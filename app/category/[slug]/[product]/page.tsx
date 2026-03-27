@@ -12,6 +12,7 @@ import { RecurringIssues } from "@/components/product/RecurringIssues";
 import { SpecsTable } from "@/components/product/SpecsTable";
 import { ComparisonModule } from "@/components/product/ComparisonModule";
 import { FAQSection } from "@/components/product/FAQSection";
+import { YouTubeVideos } from "@/components/product/YouTubeVideos";
 import { ProductDiscussions } from "@/components/community/ProductDiscussions";
 import { getDiscussionsByProduct } from "@/data/discussions";
 import { buildMetadata } from "@/lib/seo/metadata";
@@ -130,6 +131,14 @@ export default async function ProductPage({ params }: Props) {
         <div className="lg:col-span-2 space-y-10">
           {/* AI Summary */}
           <AISummaryCard summary={product.aiSummary} />
+
+          {/* YouTube Videos */}
+          {product.youtubeVideos && product.youtubeVideos.length > 0 && (
+            <YouTubeVideos
+              videos={product.youtubeVideos}
+              productName={product.name}
+            />
+          )}
 
           {/* Key Facts */}
           <section className="bg-gray-50 rounded-2xl p-6">

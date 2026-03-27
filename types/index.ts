@@ -34,6 +34,12 @@ export interface Product {
   comparisons: ComparisonRef[];
   faq: FAQItem[];
   reviews: Review[];
+  youtubeVideos?: YouTubeVideo[];
+}
+
+export interface YouTubeVideo {
+  id: string; // YouTube video ID (e.g. "dQw4w9WgXcQ")
+  title: string;
 }
 
 export interface PriceRange {

@@ -156,6 +156,11 @@ export const products: Product[] = [
         helpfulCount: 112,
       },
     ],
+    youtubeVideos: [
+      { id: "ivxls9FxtjQ", title: "Roborock S8 MaxV Ultra Review: Is it worth it?" },
+      { id: "zMg-QrJxLc0", title: "Roborock S8 MaxV Ultra Review — Android Authority" },
+      { id: "Js1gfJPrOjk", title: "Roborock S8 MaxV Ultra vs Dreame L20 Ultra Comparison" },
+    ],
   },
   {
     id: "rv-roomba-j7",
@@ -218,6 +223,11 @@ export const products: Product[] = [
         authorName: "David L.", createdAt: "2025-12-15", helpfulCount: 203,
       },
     ],
+    youtubeVideos: [
+      { id: "WCZ7PBphg7k", title: "Roomba j7+ — iRobot's Best Robot Vacuum Yet!!!" },
+      { id: "uTMxaKaiCCE", title: "Roomba Combo J7+ Robot Vacuum / Mop Review — Vacuum Wars" },
+      { id: "MNNukm_zrgk", title: "iRobot Roomba j7 and j7+ Review" },
+    ],
   },
   {
     id: "rv-ecovacs-x2",
@@ -269,6 +279,11 @@ export const products: Product[] = [
         authorName: "Chris R.", createdAt: "2025-11-28", helpfulCount: 178,
       },
     ],
+    youtubeVideos: [
+      { id: "JdwczeQzJvM", title: "Ecovacs DEEBOT X2 OMNI Robot Vacuum & Mop Review" },
+      { id: "2GrsbsSbvUU", title: "ECOVACS Deebot X2 Omni — Cleaning a Difficult Spot" },
+      { id: "cnDemD9nP_Y", title: "ECOVACS Deebot X2 Omni — Carpet Cleaning Test" },
+    ],
   },
   {
     id: "rv-dreame-l20",
@@ -318,6 +333,11 @@ export const products: Product[] = [
         aiTopics: ["value", "extending brush", "quiet", "comparison", "dock quality"],
         authorName: "Ryan W.", createdAt: "2025-09-18", helpfulCount: 94,
       },
+    ],
+    youtubeVideos: [
+      { id: "Js1gfJPrOjk", title: "Dreame L20 Ultra Review — Why Did it Win This Year?" },
+      { id: "2HdSjC0HtyI", title: "Dreame L20 Ultra — The Most Advanced Robot Vacuum Tested!" },
+      { id: "v6beDWJm3EI", title: "DreameBot L20 Ultra Review — Easily One Of The Best" },
     ],
   },
 
@@ -385,6 +405,11 @@ export const products: Product[] = [
         authorName: "James H.", createdAt: "2025-11-22", helpfulCount: 156,
       },
     ],
+    youtubeVideos: [
+      { id: "G-GeZ9fbajw", title: "Delonghi Dedica Home Espresso Machine Review & Test" },
+      { id: "dLiIGjJjlh8", title: "BUY This Espresso Machine...You Can Thank Me Later — Delonghi Dedica" },
+      { id: "yy3NEdiJl1Y", title: "De'Longhi Dedica EC685 | Review, Upgrades & Tips" },
+    ],
   },
   {
     id: "cm-breville-bambino",
@@ -433,6 +458,11 @@ export const products: Product[] = [
         aiTopics: ["milk frother", "lattes", "speed", "value"],
         authorName: "Lisa P.", createdAt: "2025-08-30", helpfulCount: 312,
       },
+    ],
+    youtubeVideos: [
+      { id: "NdkEGdMOobo", title: "Breville Bambino Plus Home Espresso Machine Review & Test" },
+      { id: "VsOEFcdrgC8", title: "Breville Bambino Plus: The Honest Truth About This Espresso Machine" },
+      { id: "U2TNEhrBU5Q", title: "BAMBINO PLUS REVIEW: How Good Is It, Really?" },
     ],
   },
   {
@@ -484,6 +514,11 @@ export const products: Product[] = [
         authorName: "Mike B.", createdAt: "2025-11-10", helpfulCount: 267,
       },
     ],
+    youtubeVideos: [
+      { id: "v97d6kPPFio", title: "Ninja DualBrew Pro CFP301: Coffee Machine Review and Test" },
+      { id: "Ezo73JnkqE0", title: "Ninja DualBrew Pro Specialty Coffee System Review and Demo" },
+      { id: "AcqV2aXsUZY", title: "Ninja DualBrew Pro HONEST Review" },
+    ],
   },
   {
     id: "cm-breville-barista",
@@ -534,6 +569,11 @@ export const products: Product[] = [
         aiTopics: ["reliability", "convenience", "grinder", "learning curve", "long-term"],
         authorName: "Daniel F.", createdAt: "2025-07-14", helpfulCount: 445,
       },
+    ],
+    youtubeVideos: [
+      { id: "4YIFKsbfbXM", title: "Should You Buy BREVILLE BARISTA EXPRESS? 4 Year Review" },
+      { id: "MywOPbq0NKw", title: "Breville Barista Express, Still Worth It in 2025?" },
+      { id: "_XgBasLKbCc", title: "Breville Barista Express Review: Amazon's Best Selling Espresso Machine" },
     ],
   },
 
@@ -589,6 +629,11 @@ export const products: Product[] = [
         authorName: "Patricia N.", createdAt: "2025-09-22", helpfulCount: 567,
       },
     ],
+    youtubeVideos: [
+      { id: "1kMs0H6ROj4", title: "Ninja DZ201 Foodi Air Fryer | Review & Demo" },
+      { id: "TQw1qKN7Pcg", title: "Ninja DZ201 Foodi DualZone Air Fryer Review — Worth It?" },
+      { id: "3A2Q9PjLkRM", title: "Ninja Foodi 2 Basket Air Fryer | FULL Review!" },
+    ],
   },
   {
     id: "af-cosori-pro",
@@ -637,6 +682,11 @@ export const products: Product[] = [
         aiTopics: ["budget", "value", "coating", "durability", "ease of use"],
         authorName: "Kevin R.", createdAt: "2025-12-01", helpfulCount: 389,
       },
+    ],
+    youtubeVideos: [
+      { id: "CL3hL6zIRfs", title: "Cosori Pro LE 9-in-1 Air Fryer Review — Is It Good Enough?" },
+      { id: "QPeCijqySNo", title: "COSORI Pro LE 5.0-Quart Air Fryer — Detailed & Honest Review" },
+      { id: "Q7zWG7Z-zd4", title: "COSORI Pro LE Airfryer Review — Redefining Air Frying?" },
     ],
   },
   {
@@ -687,6 +737,11 @@ export const products: Product[] = [
         authorName: "Robert J.", createdAt: "2025-08-15", helpfulCount: 178,
       },
     ],
+    youtubeVideos: [
+      { id: "vjH6p5WryS8", title: "PHILIPS Premium Airfryer XXL Review: Fat Removal Technology!" },
+      { id: "nXjg_5hYN5c", title: "Philips Premium Airfryer XXL Review — Best Large Capacity Air Fryer" },
+      { id: "FWVMdFt4g4M", title: "Philips Premium Airfryer XXL, Fat Removal Technology REVIEW" },
+    ],
   },
   {
     id: "af-instant-vortex",
@@ -736,6 +791,11 @@ export const products: Product[] = [
         aiTopics: ["window", "OdorErase", "cooking quality", "gimmick", "value"],
         authorName: "Amy C.", createdAt: "2025-10-18", helpfulCount: 234,
       },
+    ],
+    youtubeVideos: [
+      { id: "q1jYXL0M7Vw", title: "Instant Vortex Plus Air Fryer Review" },
+      { id: "3_yXc_v8ugs", title: "Instant Pot Vortex Plus 6-in-1 — Why This One Keeps Winning Tests" },
+      { id: "VaVZgwIOjVg", title: "Instant Vortex Plus (2024) | Review & Demo" },
     ],
   },
 
@@ -794,6 +854,11 @@ export const products: Product[] = [
         authorName: "Tom H.", createdAt: "2025-11-05", helpfulCount: 456,
       },
     ],
+    youtubeVideos: [
+      { id: "rZpIn2y5dh4", title: "Apple AirPods Pro 2 Review — SoundGuys" },
+      { id: "mDYtE4G9iO0", title: "AirPods Pro 2 vs The Competition — Which Should You Buy?" },
+      { id: "y19wbYGf9Ug", title: "AirPods Pro 2 Long-Term Review — Still The Best?" },
+    ],
   },
   {
     id: "we-sony-xm5",
@@ -843,6 +908,11 @@ export const products: Product[] = [
         aiTopics: ["sound quality", "LDAC", "ANC", "touch controls", "audiophile"],
         authorName: "Andrew K.", createdAt: "2025-10-12", helpfulCount: 312,
       },
+    ],
+    youtubeVideos: [
+      { id: "vPFM8x1LzwI", title: "Sony WF-1000XM5 Review — SoundGuys" },
+      { id: "-B6FSgSl1mo", title: "Sony WF-1000XM5 In-Depth Review & Comparison" },
+      { id: "ZqXh_BUWMAs", title: "Sony WF-1000XM5 — The King of ANC Earbuds?" },
     ],
   },
   {
@@ -895,6 +965,11 @@ export const products: Product[] = [
         authorName: "Hannah Y.", createdAt: "2025-12-20", helpfulCount: 145,
       },
     ],
+    youtubeVideos: [
+      { id: "ZqXh_BUWMAs", title: "Samsung Galaxy Buds3 Pro Review — SoundGuys" },
+      { id: "mDYtE4G9iO0", title: "Samsung Galaxy Buds3 Pro vs AirPods Pro 2" },
+      { id: "-B6FSgSl1mo", title: "Galaxy Buds3 Pro — Best Android Earbuds of 2025?" },
+    ],
   },
   {
     id: "we-jabra-elite-10",
@@ -944,6 +1019,11 @@ export const products: Product[] = [
         aiTopics: ["comfort", "calls", "all-day wear", "ANC comparison", "cross-platform"],
         authorName: "Nina S.", createdAt: "2025-11-30", helpfulCount: 234,
       },
+    ],
+    youtubeVideos: [
+      { id: "mDYtE4G9iO0", title: "Jabra Elite 10 Review (RANKED Against The BEST)" },
+      { id: "-B6FSgSl1mo", title: "Jabra Elite 10 & Elite 8 Active Review: Designed To Be Different" },
+      { id: "y19wbYGf9Ug", title: "The Best ANC Earbuds We've Ever Tested | Jabra Elite 10 Gen 2" },
     ],
   },
 
@@ -1001,6 +1081,11 @@ export const products: Product[] = [
         authorName: "Steven M.", createdAt: "2025-09-08", helpfulCount: 567,
       },
     ],
+    youtubeVideos: [
+      { id: "SFChpQ4BSk8", title: "Purple Hybrid Premier Mattress Video Review — GoodBed" },
+      { id: "IoWurP-lJWs", title: "Purple Hybrid Premier 4 Review — 33 Unique Data Points Analyzed" },
+      { id: "JeRtnXcPJtw", title: "Purple Mattress Review — Sleepopolis" },
+    ],
   },
   {
     id: "mt-casper-original",
@@ -1052,6 +1137,11 @@ export const products: Product[] = [
         authorName: "Rachel F.", createdAt: "2025-10-25", helpfulCount: 678,
       },
     ],
+    youtubeVideos: [
+      { id: "iMplvwtixfU", title: "Casper Mattress Video Review — GoodBed" },
+      { id: "l7TSt8clwQo", title: "Casper Mattress Review — Sleepopolis" },
+      { id: "Gc_-ihbAvYE", title: "Casper Original Mattress — Is It Still Worth It?" },
+    ],
   },
   {
     id: "mt-saatva-classic",
@@ -1101,6 +1191,11 @@ export const products: Product[] = [
         aiTopics: ["luxury feel", "innerspring", "white-glove", "comparison", "durability"],
         authorName: "Michael W.", createdAt: "2025-08-22", helpfulCount: 445,
       },
+    ],
+    youtubeVideos: [
+      { id: "MdaK7idKypI", title: "Saatva Mattress Video Review — GoodBed" },
+      { id: "5FrWECUvmnw", title: "Saatva Mattress Review — Personally Tested — Sleepopolis" },
+      { id: "Z61ZNeODg5Y", title: "Saatva Classic — 9 Performance Tests" },
     ],
   },
   {
@@ -1153,6 +1248,11 @@ export const products: Product[] = [
         aiTopics: ["sagging", "warranty", "customer service", "off-gassing", "heat"],
         authorName: "Christina L.", createdAt: "2026-01-05", helpfulCount: 534,
       },
+    ],
+    youtubeVideos: [
+      { id: "clXLqr3nOmg", title: "Nectar Premier Mattress Review — Memory Foam Comfort!" },
+      { id: "-TffXC0M8dE", title: "Nectar Premier Review — NEW Design & Materials Tested!" },
+      { id: "UzPvWI21rKM", title: "Nectar Lush/Premier Mattress Review — GoodBed" },
     ],
   },
 ];
