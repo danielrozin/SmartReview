@@ -89,6 +89,9 @@ export const products: Product[] = [
       { productId: "rv-roomba-j7", productName: "iRobot Roomba j7+", productSlug: "irobot-roomba-j7-plus", searchVolume: 12000 },
       { productId: "rv-ecovacs-x2", productName: "Ecovacs Deebot X2 Omni", productSlug: "ecovacs-deebot-x2-omni", searchVolume: 8500 },
     ],
+    externalComparisons: [
+      { title: "Roomba vs Roborock — Full Comparison", url: "https://aversusb.net/compare/roomba-vs-roborock", source: "aversusb.net" },
+    ],
     faq: [
       { question: "Is the Roborock S8 MaxV worth the price?", answer: "For large homes with pets, most reviewers say yes. The all-in-one dock eliminates 95% of maintenance. For small apartments, you're paying for features you won't fully use." },
       { question: "How does Roborock S8 MaxV compare to Roomba j7?", answer: "The S8 MaxV has stronger suction (6000Pa vs 2200Pa) and better mopping. The Roomba j7 has a simpler app and better carpet detection. The S8 MaxV is the more complete package." },
@@ -199,6 +202,10 @@ export const products: Product[] = [
     comparisons: [
       { productId: "rv-roborock-s8-maxv", productName: "Roborock S8 MaxV Ultra", productSlug: "roborock-s8-maxv-ultra", searchVolume: 12000 },
     ],
+    externalComparisons: [
+      { title: "Roomba vs Roborock — Full Comparison", url: "https://aversusb.net/compare/roomba-vs-roborock", source: "aversusb.net" },
+      { title: "Dyson vs Shark Vacuum — Full Comparison", url: "https://aversusb.net/compare/dyson-vs-shark-vacuum", source: "aversusb.net" },
+    ],
     faq: [
       { question: "Is the Roomba j7+ good for pet hair?", answer: "Yes for hard floors, decent for low-pile carpet. The obstacle avoidance for pet waste is a standout feature. However, deep carpet pet hair removal is not its strength." },
       { question: "How often do you need to replace the Roomba j7+ bags?", answer: "About every 60 days with daily use. The bags cost about $5 each. Some users find this recurring cost annoying." },
@@ -265,6 +272,9 @@ export const products: Product[] = [
     comparisons: [
       { productId: "rv-roborock-s8-maxv", productName: "Roborock S8 MaxV Ultra", productSlug: "roborock-s8-maxv-ultra", searchVolume: 8500 },
     ],
+    externalComparisons: [
+      { title: "Dyson vs Shark Vacuum — Full Comparison", url: "https://aversusb.net/compare/dyson-vs-shark-vacuum", source: "aversusb.net" },
+    ],
     faq: [
       { question: "Is the Ecovacs X2 Omni better than Roborock S8?", answer: "Hardware-wise, the X2 has stronger suction and better edge cleaning. But Roborock's software is far more reliable. If you prioritize cleaning performance over app experience, the X2 edges ahead." },
     ],
@@ -319,6 +329,9 @@ export const products: Product[] = [
     ],
     comparisons: [
       { productId: "rv-roborock-s8-maxv", productName: "Roborock S8 MaxV Ultra", productSlug: "roborock-s8-maxv-ultra", searchVolume: 5200 },
+    ],
+    externalComparisons: [
+      { title: "Roomba vs Roborock — Full Comparison", url: "https://aversusb.net/compare/roomba-vs-roborock", source: "aversusb.net" },
     ],
     faq: [
       { question: "Is Dreame a reliable brand?", answer: "Dreame is a Xiaomi ecosystem company with solid hardware engineering. Reliability is generally good, but US customer support is more limited than iRobot or Roborock." },
@@ -839,6 +852,9 @@ export const products: Product[] = [
     comparisons: [
       { productId: "we-sony-xm5", productName: "Sony WF-1000XM5", productSlug: "sony-wf-1000xm5", searchVolume: 33000 },
     ],
+    externalComparisons: [
+      { title: "AirPods Pro vs Galaxy Buds — Full Comparison", url: "https://aversusb.net/compare/airpods-pro-vs-galaxy-buds", source: "aversusb.net" },
+    ],
     faq: [
       { question: "Are AirPods Pro 2 worth it for Android?", answer: "No. You lose spatial audio, adaptive transparency, automatic switching, and ear tip fit test. Get the Sony XM5 or Samsung Galaxy Buds instead." },
       { question: "How long do AirPods Pro 2 last?", answer: "Battery per charge: 6 hours. Product lifespan: most users report noticeable battery degradation after 18-24 months. Apple offers battery service for $49 per earbud." },
@@ -895,6 +911,9 @@ export const products: Product[] = [
     comparisons: [
       { productId: "we-airpods-pro-2", productName: "Apple AirPods Pro 2", productSlug: "apple-airpods-pro-2", searchVolume: 33000 },
     ],
+    externalComparisons: [
+      { title: "AirPods Pro vs Galaxy Buds — Full Comparison", url: "https://aversusb.net/compare/airpods-pro-vs-galaxy-buds", source: "aversusb.net" },
+    ],
     faq: [
       { question: "Sony XM5 vs AirPods Pro 2 — which sounds better?", answer: "Sony XM5 wins on pure audio quality, especially with LDAC-compatible Android phones. AirPods Pro 2 wins on convenience and ecosystem integration for iPhone users." },
     ],
@@ -950,6 +969,9 @@ export const products: Product[] = [
     comparisons: [
       { productId: "we-sony-xm5", productName: "Sony WF-1000XM5", productSlug: "sony-wf-1000xm5", searchVolume: 12000 },
       { productId: "we-airpods-pro-2", productName: "Apple AirPods Pro 2", productSlug: "apple-airpods-pro-2", searchVolume: 15000 },
+    ],
+    externalComparisons: [
+      { title: "AirPods Pro vs Galaxy Buds — Full Comparison", url: "https://aversusb.net/compare/airpods-pro-vs-galaxy-buds", source: "aversusb.net" },
     ],
     faq: [
       { question: "Are Galaxy Buds3 Pro worth it for non-Samsung phones?", answer: "They work well on any Android phone, but you lose some Galaxy AI features. For non-Samsung Android, the Sony XM5 is generally a better value." },

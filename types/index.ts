@@ -32,6 +32,7 @@ export interface Product {
   specs: ProductSpec[];
   recurringIssues: RecurringIssue[];
   comparisons: ComparisonRef[];
+  externalComparisons?: ExternalComparison[];
   faq: FAQItem[];
   reviews: Review[];
   youtubeVideos?: YouTubeVideo[];
@@ -88,6 +89,12 @@ export interface ComparisonRef {
 export interface FAQItem {
   question: string;
   answer: string;
+}
+
+export interface ExternalComparison {
+  title: string;
+  url: string;
+  source: string;
 }
 
 // --- Reviews ---
