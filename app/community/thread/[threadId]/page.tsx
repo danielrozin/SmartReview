@@ -69,6 +69,8 @@ export default async function ThreadPage({ params }: Props) {
               {/* Vote column */}
               <div className="shrink-0 pt-2">
                 <VoteControls
+                  itemId={thread.id}
+                  itemType="thread"
                   upvotes={thread.upvotes}
                   downvotes={thread.downvotes}
                   layout="vertical"

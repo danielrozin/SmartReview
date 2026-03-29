@@ -1,9 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { formatNumber } from "@/lib/utils";
 
 interface VoteControlsProps {
+  itemId: string;
+  itemType?: "thread" | "comment";
   upvotes: number;
   downvotes: number;
   helpfulCount?: number;
@@ -11,7 +13,15 @@ interface VoteControlsProps {
   size?: "sm" | "md";
 }
 
+function getStoredVote(itemId: string): "up" | "down" | null {
+  if (typeof window === "undefined") return null;
+  const stored = localStorage.getItem(`vote_${itemId}`);
+  return stored === "up" || stored === "down" ? stored : null;
+}
+
 export function VoteControls({
+  itemId,
+  itemType = "thread",
   upvotes,
   downvotes,
   helpfulCount,
@@ -22,23 +32,41 @@ export function VoteControls({
   const [currentUpvotes, setCurrentUpvotes] = useState(upvotes);
   const [currentDownvotes, setCurrentDownvotes] = useState(downvotes);
 
+  useEffect(() => {
+    setVote(getStoredVote(itemId));
+  }, [itemId]);
+
   const netVotes = currentUpvotes - currentDownvotes;
 
-  const handleVote = (type: "up" | "down") => {
+  const handleVote = useCallback((type: "up" | "down") => {
+    let newVote: "up" | "down" | null;
     if (vote === type) {
-      // Undo vote
-      setVote(null);
+      newVote = null;
       if (type === "up") setCurrentUpvotes((v) => v - 1);
       else setCurrentDownvotes((v) => v - 1);
     } else {
-      // Change or set vote
       if (vote === "up") setCurrentUpvotes((v) => v - 1);
       if (vote === "down") setCurrentDownvotes((v) => v - 1);
-      setVote(type);
+      newVote = type;
       if (type === "up") setCurrentUpvotes((v) => v + 1);
       else setCurrentDownvotes((v) => v + 1);
     }
-  };
+    setVote(newVote);
+
+    // Persist to localStorage
+    if (newVote) {
+      localStorage.setItem(`vote_${itemId}`, newVote);
+    } else {
+      localStorage.removeItem(`vote_${itemId}`);
+    }
+
+    // Ready for backend API when available:
+    // fetch("/api/votes", {
+    //   method: "POST",
+    //   headers: { "Content-Type": "application/json" },
+    //   body: JSON.stringify({ itemId, itemType, vote: newVote }),
+    // }).catch(() => {});
+  }, [vote, itemId, itemType]);
 
   const buttonSize = size === "sm" ? "w-7 h-7 text-sm" : "w-9 h-9 text-base";
   const scoreSize = size === "sm" ? "text-sm" : "text-base";

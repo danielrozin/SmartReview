@@ -57,6 +57,8 @@ function SingleComment({ comment, depth = 0 }: { comment: Comment; depth?: numbe
         {/* Comment actions */}
         <div className="flex items-center gap-4">
           <VoteControls
+            itemId={comment.id}
+            itemType="comment"
             upvotes={comment.upvotes}
             downvotes={comment.downvotes}
             helpfulCount={comment.helpfulCount}

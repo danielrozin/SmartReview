@@ -41,10 +41,51 @@ export default function WriteReviewPage() {
   const [easeOfUseRating, setEaseOfUseRating] = useState(0);
   const [valueRating, setValueRating] = useState(0);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    setIsSubmitting(true);
+    setSubmitError("");
+
+    const reviewData = {
+      productId: selectedProduct,
+      headline,
+      rating,
+      reliabilityRating,
+      easeOfUseRating,
+      valueRating,
+      experienceLevel,
+      timeOwned,
+      verification,
+      pros: pros.filter((p) => p.trim()),
+      cons: cons.filter((c) => c.trim()),
+      body,
+      submittedAt: new Date().toISOString(),
+    };
+
+    try {
+      // Store locally until backend API is available
+      const existing = JSON.parse(localStorage.getItem("pending_reviews") || "[]");
+      existing.push(reviewData);
+      localStorage.setItem("pending_reviews", JSON.stringify(existing));
+
+      // Ready for backend API when available:
+      // const res = await fetch("/api/reviews", {
+      //   method: "POST",
+      //   headers: { "Content-Type": "application/json" },
+      //   body: JSON.stringify(reviewData),
+      // });
+      // if (!res.ok) throw new Error("Failed to submit review");
+
+      setSubmitted(true);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } catch {
+      setSubmitError("Failed to submit review. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const updatePro = (index: number, value: string) => {
@@ -358,16 +399,19 @@ export default function WriteReviewPage() {
 
           {/* Submit */}
           <div className="pt-4 border-t border-gray-100">
+            {submitError && (
+              <p className="text-sm text-red-600 mb-3">{submitError}</p>
+            )}
             <button
               type="submit"
-              disabled={!isValid}
+              disabled={!isValid || isSubmitting}
               className={`w-full py-3.5 rounded-xl font-semibold text-sm transition-colors ${
-                isValid
+                isValid && !isSubmitting
                   ? "bg-brand-600 text-white hover:bg-brand-700"
                   : "bg-gray-100 text-gray-400 cursor-not-allowed"
               }`}
             >
-              Submit Review
+              {isSubmitting ? "Submitting..." : "Submit Review"}
             </button>
             <p className="text-xs text-gray-400 text-center mt-3">
               Your review will be verified before publishing. We never edit
