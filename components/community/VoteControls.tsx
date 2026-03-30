@@ -53,9 +53,10 @@ export function VoteControls({
     }
     setVote(newVote);
 
-    // Persist to localStorage
+    // Persist to localStorage and track
     if (newVote) {
       localStorage.setItem(`vote_${itemId}`, newVote);
+      trackVoteCast(itemType, newVote);
     } else {
       localStorage.removeItem(`vote_${itemId}`);
     }

@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { products } from "@/data/products";
 import { categories } from "@/data/categories";
 import { discussions } from "@/data/discussions";
+import { trackSearch, trackSearchResultClicked } from "@/lib/tracking/analytics";
 
 interface SearchResult {
   type: "product" | "category" | "discussion";
@@ -93,8 +94,12 @@ export function SearchBar() {
       return (b.score || 0) - (a.score || 0);
     });
 
-    setResults(matched.slice(0, 8));
-    setOpen(matched.length > 0);
+    const sliced = matched.slice(0, 8);
+    setResults(sliced);
+    setOpen(sliced.length > 0);
+    if (q.trim().length >= 2) {
+      trackSearch(q.trim(), sliced.length);
+    }
   }
 
   function handleKeyDown(e: React.KeyboardEvent) {
@@ -156,7 +161,10 @@ export function SearchBar() {
           {results.map((result, i) => (
             <button
               key={result.href}
-              onClick={() => navigate(result.href)}
+              onClick={() => {
+                trackSearchResultClicked(query, result.type, result.name, i);
+                navigate(result.href);
+              }}
               className={`w-full flex items-center gap-3 px-4 py-3 text-left transition-colors ${
                 i === selectedIndex
                   ? "bg-brand-50"
