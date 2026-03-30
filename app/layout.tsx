@@ -4,6 +4,8 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { organizationSchema, websiteSchema } from "@/lib/schema/jsonld";
 import { AppProvider } from "@/lib/context/AppContext";
+import { GoogleTagManager, GoogleTagManagerNoScript } from "@/components/tracking/GoogleTagManager";
+import { MetaPixel } from "@/components/tracking/MetaPixel";
 
 export const metadata: Metadata = {
   title: "SmartReview — Real Reviews, Real Intelligence",
@@ -51,6 +53,9 @@ export default function RootLayout({
         )}
       </head>
       <body className="min-h-screen flex flex-col">
+        <GoogleTagManager />
+        <MetaPixel />
+        <GoogleTagManagerNoScript />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

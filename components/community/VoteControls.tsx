@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { formatNumber } from "@/lib/utils";
+import { trackVoteCast } from "@/lib/tracking/analytics";
 
 interface VoteControlsProps {
   itemId: string;

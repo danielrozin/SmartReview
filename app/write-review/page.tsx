@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { products } from "@/data/products";
-import { trackReviewSubmitted } from "@/lib/tracking/analytics";
+import { trackReviewSubmitted, trackWriteReviewStep } from "@/lib/tracking/analytics";
 
 const experienceLevels = [
   { value: "beginner", label: "Beginner" },
@@ -151,7 +151,10 @@ export default function WriteReviewPage() {
   const canProceed = stepValid[STEPS[step].key];
 
   const goNext = () => {
-    if (canProceed && step < STEPS.length - 1) setStep(step + 1);
+    if (canProceed && step < STEPS.length - 1) {
+      trackWriteReviewStep(step + 1, STEPS[step].key);
+      setStep(step + 1);
+    }
   };
   const goBack = () => {
     if (step > 0) setStep(step - 1);

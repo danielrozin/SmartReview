@@ -106,3 +106,21 @@ export function trackContactFormSubmitted() {
 export function trackPageEngagement(pagePath: string, timeOnPageSec: number) {
   trackEvent("page_engagement", { page_path: pagePath, time_on_page_sec: timeOnPageSec });
 }
+
+// -- Conversion funnel events --
+
+export function trackCategoryViewed(categorySlug: string, productCount: number) {
+  trackEvent("category_viewed", { category_slug: categorySlug, product_count: productCount });
+}
+
+export function trackSearchResultClicked(query: string, resultType: string, resultName: string, position: number) {
+  trackEvent("search_result_clicked", { search_term: query, result_type: resultType, result_name: resultName, position });
+}
+
+export function trackWriteReviewStep(step: number, stepName: string) {
+  trackEvent("write_review_step", { step, step_name: stepName });
+}
+
+export function trackCtaClicked(ctaName: string, page: string) {
+  trackEvent("cta_clicked", { cta_name: ctaName, page });
+}
