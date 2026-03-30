@@ -132,3 +132,33 @@ export function trackWriteReviewStep(step: number, stepName: string) {
 export function trackCtaClicked(ctaName: string, page: string) {
   trackEvent("cta_clicked", { cta_name: ctaName, page });
 }
+
+// -- New feature tracking events --
+
+export function trackEmailCaptureShown(source: string, page: string) {
+  trackEvent("email_capture_shown", { source, page });
+}
+
+export function trackEmailCaptureSubmit(source: string, page: string) {
+  trackEvent("email_capture_submit", { source, page });
+  trackEvent("generate_lead", { value: 0.5, currency: "USD", event_label: `email_capture_${source}` });
+  fbq("track", "Lead", { content_name: "email_capture", source });
+}
+
+export function trackReviewAuthGateShown(productSlug: string, triggerAction: string) {
+  trackEvent("review_auth_gate_shown", { product_slug: productSlug, trigger_action: triggerAction });
+}
+
+export function trackReviewAuthSignup(productSlug: string, method: string) {
+  trackEvent("review_auth_signup", { product_slug: productSlug, method });
+  trackEvent("sign_up", { method });
+  fbq("track", "CompleteRegistration", { content_name: "review_auth", method });
+}
+
+export function trackQuickAnswerView(productSlug: string, questionId: string) {
+  trackEvent("quick_answer_view", { product_slug: productSlug, question_id: questionId });
+}
+
+export function trackQuickAnswerExpand(productSlug: string, questionId: string) {
+  trackEvent("quick_answer_expand", { product_slug: productSlug, question_id: questionId });
+}

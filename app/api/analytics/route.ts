@@ -25,6 +25,13 @@ const CUSTOM_EVENTS = [
   { name: "newsletter_signup", category: "lead_capture", description: "User signs up for newsletter", params: ["source"] },
   { name: "contact_form_submitted", category: "lead_capture", description: "User submits contact form", params: [] },
   { name: "page_engagement", category: "engagement", description: "User spends 30+ seconds on page", params: ["page_path", "time_on_page_sec"] },
+  // New feature events
+  { name: "email_capture_shown", category: "lead_capture", description: "Email capture form displayed to user", params: ["source", "page"] },
+  { name: "email_capture_submit", category: "lead_capture", description: "User submits email via capture form", params: ["source", "page"] },
+  { name: "review_auth_gate_shown", category: "conversion", description: "Auth gate displayed before review action", params: ["product_slug", "trigger_action"] },
+  { name: "review_auth_signup", category: "conversion", description: "User signs up via review auth gate", params: ["product_slug", "method"] },
+  { name: "quick_answer_view", category: "engagement", description: "Quick Answer section viewed on product page", params: ["product_slug", "question_id"] },
+  { name: "quick_answer_expand", category: "engagement", description: "User expands a Quick Answer for full detail", params: ["product_slug", "question_id"] },
 ];
 
 const CONVERSION_FUNNEL = {
@@ -39,6 +46,51 @@ const CONVERSION_FUNNEL = {
     { step: 7, name: "Verify & Submit", event: "write_review_step:4", description: "User adds details and submits" },
     { step: 8, name: "Review Submitted", event: "review_submitted", description: "Review successfully submitted" },
   ],
+};
+
+const FEATURE_FUNNELS = {
+  emailCapture: {
+    name: "Email Capture Funnel",
+    description: "Measures email capture conversion from impression to submission",
+    steps: [
+      { step: 1, name: "Page View", event: "page_view", description: "User visits a page with email capture" },
+      { step: 2, name: "Form Shown", event: "email_capture_shown", description: "Email capture form renders in viewport" },
+      { step: 3, name: "Email Submitted", event: "email_capture_submit", description: "User enters email and submits" },
+    ],
+    kpis: [
+      { metric: "Form Show Rate", formula: "email_capture_shown / page_view", target: ">60%" },
+      { metric: "Capture Conversion", formula: "email_capture_submit / email_capture_shown", target: ">5%" },
+    ],
+  },
+  accountRequiredReviews: {
+    name: "Account-Required Review Funnel",
+    description: "Measures auth gate impact on review completion",
+    steps: [
+      { step: 1, name: "View Product", event: "product_viewed", description: "User views a product page" },
+      { step: 2, name: "Start Review", event: "write_review_step:1", description: "User begins writing a review" },
+      { step: 3, name: "Auth Gate Shown", event: "review_auth_gate_shown", description: "Auth requirement presented to user" },
+      { step: 4, name: "Sign Up", event: "review_auth_signup", description: "User creates account to continue" },
+      { step: 5, name: "Review Submitted", event: "review_submitted", description: "User completes and submits review" },
+    ],
+    kpis: [
+      { metric: "Gate-to-Signup Rate", formula: "review_auth_signup / review_auth_gate_shown", target: ">30%" },
+      { metric: "Signup-to-Review Rate", formula: "review_submitted / review_auth_signup", target: ">50%" },
+      { metric: "Gate Drop-off", formula: "1 - (review_auth_signup / review_auth_gate_shown)", target: "<70%", warning: "High drop-off means auth friction is too high" },
+    ],
+  },
+  quickAnswer: {
+    name: "Quick Answer Engagement Funnel",
+    description: "Measures Quick Answer feature engagement depth",
+    steps: [
+      { step: 1, name: "Product Page", event: "product_viewed", description: "User views a product page" },
+      { step: 2, name: "Quick Answer View", event: "quick_answer_view", description: "Quick Answer section enters viewport" },
+      { step: 3, name: "Quick Answer Expand", event: "quick_answer_expand", description: "User clicks to expand a Quick Answer" },
+    ],
+    kpis: [
+      { metric: "QA Visibility Rate", formula: "quick_answer_view / product_viewed", target: ">40%" },
+      { metric: "QA Engagement Rate", formula: "quick_answer_expand / quick_answer_view", target: ">15%" },
+    ],
+  },
 };
 
 const KPI_TARGETS = {
@@ -206,6 +258,7 @@ export async function GET(request: Request) {
   const section = searchParams.get("section");
 
   if (section === "funnel") return NextResponse.json({ funnel: CONVERSION_FUNNEL });
+  if (section === "feature-funnels") return NextResponse.json({ featureFunnels: FEATURE_FUNNELS });
   if (section === "kpis") return NextResponse.json({ kpis: KPI_TARGETS });
   if (section === "events") return NextResponse.json({ events: CUSTOM_EVENTS });
   if (section === "live") {
@@ -224,6 +277,7 @@ export async function GET(request: Request) {
     clarityProject: CLARITY_PROJECT,
     events: CUSTOM_EVENTS,
     funnel: CONVERSION_FUNNEL,
+    featureFunnels: FEATURE_FUNNELS,
     kpis: KPI_TARGETS,
     live,
   });

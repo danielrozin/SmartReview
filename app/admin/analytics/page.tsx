@@ -25,6 +25,13 @@ interface LiveMetrics {
   topCategories: Array<{ name: string; slug: string; productCount: number }>;
 }
 
+interface FeatureFunnel {
+  name: string;
+  description: string;
+  steps: Array<{ step: number; name: string; event: string; description: string }>;
+  kpis: Array<{ metric: string; formula: string; target: string; warning?: string }>;
+}
+
 interface AnalyticsConfig {
   product: string;
   ga4Property: string;
@@ -34,6 +41,7 @@ interface AnalyticsConfig {
     name: string;
     steps: Array<{ step: number; name: string; event: string; description: string }>;
   };
+  featureFunnels: Record<string, FeatureFunnel>;
   kpis: {
     northStar: { metric: string; description: string; target: string };
     core: Array<{ metric: string; source: string; frequency: string; target: string | null }>;
@@ -78,7 +86,7 @@ export default function SmartReviewAnalytics() {
   const [report, setReport] = useState<WeeklyReport | null>(null);
   const [loading, setLoading] = useState(true);
   const [reportLoading, setReportLoading] = useState(false);
-  const [activeTab, setActiveTab] = useState<"overview" | "funnel" | "events" | "report">("overview");
+  const [activeTab, setActiveTab] = useState<"overview" | "funnel" | "features" | "events" | "report">("overview");
 
   useEffect(() => {
     fetch("/api/analytics")
@@ -121,6 +129,7 @@ export default function SmartReviewAnalytics() {
   const tabs = [
     { key: "overview" as const, label: "Overview" },
     { key: "funnel" as const, label: "Review Funnel" },
+    { key: "features" as const, label: "New Features" },
     { key: "events" as const, label: "Custom Events" },
     { key: "report" as const, label: "Weekly Report" },
   ];
@@ -331,6 +340,72 @@ export default function SmartReviewAnalytics() {
           </div>
 
           <p className="text-xs text-gray-400">Funnel percentages are placeholders. Actual GA4 data will replace them after collection begins.</p>
+        </div>
+      )}
+
+      {/* New Features */}
+      {activeTab === "features" && config.featureFunnels && (
+        <div className="space-y-8">
+          <div className="bg-gradient-to-r from-violet-50 to-purple-50 border border-violet-100 rounded-2xl p-6">
+            <h2 className="text-xl font-bold text-gray-900">New Feature Tracking</h2>
+            <p className="text-sm text-gray-600 mt-1">
+              Conversion funnels for Email Capture, Account-Required Reviews, and Quick Answer features.
+            </p>
+            <p className="text-xs text-gray-400 mt-2">Baseline collection starts once features are deployed. Targets shown below are initial benchmarks.</p>
+          </div>
+
+          {Object.entries(config.featureFunnels).map(([key, funnel]) => (
+            <div key={key} className="bg-white border border-gray-200 rounded-xl p-6 space-y-5">
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900">{funnel.name}</h3>
+                <p className="text-sm text-gray-500 mt-1">{funnel.description}</p>
+              </div>
+
+              <div className="space-y-3">
+                {funnel.steps.map((step, i) => (
+                  <div key={step.step} className="flex items-stretch gap-4">
+                    <div className="flex flex-col items-center">
+                      <div className="w-8 h-8 bg-violet-100 text-violet-700 rounded-full flex items-center justify-center font-bold text-xs shrink-0">
+                        {step.step}
+                      </div>
+                      {i < funnel.steps.length - 1 && <div className="w-0.5 flex-1 bg-gray-200 my-1" />}
+                    </div>
+                    <div className="bg-gray-50 border border-gray-100 rounded-lg p-3 flex-1 mb-1">
+                      <div className="flex items-center gap-2 mb-1">
+                        <h4 className="font-medium text-gray-900 text-sm">{step.name}</h4>
+                        <code className="text-[10px] bg-white text-gray-500 px-1.5 py-0.5 rounded border border-gray-200">{step.event}</code>
+                      </div>
+                      <p className="text-xs text-gray-500">{step.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div>
+                <h4 className="text-sm font-semibold text-gray-700 mb-3">Target KPIs</h4>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                  {funnel.kpis.map((kpi) => (
+                    <div key={kpi.metric} className="bg-gray-50 border border-gray-100 rounded-lg p-3">
+                      <p className="text-[10px] font-semibold text-gray-500 uppercase tracking-wider">{kpi.metric}</p>
+                      <p className="text-lg font-bold text-gray-900 mt-0.5">{kpi.target}</p>
+                      <p className="text-[10px] text-gray-400 mt-0.5">{kpi.formula}</p>
+                      {kpi.warning && <p className="text-[10px] text-amber-600 mt-1">{kpi.warning}</p>}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+
+          <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
+            <h4 className="text-sm font-semibold text-blue-900 mb-2">GA4 Setup Instructions</h4>
+            <ul className="text-xs text-blue-800 space-y-1">
+              <li>1. Events fire automatically once feature components are deployed with tracking hooks</li>
+              <li>2. Mark <code className="bg-blue-100 px-1 rounded">email_capture_submit</code> and <code className="bg-blue-100 px-1 rounded">review_auth_signup</code> as conversions in GA4 Admin &gt; Events</li>
+              <li>3. Create custom dimensions for <code className="bg-blue-100 px-1 rounded">source</code>, <code className="bg-blue-100 px-1 rounded">trigger_action</code>, and <code className="bg-blue-100 px-1 rounded">method</code> parameters</li>
+              <li>4. Build a Funnel Exploration report in GA4 using the event sequences above</li>
+            </ul>
+          </div>
         </div>
       )}
 
