@@ -1,10 +1,12 @@
+"use client";
+
 import Link from "next/link";
 
 export function Footer() {
   return (
     <footer className="bg-gray-50 border-t border-gray-100 mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
               <div className="w-7 h-7 bg-brand-600 rounded-lg flex items-center justify-center">
@@ -87,6 +89,48 @@ export function Footer() {
               ))}
             </ul>
           </div>
+
+          {/* Legal section */}
+          <div>
+            <h3 className="text-sm font-semibold text-gray-900 mb-3">
+              Legal
+            </h3>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/privacy" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
+                  Terms of Service
+                </Link>
+              </li>
+              <li>
+                <Link href="/cookie-policy" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
+                  Cookie Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/acceptable-use" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
+                  Acceptable Use
+                </Link>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (typeof window !== "undefined") {
+                      window.dispatchEvent(new CustomEvent("open-cookie-preferences"));
+                    }
+                  }}
+                  className="text-sm text-gray-500 hover:text-gray-900 transition-colors cursor-pointer"
+                >
+                  Cookie Preferences
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div className="border-t border-gray-200 mt-10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
@@ -95,16 +139,22 @@ export function Footer() {
           </p>
           <div className="flex gap-6">
             <Link
-              href="#"
+              href="/privacy"
               className="text-sm text-gray-400 hover:text-gray-600 transition-colors"
             >
-              Privacy Policy
+              Privacy
             </Link>
             <Link
-              href="#"
+              href="/terms"
               className="text-sm text-gray-400 hover:text-gray-600 transition-colors"
             >
-              Terms of Service
+              Terms
+            </Link>
+            <Link
+              href="/cookie-policy"
+              className="text-sm text-gray-400 hover:text-gray-600 transition-colors"
+            >
+              Cookies
             </Link>
           </div>
         </div>
