@@ -66,23 +66,33 @@ export default function WriteReviewPage() {
     };
 
     try {
-      // Store locally until backend API is available
-      const existing = JSON.parse(localStorage.getItem("pending_reviews") || "[]");
-      existing.push(reviewData);
-      localStorage.setItem("pending_reviews", JSON.stringify(existing));
+      const res = await fetch("/api/reviews", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...reviewData,
+          userId: "anonymous", // Will be replaced by session user when auth is wired
+          verifiedPurchase: verification !== "",
+          verificationTier: verification || "unverified",
+        }),
+      });
 
-      // Ready for backend API when available:
-      // const res = await fetch("/api/reviews", {
-      //   method: "POST",
-      //   headers: { "Content-Type": "application/json" },
-      //   body: JSON.stringify(reviewData),
-      // });
-      // if (!res.ok) throw new Error("Failed to submit review");
+      if (!res.ok) {
+        // Fallback to localStorage when API is unavailable (no DB)
+        const existing = JSON.parse(localStorage.getItem("pending_reviews") || "[]");
+        existing.push(reviewData);
+        localStorage.setItem("pending_reviews", JSON.stringify(existing));
+      }
 
       setSubmitted(true);
       window.scrollTo({ top: 0, behavior: "smooth" });
     } catch {
-      setSubmitError("Failed to submit review. Please try again.");
+      // Offline fallback
+      const existing = JSON.parse(localStorage.getItem("pending_reviews") || "[]");
+      existing.push(reviewData);
+      localStorage.setItem("pending_reviews", JSON.stringify(existing));
+      setSubmitted(true);
+      window.scrollTo({ top: 0, behavior: "smooth" });
     } finally {
       setIsSubmitting(false);
     }
