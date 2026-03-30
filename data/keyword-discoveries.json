@@ -1,0 +1,2230 @@
+{
+  "generatedAt": "2026-03-30T12:10:06.806Z",
+  "totalDiscovered": 171,
+  "top50Count": 50,
+  "filters": {
+    "minVolume": 500,
+    "maxDifficulty": 60
+  },
+  "byCategory": {
+    "robot-vacuums": 5,
+    "coffee-machines": 47,
+    "air-fryers": 11,
+    "wireless-earbuds": 20,
+    "mattresses": 88
+  },
+  "top50Keywords": [
+    {
+      "keyword": "mattress best for back pain",
+      "searchVolume": 33100,
+      "cpc": 13.9,
+      "competition": 1,
+      "difficulty": 8,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 142.99655987551438
+    },
+    {
+      "keyword": "best for back pain mattress",
+      "searchVolume": 33100,
+      "cpc": 13.9,
+      "competition": 1,
+      "difficulty": 8,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 142.99655987551438
+    },
+    {
+      "keyword": "best mattress for back pain",
+      "searchVolume": 33100,
+      "cpc": 13.9,
+      "competition": 1,
+      "difficulty": 8,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 142.99655987551438
+    },
+    {
+      "keyword": "best mattress pad for back pain",
+      "searchVolume": 9900,
+      "cpc": 5.22,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 134.912703891951
+    },
+    {
+      "keyword": "best mattress pads for back pain",
+      "searchVolume": 9900,
+      "cpc": 5.22,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 134.912703891951
+    },
+    {
+      "keyword": "best mattress topper for back pain",
+      "searchVolume": 9900,
+      "cpc": 5.22,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 134.912703891951
+    },
+    {
+      "keyword": "best mattress toppers for back pain",
+      "searchVolume": 9900,
+      "cpc": 5.22,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 134.912703891951
+    },
+    {
+      "keyword": "best bed mattress for back pain",
+      "searchVolume": 33100,
+      "cpc": 13.9,
+      "competition": 1,
+      "difficulty": 38,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 133.99655987551438
+    },
+    {
+      "keyword": "best bed mattress for lower back pain",
+      "searchVolume": 6600,
+      "cpc": 13.41,
+      "competition": 1,
+      "difficulty": 9,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 128.69087871083735
+    },
+    {
+      "keyword": "best type mattress for back pain",
+      "searchVolume": 33100,
+      "cpc": 13.9,
+      "competition": 1,
+      "difficulty": 56,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 128.5965598755144
+    },
+    {
+      "keyword": "hybrid mattress vs memory foam",
+      "searchVolume": 4400,
+      "cpc": 13.48,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 127.86905352972374
+    },
+    {
+      "keyword": "hybrid vs memory foam mattress",
+      "searchVolume": 4400,
+      "cpc": 13.48,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 127.86905352972374
+    },
+    {
+      "keyword": "memory foam mattress vs hybrid",
+      "searchVolume": 4400,
+      "cpc": 13.48,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 127.86905352972374
+    },
+    {
+      "keyword": "what type of mattress is best for back pain",
+      "searchVolume": 6600,
+      "cpc": 9.67,
+      "competition": 1,
+      "difficulty": 13,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 127.49087871083736
+    },
+    {
+      "keyword": "what is the best mattress type for back pain",
+      "searchVolume": 6600,
+      "cpc": 9.67,
+      "competition": 1,
+      "difficulty": 13,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 127.49087871083736
+    },
+    {
+      "keyword": "what is best type of mattress for back pain",
+      "searchVolume": 6600,
+      "cpc": 9.67,
+      "competition": 1,
+      "difficulty": 13,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 127.49087871083736
+    },
+    {
+      "keyword": "espresso machine for home best",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.94655987551438
+    },
+    {
+      "keyword": "best espresso machine for the home",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.94655987551438
+    },
+    {
+      "keyword": "espresso machine home best",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.94655987551438
+    },
+    {
+      "keyword": "home espresso machine best",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.94655987551438
+    },
+    {
+      "keyword": "espresso machine best home",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.94655987551438
+    },
+    {
+      "keyword": "best espresso machine home",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.94655987551438
+    },
+    {
+      "keyword": "best in home espresso machine",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.94655987551438
+    },
+    {
+      "keyword": "best rated home espresso machine",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.94655987551438
+    },
+    {
+      "keyword": "best espresso machine for home",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.94655987551438
+    },
+    {
+      "keyword": "best espresso machine at home",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.94655987551438
+    },
+    {
+      "keyword": "best at home espresso machine",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.94655987551438
+    },
+    {
+      "keyword": "espresso machine best for home",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.94655987551438
+    },
+    {
+      "keyword": "best espresso home machine",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.94655987551438
+    },
+    {
+      "keyword": "what is the best mattress for low back pain",
+      "searchVolume": 6600,
+      "cpc": 9.67,
+      "competition": 1,
+      "difficulty": 15,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.89087871083737
+    },
+    {
+      "keyword": "best home espresso machine",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 1,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.64655987551438
+    },
+    {
+      "keyword": "best home coffee espresso machine",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 2,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.34655987551439
+    },
+    {
+      "keyword": "what type of mattress best for back pain",
+      "searchVolume": 6600,
+      "cpc": 9.67,
+      "competition": 1,
+      "difficulty": 17,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.29087871083738
+    },
+    {
+      "keyword": "what mattress is the best for back pain",
+      "searchVolume": 6600,
+      "cpc": 9.67,
+      "competition": 1,
+      "difficulty": 18,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 125.99087871083736
+    },
+    {
+      "keyword": "what mattress is best for back pain",
+      "searchVolume": 6600,
+      "cpc": 9.67,
+      "competition": 1,
+      "difficulty": 18,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 125.99087871083736
+    },
+    {
+      "keyword": "what is the best mattress for back pain",
+      "searchVolume": 6600,
+      "cpc": 9.67,
+      "competition": 1,
+      "difficulty": 18,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 125.99087871083736
+    },
+    {
+      "keyword": "what is best mattress for back pain",
+      "searchVolume": 6600,
+      "cpc": 9.67,
+      "competition": 1,
+      "difficulty": 18,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 125.99087871083736
+    },
+    {
+      "keyword": "memory foam vs hybrid mattress",
+      "searchVolume": 1600,
+      "cpc": 18.05,
+      "competition": 0.55,
+      "difficulty": 0,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 125.8323996531185
+    },
+    {
+      "keyword": "best rated at home espresso machine",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 4,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 125.74655987551438
+    },
+    {
+      "keyword": "mattress best for lower back pain",
+      "searchVolume": 6600,
+      "cpc": 13.41,
+      "competition": 1,
+      "difficulty": 19,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 125.69087871083737
+    },
+    {
+      "keyword": "best mattress for lower back pain",
+      "searchVolume": 6600,
+      "cpc": 13.41,
+      "competition": 1,
+      "difficulty": 19,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 125.69087871083737
+    },
+    {
+      "keyword": "what is the best mattress for lower back pain",
+      "searchVolume": 6600,
+      "cpc": 9.67,
+      "competition": 1,
+      "difficulty": 19,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 125.69087871083737
+    },
+    {
+      "keyword": "best mattress for low back pain",
+      "searchVolume": 6600,
+      "cpc": 13.41,
+      "competition": 1,
+      "difficulty": 21,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 125.09087871083737
+    },
+    {
+      "keyword": "best rated espresso machine for home",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 7,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 124.84655987551439
+    },
+    {
+      "keyword": "best espresso coffee machine for home",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 8,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 124.54655987551438
+    },
+    {
+      "keyword": "what is the best rated mattress for back pain",
+      "searchVolume": 6600,
+      "cpc": 9.67,
+      "competition": 1,
+      "difficulty": 26,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 123.59087871083737
+    },
+    {
+      "keyword": "best mattress for back pain side sleeper",
+      "searchVolume": 2900,
+      "cpc": 14.15,
+      "competition": 1,
+      "difficulty": 3,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 123.34795995797911
+    },
+    {
+      "keyword": "best mattress for side sleepers with back pain",
+      "searchVolume": 2900,
+      "cpc": 14.15,
+      "competition": 1,
+      "difficulty": 4,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 123.04795995797912
+    },
+    {
+      "keyword": "best home espresso coffee machine",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 13,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 123.04655987551438
+    },
+    {
+      "keyword": "best mattress for side sleepers and back pain",
+      "searchVolume": 2900,
+      "cpc": 14.15,
+      "competition": 1,
+      "difficulty": 6,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 122.44795995797912
+    }
+  ],
+  "allKeywords": [
+    {
+      "keyword": "mattress best for back pain",
+      "searchVolume": 33100,
+      "cpc": 13.9,
+      "competition": 1,
+      "difficulty": 8,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 142.99655987551438
+    },
+    {
+      "keyword": "best for back pain mattress",
+      "searchVolume": 33100,
+      "cpc": 13.9,
+      "competition": 1,
+      "difficulty": 8,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 142.99655987551438
+    },
+    {
+      "keyword": "best mattress for back pain",
+      "searchVolume": 33100,
+      "cpc": 13.9,
+      "competition": 1,
+      "difficulty": 8,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 142.99655987551438
+    },
+    {
+      "keyword": "best mattress pad for back pain",
+      "searchVolume": 9900,
+      "cpc": 5.22,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 134.912703891951
+    },
+    {
+      "keyword": "best mattress pads for back pain",
+      "searchVolume": 9900,
+      "cpc": 5.22,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 134.912703891951
+    },
+    {
+      "keyword": "best mattress topper for back pain",
+      "searchVolume": 9900,
+      "cpc": 5.22,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 134.912703891951
+    },
+    {
+      "keyword": "best mattress toppers for back pain",
+      "searchVolume": 9900,
+      "cpc": 5.22,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 134.912703891951
+    },
+    {
+      "keyword": "best bed mattress for back pain",
+      "searchVolume": 33100,
+      "cpc": 13.9,
+      "competition": 1,
+      "difficulty": 38,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 133.99655987551438
+    },
+    {
+      "keyword": "best bed mattress for lower back pain",
+      "searchVolume": 6600,
+      "cpc": 13.41,
+      "competition": 1,
+      "difficulty": 9,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 128.69087871083735
+    },
+    {
+      "keyword": "best type mattress for back pain",
+      "searchVolume": 33100,
+      "cpc": 13.9,
+      "competition": 1,
+      "difficulty": 56,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 128.5965598755144
+    },
+    {
+      "keyword": "hybrid mattress vs memory foam",
+      "searchVolume": 4400,
+      "cpc": 13.48,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 127.86905352972374
+    },
+    {
+      "keyword": "hybrid vs memory foam mattress",
+      "searchVolume": 4400,
+      "cpc": 13.48,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 127.86905352972374
+    },
+    {
+      "keyword": "memory foam mattress vs hybrid",
+      "searchVolume": 4400,
+      "cpc": 13.48,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 127.86905352972374
+    },
+    {
+      "keyword": "what type of mattress is best for back pain",
+      "searchVolume": 6600,
+      "cpc": 9.67,
+      "competition": 1,
+      "difficulty": 13,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 127.49087871083736
+    },
+    {
+      "keyword": "what is the best mattress type for back pain",
+      "searchVolume": 6600,
+      "cpc": 9.67,
+      "competition": 1,
+      "difficulty": 13,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 127.49087871083736
+    },
+    {
+      "keyword": "what is best type of mattress for back pain",
+      "searchVolume": 6600,
+      "cpc": 9.67,
+      "competition": 1,
+      "difficulty": 13,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 127.49087871083736
+    },
+    {
+      "keyword": "espresso machine for home best",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.94655987551438
+    },
+    {
+      "keyword": "best espresso machine for the home",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.94655987551438
+    },
+    {
+      "keyword": "espresso machine home best",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.94655987551438
+    },
+    {
+      "keyword": "home espresso machine best",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.94655987551438
+    },
+    {
+      "keyword": "espresso machine best home",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.94655987551438
+    },
+    {
+      "keyword": "best espresso machine home",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.94655987551438
+    },
+    {
+      "keyword": "best in home espresso machine",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.94655987551438
+    },
+    {
+      "keyword": "best rated home espresso machine",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.94655987551438
+    },
+    {
+      "keyword": "best espresso machine for home",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.94655987551438
+    },
+    {
+      "keyword": "best espresso machine at home",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.94655987551438
+    },
+    {
+      "keyword": "best at home espresso machine",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.94655987551438
+    },
+    {
+      "keyword": "espresso machine best for home",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.94655987551438
+    },
+    {
+      "keyword": "best espresso home machine",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.94655987551438
+    },
+    {
+      "keyword": "what is the best mattress for low back pain",
+      "searchVolume": 6600,
+      "cpc": 9.67,
+      "competition": 1,
+      "difficulty": 15,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.89087871083737
+    },
+    {
+      "keyword": "best home espresso machine",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 1,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.64655987551438
+    },
+    {
+      "keyword": "best home coffee espresso machine",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 2,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.34655987551439
+    },
+    {
+      "keyword": "what type of mattress best for back pain",
+      "searchVolume": 6600,
+      "cpc": 9.67,
+      "competition": 1,
+      "difficulty": 17,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 126.29087871083738
+    },
+    {
+      "keyword": "what mattress is the best for back pain",
+      "searchVolume": 6600,
+      "cpc": 9.67,
+      "competition": 1,
+      "difficulty": 18,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 125.99087871083736
+    },
+    {
+      "keyword": "what mattress is best for back pain",
+      "searchVolume": 6600,
+      "cpc": 9.67,
+      "competition": 1,
+      "difficulty": 18,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 125.99087871083736
+    },
+    {
+      "keyword": "what is the best mattress for back pain",
+      "searchVolume": 6600,
+      "cpc": 9.67,
+      "competition": 1,
+      "difficulty": 18,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 125.99087871083736
+    },
+    {
+      "keyword": "what is best mattress for back pain",
+      "searchVolume": 6600,
+      "cpc": 9.67,
+      "competition": 1,
+      "difficulty": 18,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 125.99087871083736
+    },
+    {
+      "keyword": "memory foam vs hybrid mattress",
+      "searchVolume": 1600,
+      "cpc": 18.05,
+      "competition": 0.55,
+      "difficulty": 0,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 125.8323996531185
+    },
+    {
+      "keyword": "best rated at home espresso machine",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 4,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 125.74655987551438
+    },
+    {
+      "keyword": "mattress best for lower back pain",
+      "searchVolume": 6600,
+      "cpc": 13.41,
+      "competition": 1,
+      "difficulty": 19,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 125.69087871083737
+    },
+    {
+      "keyword": "best mattress for lower back pain",
+      "searchVolume": 6600,
+      "cpc": 13.41,
+      "competition": 1,
+      "difficulty": 19,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 125.69087871083737
+    },
+    {
+      "keyword": "what is the best mattress for lower back pain",
+      "searchVolume": 6600,
+      "cpc": 9.67,
+      "competition": 1,
+      "difficulty": 19,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 125.69087871083737
+    },
+    {
+      "keyword": "best mattress for low back pain",
+      "searchVolume": 6600,
+      "cpc": 13.41,
+      "competition": 1,
+      "difficulty": 21,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 125.09087871083737
+    },
+    {
+      "keyword": "best rated espresso machine for home",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 7,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 124.84655987551439
+    },
+    {
+      "keyword": "best espresso coffee machine for home",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 8,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 124.54655987551438
+    },
+    {
+      "keyword": "what is the best rated mattress for back pain",
+      "searchVolume": 6600,
+      "cpc": 9.67,
+      "competition": 1,
+      "difficulty": 26,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 123.59087871083737
+    },
+    {
+      "keyword": "best mattress for back pain side sleeper",
+      "searchVolume": 2900,
+      "cpc": 14.15,
+      "competition": 1,
+      "difficulty": 3,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 123.34795995797911
+    },
+    {
+      "keyword": "best mattress for side sleepers with back pain",
+      "searchVolume": 2900,
+      "cpc": 14.15,
+      "competition": 1,
+      "difficulty": 4,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 123.04795995797912
+    },
+    {
+      "keyword": "best home espresso coffee machine",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 13,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 123.04655987551438
+    },
+    {
+      "keyword": "best mattress for side sleepers and back pain",
+      "searchVolume": 2900,
+      "cpc": 14.15,
+      "competition": 1,
+      "difficulty": 6,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 122.44795995797912
+    },
+    {
+      "keyword": "what are the best mattress for back pain",
+      "searchVolume": 6600,
+      "cpc": 9.67,
+      "competition": 1,
+      "difficulty": 30,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 122.39087871083737
+    },
+    {
+      "keyword": "best mattress firmness for back pain",
+      "searchVolume": 3600,
+      "cpc": 14.17,
+      "competition": 1,
+      "difficulty": 13,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 122.22605001534573
+    },
+    {
+      "keyword": "best mattress for back pain and side sleepers",
+      "searchVolume": 2900,
+      "cpc": 14.15,
+      "competition": 1,
+      "difficulty": 7,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 122.14795995797911
+    },
+    {
+      "keyword": "best home use espresso machine",
+      "searchVolume": 33100,
+      "cpc": 1.31,
+      "competition": 1,
+      "difficulty": 16,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 122.14655987551438
+    },
+    {
+      "keyword": "best mattress for side sleeper back pain",
+      "searchVolume": 2900,
+      "cpc": 14.15,
+      "competition": 1,
+      "difficulty": 8,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 121.84795995797911
+    },
+    {
+      "keyword": "best mattress for side sleeper with back pain",
+      "searchVolume": 2900,
+      "cpc": 14.15,
+      "competition": 1,
+      "difficulty": 10,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 121.24795995797912
+    },
+    {
+      "keyword": "best recommended mattress for back pain",
+      "searchVolume": 2400,
+      "cpc": 14.14,
+      "competition": 1,
+      "difficulty": 6,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 120.80422483423212
+    },
+    {
+      "keyword": "best mattress 2026",
+      "searchVolume": 3600,
+      "cpc": 17.86,
+      "competition": 1,
+      "difficulty": 18,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 120.72605001534573
+    },
+    {
+      "keyword": "what is the best type of mattress for back pain",
+      "searchVolume": 6600,
+      "cpc": 9.67,
+      "competition": 1,
+      "difficulty": 36,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 120.59087871083737
+    },
+    {
+      "keyword": "best firm mattress for back pain",
+      "searchVolume": 3600,
+      "cpc": 14.17,
+      "competition": 1,
+      "difficulty": 20,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 120.12605001534574
+    },
+    {
+      "keyword": "best mattress for back pain firm",
+      "searchVolume": 3600,
+      "cpc": 14.17,
+      "competition": 1,
+      "difficulty": 20,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 120.12605001534574
+    },
+    {
+      "keyword": "best hard mattress for back pain",
+      "searchVolume": 3600,
+      "cpc": 14.17,
+      "competition": 1,
+      "difficulty": 20,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 120.12605001534574
+    },
+    {
+      "keyword": "best firmness mattress for back pain",
+      "searchVolume": 3600,
+      "cpc": 14.17,
+      "competition": 1,
+      "difficulty": 20,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 120.12605001534574
+    },
+    {
+      "keyword": "firm mattress best for back pain",
+      "searchVolume": 3600,
+      "cpc": 14.17,
+      "competition": 1,
+      "difficulty": 20,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 120.12605001534574
+    },
+    {
+      "keyword": "best mattress for back pain and hip pain",
+      "searchVolume": 2400,
+      "cpc": 12.87,
+      "competition": 1,
+      "difficulty": 9,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 119.90422483423211
+    },
+    {
+      "keyword": "best mattress for a side sleeper with back pain",
+      "searchVolume": 2900,
+      "cpc": 14.15,
+      "competition": 1,
+      "difficulty": 17,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 119.14795995797911
+    },
+    {
+      "keyword": "best mattress for back pain side sleepers",
+      "searchVolume": 2900,
+      "cpc": 14.15,
+      "competition": 1,
+      "difficulty": 17,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 119.14795995797911
+    },
+    {
+      "keyword": "best mattress for bad back pain",
+      "searchVolume": 2900,
+      "cpc": 11.58,
+      "competition": 1,
+      "difficulty": 19,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 118.54795995797912
+    },
+    {
+      "keyword": "best mattress for back and hip pain",
+      "searchVolume": 2400,
+      "cpc": 12.87,
+      "competition": 1,
+      "difficulty": 17,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 117.5042248342321
+    },
+    {
+      "keyword": "best mattress ratings for back pain",
+      "searchVolume": 2400,
+      "cpc": 14.14,
+      "competition": 1,
+      "difficulty": 21,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 116.30422483423212
+    },
+    {
+      "keyword": "best rated mattress for back pain",
+      "searchVolume": 2400,
+      "cpc": 14.14,
+      "competition": 1,
+      "difficulty": 21,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 116.30422483423212
+    },
+    {
+      "keyword": "best mattress for back and neck pain",
+      "searchVolume": 1000,
+      "cpc": 13.5,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 115
+    },
+    {
+      "keyword": "air fryer vs convection oven",
+      "searchVolume": 4400,
+      "cpc": 0.13,
+      "competition": 0.31,
+      "difficulty": 0,
+      "category": "air-fryers",
+      "source": "keyword_suggestions",
+      "opportunityScore": 113.86905352972374
+    },
+    {
+      "keyword": "best mattress for back neck pain",
+      "searchVolume": 1000,
+      "cpc": 13.5,
+      "competition": 1,
+      "difficulty": 7,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 112.9
+    },
+    {
+      "keyword": "best mattress type for back pain",
+      "searchVolume": 1300,
+      "cpc": 10.55,
+      "competition": 0.99,
+      "difficulty": 16,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 112.62886704613675
+    },
+    {
+      "keyword": "best mattress for neck and back pain",
+      "searchVolume": 1000,
+      "cpc": 13.5,
+      "competition": 1,
+      "difficulty": 9,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 112.3
+    },
+    {
+      "keyword": "best home automatic espresso machine",
+      "searchVolume": 6600,
+      "cpc": 1.52,
+      "competition": 1,
+      "difficulty": 6,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 112.19087871083737
+    },
+    {
+      "keyword": "casper mattress vs purple",
+      "searchVolume": 720,
+      "cpc": 11.51,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 112.14664992862538
+    },
+    {
+      "keyword": "purple mattress vs casper mattress",
+      "searchVolume": 720,
+      "cpc": 11.51,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 112.14664992862538
+    },
+    {
+      "keyword": "purple mattress vs casper",
+      "searchVolume": 720,
+      "cpc": 11.51,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 112.14664992862538
+    },
+    {
+      "keyword": "casper mattress vs purple mattress",
+      "searchVolume": 720,
+      "cpc": 11.51,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 112.14664992862538
+    },
+    {
+      "keyword": "casper vs purple mattress",
+      "searchVolume": 720,
+      "cpc": 11.51,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 112.14664992862538
+    },
+    {
+      "keyword": "mattress purple vs casper",
+      "searchVolume": 720,
+      "cpc": 11.51,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 112.14664992862538
+    },
+    {
+      "keyword": "best mattress for back pain on a budget",
+      "searchVolume": 880,
+      "cpc": 8.64,
+      "competition": 1,
+      "difficulty": 8,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 111.48965344300338
+    },
+    {
+      "keyword": "best mattress for side sleeper with low back pain",
+      "searchVolume": 720,
+      "cpc": 13.6,
+      "competition": 1,
+      "difficulty": 5,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 110.64664992862538
+    },
+    {
+      "keyword": "keurig vs nespresso",
+      "searchVolume": 6600,
+      "cpc": 0.55,
+      "competition": 0.91,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 110.49087871083736
+    },
+    {
+      "keyword": "nespresso vs keurig",
+      "searchVolume": 6600,
+      "cpc": 0.55,
+      "competition": 0.91,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 110.49087871083736
+    },
+    {
+      "keyword": "best type of mattress for back pain",
+      "searchVolume": 1300,
+      "cpc": 10.55,
+      "competition": 0.99,
+      "difficulty": 24,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 110.22886704613674
+    },
+    {
+      "keyword": "best at home automatic espresso machine",
+      "searchVolume": 6600,
+      "cpc": 1.52,
+      "competition": 1,
+      "difficulty": 13,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 110.09087871083736
+    },
+    {
+      "keyword": "which mattress is the best for back pain",
+      "searchVolume": 880,
+      "cpc": 10.82,
+      "competition": 1,
+      "difficulty": 13,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 109.98965344300338
+    },
+    {
+      "keyword": "best automatic home espresso machine",
+      "searchVolume": 6600,
+      "cpc": 1.52,
+      "competition": 1,
+      "difficulty": 14,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 109.79087871083736
+    },
+    {
+      "keyword": "best mattress for low back pain side sleeper",
+      "searchVolume": 720,
+      "cpc": 13.6,
+      "competition": 1,
+      "difficulty": 9,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 109.44664992862538
+    },
+    {
+      "keyword": "convection oven vs air fryer",
+      "searchVolume": 3600,
+      "cpc": 0.33,
+      "competition": 0.56,
+      "difficulty": 0,
+      "category": "air-fryers",
+      "source": "keyword_suggestions",
+      "opportunityScore": 109.37605001534574
+    },
+    {
+      "keyword": "mattress in a box review",
+      "searchVolume": 590,
+      "cpc": 9.58,
+      "competition": 1,
+      "difficulty": 4,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 109.21704023284289
+    },
+    {
+      "keyword": "review mattress in a box",
+      "searchVolume": 590,
+      "cpc": 9.58,
+      "competition": 1,
+      "difficulty": 4,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 109.21704023284289
+    },
+    {
+      "keyword": "which is best mattress for back pain",
+      "searchVolume": 880,
+      "cpc": 10.82,
+      "competition": 1,
+      "difficulty": 16,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 109.08965344300337
+    },
+    {
+      "keyword": "buying guide mattress",
+      "searchVolume": 590,
+      "cpc": 11.03,
+      "competition": 0.91,
+      "difficulty": 10,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 108.76704023284287
+    },
+    {
+      "keyword": "buying mattress guide",
+      "searchVolume": 590,
+      "cpc": 11.03,
+      "competition": 0.91,
+      "difficulty": 10,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 108.76704023284287
+    },
+    {
+      "keyword": "buying guide for mattress",
+      "searchVolume": 590,
+      "cpc": 11.03,
+      "competition": 0.91,
+      "difficulty": 10,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 108.76704023284287
+    },
+    {
+      "keyword": "buying a mattress guide",
+      "searchVolume": 590,
+      "cpc": 11.03,
+      "competition": 0.91,
+      "difficulty": 10,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 108.76704023284287
+    },
+    {
+      "keyword": "mattress buying guide",
+      "searchVolume": 590,
+      "cpc": 11.03,
+      "competition": 0.91,
+      "difficulty": 10,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 108.76704023284287
+    },
+    {
+      "keyword": "best mattress for side sleepers with lower back pain",
+      "searchVolume": 720,
+      "cpc": 13.6,
+      "competition": 1,
+      "difficulty": 12,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 108.54664992862537
+    },
+    {
+      "keyword": "which mattress is best for back pain",
+      "searchVolume": 880,
+      "cpc": 10.82,
+      "competition": 1,
+      "difficulty": 18,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 108.48965344300338
+    },
+    {
+      "keyword": "the best mattress for back pain",
+      "searchVolume": 1000,
+      "cpc": 11.92,
+      "competition": 1,
+      "difficulty": 23,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 108.1
+    },
+    {
+      "keyword": "which is the best mattress for back pain",
+      "searchVolume": 880,
+      "cpc": 10.82,
+      "competition": 1,
+      "difficulty": 20,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 107.88965344300337
+    },
+    {
+      "keyword": "which mattress best for back pain",
+      "searchVolume": 880,
+      "cpc": 10.82,
+      "competition": 1,
+      "difficulty": 20,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 107.88965344300337
+    },
+    {
+      "keyword": "air fryer vs oven",
+      "searchVolume": 1900,
+      "cpc": 0.35,
+      "competition": 0.33,
+      "difficulty": 0,
+      "category": "air-fryers",
+      "source": "keyword_suggestions",
+      "opportunityScore": 107.37507201905657
+    },
+    {
+      "keyword": "best mattress for lower back pain side sleeper",
+      "searchVolume": 720,
+      "cpc": 13.6,
+      "competition": 1,
+      "difficulty": 20,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 106.14664992862538
+    },
+    {
+      "keyword": "best king size mattress for back pain",
+      "searchVolume": 590,
+      "cpc": 15.49,
+      "competition": 1,
+      "difficulty": 18,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 105.01704023284289
+    },
+    {
+      "keyword": "best types of mattress for back pain",
+      "searchVolume": 1300,
+      "cpc": 10.55,
+      "competition": 0.99,
+      "difficulty": 42,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 104.82886704613674
+    },
+    {
+      "keyword": "best mattress types for back pain",
+      "searchVolume": 1300,
+      "cpc": 10.55,
+      "competition": 0.99,
+      "difficulty": 44,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 104.22886704613674
+    },
+    {
+      "keyword": "best mattress for back pain and neck pain",
+      "searchVolume": 1000,
+      "cpc": 13.5,
+      "competition": 1,
+      "difficulty": 36,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 104.2
+    },
+    {
+      "keyword": "best mattress for lower back and neck pain",
+      "searchVolume": 1000,
+      "cpc": 13.5,
+      "competition": 1,
+      "difficulty": 39,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 103.3
+    },
+    {
+      "keyword": "best mattress 2025 for back pain",
+      "searchVolume": 590,
+      "cpc": 14.05,
+      "competition": 1,
+      "difficulty": 25,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 102.91704023284288
+    },
+    {
+      "keyword": "air fryer vs microwave oven",
+      "searchVolume": 880,
+      "cpc": 0.8,
+      "competition": 0.35,
+      "difficulty": 0,
+      "category": "air-fryers",
+      "source": "keyword_suggestions",
+      "opportunityScore": 102.63965344300337
+    },
+    {
+      "keyword": "best mattress for lower back pain and side sleeper",
+      "searchVolume": 720,
+      "cpc": 13.6,
+      "competition": 1,
+      "difficulty": 36,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 101.34664992862537
+    },
+    {
+      "keyword": "best robot vacuum for pets",
+      "searchVolume": 1300,
+      "cpc": 2.82,
+      "competition": 1,
+      "difficulty": 17,
+      "category": "robot-vacuums",
+      "source": "keyword_suggestions",
+      "opportunityScore": 101.27886704613672
+    },
+    {
+      "keyword": "best small home espresso machine",
+      "searchVolume": 1900,
+      "cpc": 1.12,
+      "competition": 1,
+      "difficulty": 4,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 99.97507201905657
+    },
+    {
+      "keyword": "air fryer vs toaster oven",
+      "searchVolume": 1900,
+      "cpc": 0.49,
+      "competition": 0.88,
+      "difficulty": 0,
+      "category": "air-fryers",
+      "source": "keyword_suggestions",
+      "opportunityScore": 99.82507201905658
+    },
+    {
+      "keyword": "best vacuum robot for pets",
+      "searchVolume": 1300,
+      "cpc": 2.82,
+      "competition": 1,
+      "difficulty": 24,
+      "category": "robot-vacuums",
+      "source": "keyword_suggestions",
+      "opportunityScore": 99.17886704613673
+    },
+    {
+      "keyword": "air fryer vs conventional oven",
+      "searchVolume": 4400,
+      "cpc": 0.13,
+      "competition": 0.31,
+      "difficulty": 49,
+      "category": "air-fryers",
+      "source": "keyword_suggestions",
+      "opportunityScore": 99.16905352972374
+    },
+    {
+      "keyword": "best robot vacuum cleaner for pets",
+      "searchVolume": 1300,
+      "cpc": 2.82,
+      "competition": 1,
+      "difficulty": 26,
+      "category": "robot-vacuums",
+      "source": "keyword_suggestions",
+      "opportunityScore": 98.57886704613674
+    },
+    {
+      "keyword": "robot vacuum cleaner for pets",
+      "searchVolume": 1600,
+      "cpc": 2.38,
+      "competition": 1,
+      "difficulty": 27,
+      "category": "robot-vacuums",
+      "source": "keyword_suggestions",
+      "opportunityScore": 97.88239965311851
+    },
+    {
+      "keyword": "best earbuds under 100 dollars",
+      "searchVolume": 1900,
+      "cpc": 0.71,
+      "competition": 0.95,
+      "difficulty": 7,
+      "category": "wireless-earbuds",
+      "source": "keyword_suggestions",
+      "opportunityScore": 97.77507201905657
+    },
+    {
+      "keyword": "best under 100 dollar earbuds",
+      "searchVolume": 1900,
+      "cpc": 0.71,
+      "competition": 0.95,
+      "difficulty": 7,
+      "category": "wireless-earbuds",
+      "source": "keyword_suggestions",
+      "opportunityScore": 97.77507201905657
+    },
+    {
+      "keyword": "toaster oven vs air fryer",
+      "searchVolume": 1600,
+      "cpc": 0.65,
+      "competition": 0.98,
+      "difficulty": 0,
+      "category": "air-fryers",
+      "source": "keyword_suggestions",
+      "opportunityScore": 97.6323996531185
+    },
+    {
+      "keyword": "robot vacuum for pets",
+      "searchVolume": 1600,
+      "cpc": 2.38,
+      "competition": 1,
+      "difficulty": 28,
+      "category": "robot-vacuums",
+      "source": "keyword_suggestions",
+      "opportunityScore": 97.5823996531185
+    },
+    {
+      "keyword": "best earbuds for under 100 dollars",
+      "searchVolume": 1900,
+      "cpc": 0.71,
+      "competition": 0.95,
+      "difficulty": 8,
+      "category": "wireless-earbuds",
+      "source": "keyword_suggestions",
+      "opportunityScore": 97.47507201905657
+    },
+    {
+      "keyword": "which type of mattress is best for back pain",
+      "searchVolume": 880,
+      "cpc": 10.82,
+      "competition": 1,
+      "difficulty": 57,
+      "category": "mattresses",
+      "source": "keyword_suggestions",
+      "opportunityScore": 96.78965344300337
+    },
+    {
+      "keyword": "best home espresso machine 2025",
+      "searchVolume": 1300,
+      "cpc": 1.53,
+      "competition": 1,
+      "difficulty": 14,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 95.72886704613674
+    },
+    {
+      "keyword": "breville the barista express review",
+      "searchVolume": 1000,
+      "cpc": 1.03,
+      "competition": 0.98,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 95.45
+    },
+    {
+      "keyword": "barista express breville review",
+      "searchVolume": 1000,
+      "cpc": 1.03,
+      "competition": 0.98,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 95.45
+    },
+    {
+      "keyword": "breville barista express review",
+      "searchVolume": 1000,
+      "cpc": 1.03,
+      "competition": 0.98,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 95.45
+    },
+    {
+      "keyword": "best rated earbuds under $100",
+      "searchVolume": 1900,
+      "cpc": 0.71,
+      "competition": 0.95,
+      "difficulty": 15,
+      "category": "wireless-earbuds",
+      "source": "keyword_suggestions",
+      "opportunityScore": 95.37507201905657
+    },
+    {
+      "keyword": "best earbuds under £100",
+      "searchVolume": 1900,
+      "cpc": 0.71,
+      "competition": 0.95,
+      "difficulty": 15,
+      "category": "wireless-earbuds",
+      "source": "keyword_suggestions",
+      "opportunityScore": 95.37507201905657
+    },
+    {
+      "keyword": "best earbuds under 100",
+      "searchVolume": 1900,
+      "cpc": 0.71,
+      "competition": 0.95,
+      "difficulty": 15,
+      "category": "wireless-earbuds",
+      "source": "keyword_suggestions",
+      "opportunityScore": 95.37507201905657
+    },
+    {
+      "keyword": "breville bes870xl barista express review",
+      "searchVolume": 1000,
+      "cpc": 1.03,
+      "competition": 0.98,
+      "difficulty": 2,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 94.85000000000001
+    },
+    {
+      "keyword": "best home super automatic espresso machine",
+      "searchVolume": 2400,
+      "cpc": 1.83,
+      "competition": 1,
+      "difficulty": 40,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 94.75422483423212
+    },
+    {
+      "keyword": "breville the barista express espresso machine review",
+      "searchVolume": 1000,
+      "cpc": 1.03,
+      "competition": 0.98,
+      "difficulty": 3,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 94.55
+    },
+    {
+      "keyword": "best professional home espresso machine",
+      "searchVolume": 720,
+      "cpc": 1.41,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 94.19664992862538
+    },
+    {
+      "keyword": "best home professional espresso machine",
+      "searchVolume": 720,
+      "cpc": 1.41,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 94.19664992862538
+    },
+    {
+      "keyword": "best pro espresso machine for home",
+      "searchVolume": 720,
+      "cpc": 1.41,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 94.19664992862538
+    },
+    {
+      "keyword": "best home pro espresso machine",
+      "searchVolume": 720,
+      "cpc": 1.41,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 94.19664992862538
+    },
+    {
+      "keyword": "best professional espresso machine for home",
+      "searchVolume": 720,
+      "cpc": 1.41,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 94.19664992862538
+    },
+    {
+      "keyword": "best pro home espresso machine",
+      "searchVolume": 720,
+      "cpc": 1.41,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 94.19664992862538
+    },
+    {
+      "keyword": "best air fryer 2026",
+      "searchVolume": 2400,
+      "cpc": 1.32,
+      "competition": 1,
+      "difficulty": 34,
+      "category": "air-fryers",
+      "source": "keyword_suggestions",
+      "opportunityScore": 94.0042248342321
+    },
+    {
+      "keyword": "best home espresso machine under 200",
+      "searchVolume": 720,
+      "cpc": 1.37,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 93.99664992862537
+    },
+    {
+      "keyword": "review breville barista express espresso machine",
+      "searchVolume": 1000,
+      "cpc": 1.03,
+      "competition": 0.98,
+      "difficulty": 5,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 93.95
+    },
+    {
+      "keyword": "review breville barista express",
+      "searchVolume": 1000,
+      "cpc": 1.03,
+      "competition": 0.98,
+      "difficulty": 6,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 93.65
+    },
+    {
+      "keyword": "best coffee espresso machine for home",
+      "searchVolume": 880,
+      "cpc": 1.26,
+      "competition": 1,
+      "difficulty": 6,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 93.38965344300337
+    },
+    {
+      "keyword": "breville barista express espresso maker review",
+      "searchVolume": 1000,
+      "cpc": 1.03,
+      "competition": 0.98,
+      "difficulty": 7,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 93.35000000000001
+    },
+    {
+      "keyword": "breville barista express espresso machine review",
+      "searchVolume": 1000,
+      "cpc": 1.03,
+      "competition": 0.98,
+      "difficulty": 7,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 93.35000000000001
+    },
+    {
+      "keyword": "best earbuds for running wireless",
+      "searchVolume": 880,
+      "cpc": 0.95,
+      "competition": 1,
+      "difficulty": 1,
+      "category": "wireless-earbuds",
+      "source": "keyword_suggestions",
+      "opportunityScore": 93.33965344300337
+    },
+    {
+      "keyword": "best wireless earbuds for running",
+      "searchVolume": 880,
+      "cpc": 0.95,
+      "competition": 1,
+      "difficulty": 1,
+      "category": "wireless-earbuds",
+      "source": "keyword_suggestions",
+      "opportunityScore": 93.33965344300337
+    },
+    {
+      "keyword": "best earbuds wireless for running",
+      "searchVolume": 880,
+      "cpc": 0.95,
+      "competition": 1,
+      "difficulty": 1,
+      "category": "wireless-earbuds",
+      "source": "keyword_suggestions",
+      "opportunityScore": 93.33965344300337
+    },
+    {
+      "keyword": "best earbuds for under $100",
+      "searchVolume": 1900,
+      "cpc": 0.71,
+      "competition": 0.95,
+      "difficulty": 22,
+      "category": "wireless-earbuds",
+      "source": "keyword_suggestions",
+      "opportunityScore": 93.27507201905657
+    },
+    {
+      "keyword": "breville barista express espresso machine bes870xl review",
+      "searchVolume": 1000,
+      "cpc": 1.03,
+      "competition": 0.98,
+      "difficulty": 8,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 93.05
+    },
+    {
+      "keyword": "best home espresso machine brands",
+      "searchVolume": 1000,
+      "cpc": 1.23,
+      "competition": 1,
+      "difficulty": 13,
+      "category": "coffee-machines",
+      "source": "keyword_suggestions",
+      "opportunityScore": 92.25
+    },
+    {
+      "keyword": "best headphones earbuds under $100",
+      "searchVolume": 1900,
+      "cpc": 0.71,
+      "competition": 0.95,
+      "difficulty": 28,
+      "category": "wireless-earbuds",
+      "source": "keyword_suggestions",
+      "opportunityScore": 91.47507201905657
+    },
+    {
+      "keyword": "air fryer size for family",
+      "searchVolume": 720,
+      "cpc": 0.82,
+      "competition": 1,
+      "difficulty": 0,
+      "category": "air-fryers",
+      "source": "keyword_suggestions",
+      "opportunityScore": 91.24664992862537
+    },
+    {
+      "keyword": "best rated wireless earbuds for running",
+      "searchVolume": 880,
+      "cpc": 0.95,
+      "competition": 1,
+      "difficulty": 8,
+      "category": "wireless-earbuds",
+      "source": "keyword_suggestions",
+      "opportunityScore": 91.23965344300338
+    },
+    {
+      "keyword": "wireless earbuds for running",
+      "searchVolume": 880,
+      "cpc": 1.04,
+      "competition": 1,
+      "difficulty": 10,
+      "category": "wireless-earbuds",
+      "source": "keyword_suggestions",
+      "opportunityScore": 91.08965344300337
+    },
+    {
+      "keyword": "earbuds wireless for running",
+      "searchVolume": 880,
+      "cpc": 1.04,
+      "competition": 1,
+      "difficulty": 10,
+      "category": "wireless-earbuds",
+      "source": "keyword_suggestions",
+      "opportunityScore": 91.08965344300337
+    },
+    {
+      "keyword": "breville smart oven air fryer vs pro",
+      "searchVolume": 590,
+      "cpc": 0.84,
+      "competition": 1,
+      "difficulty": 3,
+      "category": "air-fryers",
+      "source": "keyword_suggestions",
+      "opportunityScore": 88.71704023284289
+    },
+    {
+      "keyword": "good wireless earbuds for running",
+      "searchVolume": 880,
+      "cpc": 0.95,
+      "competition": 1,
+      "difficulty": 19,
+      "category": "wireless-earbuds",
+      "source": "keyword_suggestions",
+      "opportunityScore": 87.93965344300338
+    },
+    {
+      "keyword": "earbuds for running wireless",
+      "searchVolume": 880,
+      "cpc": 1.04,
+      "competition": 1,
+      "difficulty": 22,
+      "category": "wireless-earbuds",
+      "source": "keyword_suggestions",
+      "opportunityScore": 87.48965344300338
+    },
+    {
+      "keyword": "air fryer for large family",
+      "searchVolume": 590,
+      "cpc": 1.19,
+      "competition": 1,
+      "difficulty": 15,
+      "category": "air-fryers",
+      "source": "keyword_suggestions",
+      "opportunityScore": 86.86704023284288
+    },
+    {
+      "keyword": "best wireless earbuds under $100",
+      "searchVolume": 590,
+      "cpc": 0.87,
+      "competition": 1,
+      "difficulty": 11,
+      "category": "wireless-earbuds",
+      "source": "keyword_suggestions",
+      "opportunityScore": 86.46704023284288
+    },
+    {
+      "keyword": "best earbuds under $100",
+      "searchVolume": 590,
+      "cpc": 0.94,
+      "competition": 0.99,
+      "difficulty": 14,
+      "category": "wireless-earbuds",
+      "source": "keyword_suggestions",
+      "opportunityScore": 86.0670402328429
+    },
+    {
+      "keyword": "best earbuds under$100",
+      "searchVolume": 590,
+      "cpc": 0.94,
+      "competition": 0.99,
+      "difficulty": 15,
+      "category": "wireless-earbuds",
+      "source": "keyword_suggestions",
+      "opportunityScore": 85.76704023284289
+    },
+    {
+      "keyword": "top wireless earbuds for running",
+      "searchVolume": 880,
+      "cpc": 0.95,
+      "competition": 1,
+      "difficulty": 32,
+      "category": "wireless-earbuds",
+      "source": "keyword_suggestions",
+      "opportunityScore": 84.03965344300337
+    }
+  ]
+}

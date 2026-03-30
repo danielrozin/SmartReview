@@ -8,6 +8,23 @@
  * Output: data/keyword-discoveries.json
  */
 
+// Load .env file
+import { readFileSync } from "fs";
+import { resolve } from "path";
+try {
+  const envPath = resolve(process.cwd(), ".env");
+  const envContent = readFileSync(envPath, "utf-8");
+  for (const line of envContent.split("\n")) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith("#")) continue;
+    const eqIdx = trimmed.indexOf("=");
+    if (eqIdx === -1) continue;
+    const key = trimmed.slice(0, eqIdx).trim();
+    const val = trimmed.slice(eqIdx + 1).trim().replace(/^["']|["']$/g, "");
+    if (!process.env[key]) process.env[key] = val;
+  }
+} catch {}
+
 const DATAFORSEO_BASE_URL = "https://api.dataforseo.com/v3";
 
 // SmartReview categories and seed products

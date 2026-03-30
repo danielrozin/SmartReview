@@ -13,7 +13,8 @@
     "db:reset": "prisma db push --force-reset && tsx prisma/seed.ts",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "discover:keywords": "tsx scripts/keyword-discovery.ts"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"
