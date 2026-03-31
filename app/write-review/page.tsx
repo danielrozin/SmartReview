@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { useSession } from "next-auth/react";
+import Link from "next/link";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { products } from "@/data/products";
-import { trackReviewSubmitted, trackWriteReviewStep } from "@/lib/tracking/analytics";
+import { trackReviewSubmitted, trackWriteReviewStep, trackReviewAuthGateShown } from "@/lib/tracking/analytics";
 
 const experienceLevels = [
   { value: "beginner", label: "Beginner" },
@@ -117,6 +119,7 @@ function FieldError({ show, message }: { show: boolean; message: string }) {
 }
 
 export default function WriteReviewPage() {
+  const { data: session, status } = useSession();
   const [submitted, setSubmitted] = useState(false);
   const [step, setStep] = useState(0);
   const [touched, setTouched] = useState<Record<string, boolean>>({});
@@ -186,7 +189,7 @@ export default function WriteReviewPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           ...reviewData,
-          userId: "anonymous",
+          userId: (session?.user as { id?: string })?.id || "anonymous",
           verifiedPurchase: verification !== "",
           verificationTier: verification || "unverified",
         }),
@@ -224,6 +227,48 @@ export default function WriteReviewPage() {
     updated[index] = value;
     setCons(updated);
   };
+
+  // Auth gate: require sign-in to write reviews
+  if (status === "loading") {
+    return (
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="max-w-2xl mx-auto text-center py-20">
+          <div className="w-8 h-8 border-2 border-brand-600 border-t-transparent rounded-full animate-spin mx-auto" />
+        </div>
+      </div>
+    );
+  }
+
+  if (!session) {
+    trackReviewAuthGateShown("", "page_load");
+    return (
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <Breadcrumbs items={[{ name: "Write a Review", url: "/write-review" }]} />
+        <div className="max-w-lg mx-auto text-center py-16">
+          <div className="w-16 h-16 bg-brand-50 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg className="w-8 h-8 text-brand-600" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+            </svg>
+          </div>
+          <h1 className="text-2xl font-bold text-gray-900 mb-3">
+            Sign in to write a review
+          </h1>
+          <p className="text-gray-500 mb-8 leading-relaxed">
+            Create a free account to share your experience and help others make smarter buying decisions. Your reviews earn reputation and build trust.
+          </p>
+          <Link
+            href="/auth/signin?callbackUrl=/write-review"
+            className="inline-flex px-8 py-3.5 bg-brand-600 text-white font-semibold rounded-xl hover:bg-brand-700 transition-colors"
+          >
+            Sign in to continue
+          </Link>
+          <p className="text-xs text-gray-400 mt-4">
+            Free account — takes less than 30 seconds
+          </p>
+        </div>
+      </div>
+    );
+  }
 
   if (submitted) {
     return (

@@ -5,9 +5,9 @@ import { Footer } from "@/components/layout/Footer";
 import { organizationSchema, websiteSchema } from "@/lib/schema/jsonld";
 import { AppProvider } from "@/lib/context/AppContext";
 import { SessionProvider } from "@/components/providers/SessionProvider";
-import { SurveyPopup } from "@/components/survey/SurveyPopup";
 import { GoogleTagManager, GoogleTagManagerNoScript } from "@/components/tracking/GoogleTagManager";
 import { MetaPixel } from "@/components/tracking/MetaPixel";
+import { SurveyPopup } from "@/components/survey/SurveyPopup";
 
 export const metadata: Metadata = {
   title: "SmartReview — Real Reviews, Real Intelligence",
