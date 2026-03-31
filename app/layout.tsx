@@ -4,6 +4,8 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { organizationSchema, websiteSchema } from "@/lib/schema/jsonld";
 import { AppProvider } from "@/lib/context/AppContext";
+import { SessionProvider } from "@/components/providers/SessionProvider";
+import { SurveyPopup } from "@/components/survey/SurveyPopup";
 import { GoogleTagManager, GoogleTagManagerNoScript } from "@/components/tracking/GoogleTagManager";
 import { MetaPixel } from "@/components/tracking/MetaPixel";
 
@@ -42,11 +44,14 @@ export default function RootLayout({
             __html: JSON.stringify([organizationSchema(), websiteSchema()]),
           }}
         />
-        <AppProvider>
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </AppProvider>
+        <SessionProvider>
+          <AppProvider>
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+            <SurveyPopup />
+          </AppProvider>
+        </SessionProvider>
       </body>
     </html>
   );

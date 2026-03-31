@@ -48,7 +48,6 @@ export default function SignInPage() {
         </div>
 
         <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm space-y-4">
-          {/* OAuth buttons */}
           <button
             type="button"
             onClick={() => signIn("google", { callbackUrl: "/" })}
@@ -95,7 +94,6 @@ export default function SignInPage() {
             </div>
           </div>
 
-          {/* Email form */}
           <form onSubmit={handleSubmit} className="space-y-4">
             {error && (
               <div className="p-3 text-sm text-red-700 bg-red-50 border border-red-100 rounded-lg">

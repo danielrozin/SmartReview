@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { useSession, signOut } from "next-auth/react";
 import { SearchBar } from "./SearchBar";
 
 const navLinks = [
@@ -14,6 +15,8 @@ const navLinks = [
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [userMenuOpen, setUserMenuOpen] = useState(false);
+  const { data: session, status } = useSession();
 
   return (
     <header className="border-b border-gray-100 bg-white sticky top-0 z-50">
@@ -62,6 +65,50 @@ export function Header() {
               <span className="hidden sm:inline">Write a Review</span>
               <span className="sm:hidden">Review</span>
             </Link>
+
+            {status !== "loading" && (
+              session ? (
+                <div className="relative">
+                  <button
+                    type="button"
+                    onClick={() => setUserMenuOpen(!userMenuOpen)}
+                    className="flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
+                  >
+                    <div className="w-7 h-7 bg-brand-100 text-brand-700 rounded-full flex items-center justify-center text-xs font-bold">
+                      {(session.user?.name?.[0] || session.user?.email?.[0] || "U").toUpperCase()}
+                    </div>
+                    <span className="hidden sm:inline max-w-[100px] truncate">
+                      {session.user?.name || session.user?.email?.split("@")[0]}
+                    </span>
+                  </button>
+                  {userMenuOpen && (
+                    <div className="absolute right-0 mt-1 w-48 bg-white border border-gray-200 rounded-lg shadow-lg py-1 z-50">
+                      <div className="px-4 py-2 border-b border-gray-100">
+                        <p className="text-sm font-medium text-gray-900 truncate">
+                          {session.user?.name || "User"}
+                        </p>
+                        <p className="text-xs text-gray-500 truncate">
+                          {session.user?.email}
+                        </p>
+                      </div>
+                      <button
+                        onClick={() => { setUserMenuOpen(false); signOut(); }}
+                        className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
+                      >
+                        Sign out
+                      </button>
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <Link
+                  href="/auth/signin"
+                  className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-brand-600 rounded-lg hover:bg-brand-700 transition-colors"
+                >
+                  Sign In
+                </Link>
+              )
+            )}
 
             {/* Mobile hamburger */}
             <button
@@ -122,6 +169,23 @@ export function Header() {
             >
               Write a Review
             </Link>
+            {!session && (
+              <Link
+                href="/auth/signin"
+                onClick={() => setMenuOpen(false)}
+                className="block px-3 py-2 rounded-lg text-base font-medium text-white bg-brand-600 hover:bg-brand-700 transition-colors mt-2 text-center"
+              >
+                Sign In
+              </Link>
+            )}
+            {session && (
+              <button
+                onClick={() => { setMenuOpen(false); signOut(); }}
+                className="block w-full text-left px-3 py-2 rounded-lg text-base font-medium text-gray-700 hover:bg-gray-50 transition-colors mt-2"
+              >
+                Sign out
+              </button>
+            )}
           </div>
         </nav>
       )}
