@@ -21,6 +21,8 @@ import { buildMetadata } from "@/lib/seo/metadata";
 import { productSchema } from "@/lib/schema/jsonld";
 import { formatNumber } from "@/lib/utils";
 import { TrackProductView } from "@/components/tracking/TrackProductView";
+import { WriteReviewCTA } from "@/components/product/WriteReviewCTA";
+import { StickyMobileCTA } from "@/components/product/StickyMobileCTA";
 
 interface Props {
   params: Promise<{ slug: string; product: string }>;
@@ -197,6 +199,9 @@ export default async function ProductPage({ params }: Props) {
             </div>
           </section>
 
+          {/* Write a Review CTA */}
+          <WriteReviewCTA productName={product.name} productSlug={product.slug} />
+
           {/* Community Discussion */}
           <ProductDiscussions
             threads={productDiscussions}
@@ -282,6 +287,9 @@ export default async function ProductPage({ params }: Props) {
           <FAQSection items={product.faq} />
         </aside>
       </div>
+
+      {/* Sticky mobile CTA */}
+      <StickyMobileCTA productName={product.name} productSlug={product.slug} />
     </div>
   );
 }

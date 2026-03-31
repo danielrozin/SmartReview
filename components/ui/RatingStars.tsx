@@ -11,8 +11,12 @@ export function RatingStars({ rating, maxRating = 5, size = "md", showValue = fa
   const sizeClass = { sm: "text-sm", md: "text-base", lg: "text-xl" };
 
   return (
-    <div className="flex items-center gap-1">
-      <div className={cn("flex", sizeClass[size])}>
+    <div
+      className="flex items-center gap-1"
+      role="img"
+      aria-label={`Rating: ${rating.toFixed(1)} out of ${maxRating} stars`}
+    >
+      <div className={cn("flex", sizeClass[size])} aria-hidden="true">
         {Array.from({ length: maxRating }, (_, i) => (
           <span
             key={i}
