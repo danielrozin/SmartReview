@@ -367,3 +367,30 @@ model ConsentRecord {
   @@index([grantedAt])
   @@index([geoCountry])
 }
+
+// ==========================================
+// User Research Surveys
+// ==========================================
+
+model SmartreviewSurvey {
+  id                     String   @id @default(cuid())
+  userType               String?
+  actionType             String?
+  category               String?
+  reviewCompletionTimeSec Int?
+  formFieldsFilled       Int?
+  surveyCompleted        Boolean  @default(false)
+  q1Intent               String?
+  q2Found                Boolean?
+  q2Missing              String?  @db.Text
+  q3Rating               Int?
+  q4Improvement          String?  @db.Text
+  q5Discovery            String?
+  deviceType             String?
+  referralSource         String?
+  optInEmail             String?
+  createdAt              DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([category])
+}
