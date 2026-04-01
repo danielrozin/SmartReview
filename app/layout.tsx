@@ -4,6 +4,8 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { organizationSchema, websiteSchema } from "@/lib/schema/jsonld";
 import { AppProvider } from "@/lib/context/AppContext";
+import { CompareProvider } from "@/lib/context/CompareContext";
+import { ComparisonTray } from "@/components/comparison/ComparisonTray";
 import { SessionProvider } from "@/components/providers/SessionProvider";
 import { GoogleTagManager, GoogleTagManagerNoScript } from "@/components/tracking/GoogleTagManager";
 import { MetaPixel } from "@/components/tracking/MetaPixel";
@@ -51,10 +53,13 @@ export default function RootLayout({
         />
         <SessionProvider>
           <AppProvider>
-            <Header />
-            <main className="flex-1">{children}</main>
-            <Footer />
-            <SurveyPopup />
+            <CompareProvider>
+              <Header />
+              <main className="flex-1">{children}</main>
+              <Footer />
+              <ComparisonTray />
+              <SurveyPopup />
+            </CompareProvider>
           </AppProvider>
         </SessionProvider>
       </body>
