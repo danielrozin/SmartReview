@@ -3,6 +3,7 @@ import { categories } from "@/data/categories";
 import { products } from "@/data/products";
 import { discussions } from "@/data/discussions";
 import { getAllBlogPosts, getBlogCategories } from "@/data/blog-posts";
+import { getAllComparisonPairs } from "@/data/comparisons";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 3600; // Revalidate every hour
@@ -91,6 +92,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // DB unavailable — static data only
   }
 
+  // Comparison pages
+  const comparisonPairs = getAllComparisonPairs();
+  const comparisonPages: MetadataRoute.Sitemap = comparisonPairs.map((pair) => ({
+    url: `${siteUrl}/compare/${pair.slug}`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }));
+
   // Blog posts
   const blogPosts = getAllBlogPosts();
   const blogCategories = getBlogCategories();
@@ -119,6 +129,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...staticPages,
     ...categoryPages,
     ...productPages,
+    ...comparisonPages,
     ...communityPages,
     ...blogPages,
     ...dbProductPages,

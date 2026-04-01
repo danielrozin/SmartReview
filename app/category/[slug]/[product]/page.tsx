@@ -327,6 +327,7 @@ export default async function ProductPage({ params }: Props) {
           {/* Comparisons */}
           <ComparisonModule
             currentProduct={product.name}
+            currentProductSlug={product.slug}
             comparisons={product.comparisons}
             categorySlug={slug}
           />

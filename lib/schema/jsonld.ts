@@ -203,3 +203,75 @@ export function blogListSchema(posts: BlogPost[]) {
     })),
   };
 }
+
+export function comparisonSchema(productA: Product, productB: Product) {
+  const avgRatingA =
+    productA.reviews.length > 0
+      ? productA.reviews.reduce((sum, r) => sum + r.rating, 0) / productA.reviews.length
+      : 0;
+  const avgRatingB =
+    productB.reviews.length > 0
+      ? productB.reviews.reduce((sum, r) => sum + r.rating, 0) / productB.reviews.length
+      : 0;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: `${productA.name} vs ${productB.name} — Comparison`,
+    description: `Side-by-side comparison of ${productA.name} and ${productB.name} based on verified buyer reviews.`,
+    url: `${SITE_URL}/compare/${[productA.slug, productB.slug].sort().join("-vs-")}`,
+    mainEntity: {
+      "@type": "ItemList",
+      name: `${productA.name} vs ${productB.name}`,
+      numberOfItems: 2,
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          item: {
+            "@type": "Product",
+            name: productA.name,
+            brand: { "@type": "Brand", name: productA.brand },
+            description: productA.description,
+            offers: {
+              "@type": "AggregateOffer",
+              lowPrice: productA.priceRange.min,
+              highPrice: productA.priceRange.max,
+              priceCurrency: productA.priceRange.currency,
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: avgRatingA.toFixed(1),
+              reviewCount: productA.reviewCount,
+              bestRating: 5,
+              worstRating: 1,
+            },
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "Product",
+            name: productB.name,
+            brand: { "@type": "Brand", name: productB.brand },
+            description: productB.description,
+            offers: {
+              "@type": "AggregateOffer",
+              lowPrice: productB.priceRange.min,
+              highPrice: productB.priceRange.max,
+              priceCurrency: productB.priceRange.currency,
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: avgRatingB.toFixed(1),
+              reviewCount: productB.reviewCount,
+              bestRating: 5,
+              worstRating: 1,
+            },
+          },
+        },
+      ],
+    },
+  };
+}
