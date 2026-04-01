@@ -264,7 +264,7 @@ function persistResults(opportunities: TrendOpportunity[]): string {
  *
  * Daily cron: multi-source trend discovery using DataForSEO, Tavily, and Apify.
  * Discovers keyword opportunities, Quora/Reddit questions, and YouTube content
- * across all SmartReview categories. Persists results to data/ directory.
+ * across all ReviewIQ categories. Persists results to data/ directory.
  */
 export async function GET(request: NextRequest) {
   const authHeader = request.headers.get("authorization");

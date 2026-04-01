@@ -23,7 +23,7 @@ export function AcceptableUseContent() {
     >
       <section>
         <p>
-          This Acceptable Use Policy sets out the rules for using SmartReview. By accessing our
+          This Acceptable Use Policy sets out the rules for using ReviewIQ. By accessing our
           platform, you agree to comply with this policy alongside our{" "}
           <Link href="/terms" className="text-brand-600 hover:underline">Terms of Service</Link>.
         </p>
@@ -32,7 +32,7 @@ export function AcceptableUseContent() {
       <section id="purpose">
         <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Purpose</h2>
         <p>
-          SmartReview exists to provide honest, AI-powered product reviews built on real buyer
+          ReviewIQ exists to provide honest, AI-powered product reviews built on real buyer
           experiences. This policy ensures the platform remains trustworthy, safe, and useful for everyone.
         </p>
       </section>
@@ -55,7 +55,7 @@ export function AcceptableUseContent() {
 
       <section id="review-guidelines">
         <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Review Guidelines</h2>
-        <p className="mb-4">Reviews on SmartReview must:</p>
+        <p className="mb-4">Reviews on ReviewIQ must:</p>
         <ul className="list-disc pl-6 space-y-1">
           <li>Be based on genuine personal experience with the product</li>
           <li>Be honest and fair, even if critical</li>
@@ -93,7 +93,7 @@ export function AcceptableUseContent() {
         <h2 className="text-2xl font-bold text-gray-900 mb-4">7. Contact Us</h2>
         <p className="mb-4">Questions about this policy? Contact us:</p>
         <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 text-sm">
-          <p className="font-semibold text-gray-900 mb-1">SmartReview</p>
+          <p className="font-semibold text-gray-900 mb-1">ReviewIQ</p>
           <p>Email: <a href="mailto:contact@smartreview.com" className="text-brand-600 hover:underline">contact@smartreview.com</a></p>
         </div>
       </section>

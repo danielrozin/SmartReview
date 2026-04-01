@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { prisma } from "@/lib/db/prisma";
 
 /**
- * Analytics Dashboard API for SmartReview
+ * Analytics Dashboard API for ReviewIQ
  *
  * GET /api/analytics — full config + live DB metrics
  * GET /api/analytics?section=funnel|kpis|events|live|report
@@ -35,9 +35,9 @@ const CUSTOM_EVENTS = [
 ];
 
 const CONVERSION_FUNNEL = {
-  name: "SmartReview Review Submission Funnel",
+  name: "ReviewIQ Review Submission Funnel",
   steps: [
-    { step: 1, name: "Landing", event: "page_view", description: "User arrives at SmartReview" },
+    { step: 1, name: "Landing", event: "page_view", description: "User arrives at ReviewIQ" },
     { step: 2, name: "Browse Category", event: "category_viewed", description: "User browses a product category" },
     { step: 3, name: "View Product", event: "product_viewed", description: "User views a specific product" },
     { step: 4, name: "Start Review", event: "write_review_step:1", description: "User begins writing a review (product selection)" },
@@ -219,7 +219,7 @@ async function generateWeeklyReport() {
     Math.max(live.summary.totalReviews, 1);
 
   const report = {
-    title: `SmartReview Weekly Report — ${live.period.start} to ${live.period.end}`,
+    title: `ReviewIQ Weekly Report — ${live.period.start} to ${live.period.end}`,
     generatedAt: now.toISOString(),
     headline: {
       totalProducts: live.summary.totalProducts,
@@ -272,7 +272,7 @@ export async function GET(request: Request) {
 
   const live = await getLiveMetrics();
   return NextResponse.json({
-    product: "SmartReview",
+    product: "ReviewIQ",
     ga4Property: GA4_PROPERTY,
     clarityProject: CLARITY_PROJECT,
     events: CUSTOM_EVENTS,

@@ -1,5 +1,5 @@
 // ==========================================
-// SmartReview Core Type System
+// ReviewIQ Core Type System
 // ==========================================
 
 // --- Product & Category ---

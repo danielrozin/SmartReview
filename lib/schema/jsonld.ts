@@ -6,7 +6,7 @@ export function organizationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "SmartReview",
+    name: "ReviewIQ",
     url: SITE_URL,
     logo: `${SITE_URL}/logo.png`,
     description:
@@ -19,7 +19,7 @@ export function websiteSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "SmartReview",
+    name: "ReviewIQ",
     url: SITE_URL,
     potentialAction: {
       "@type": "SearchAction",
@@ -154,11 +154,11 @@ export function analysisAuthorSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "SmartReview AI Analysis Team",
+    name: "ReviewIQ AI Analysis Team",
     url: `${SITE_URL}/about`,
     worksFor: {
       "@type": "Organization",
-      name: "SmartReview",
+      name: "ReviewIQ",
       url: SITE_URL,
     },
     knowsAbout: ["Product Reviews", "Consumer Electronics", "Buyer Guidance"],
@@ -178,7 +178,7 @@ export function blogPostSchema(post: BlogPost) {
     },
     publisher: {
       "@type": "Organization",
-      name: "SmartReview",
+      name: "ReviewIQ",
       logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.png` },
     },
     datePublished: post.publishedAt,
@@ -192,8 +192,8 @@ export function blogListSchema(posts: BlogPost[]) {
   return {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "SmartReview Blog",
-    description: "Expert buying guides, product comparisons, and review insights from SmartReview.",
+    name: "ReviewIQ Blog",
+    description: "Expert buying guides, product comparisons, and review insights from ReviewIQ.",
     url: `${SITE_URL}/blog`,
     hasPart: posts.map((post) => ({
       "@type": "Article",

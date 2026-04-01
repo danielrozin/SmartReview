@@ -1,7 +1,7 @@
 import type { BlogPost } from "@/types";
 
 // ==========================================
-// SmartReview Blog Posts Data
+// ReviewIQ Blog Posts Data
 // SEO / AEO / GEO Optimized Content
 // ==========================================
 
@@ -20,7 +20,7 @@ const blogPosts: BlogPost[] = [
     categoryName: "Mattresses",
     tags: ["back pain", "mattress guide", "sleep health", "buying guide", "2026"],
     author: {
-      name: "SmartReview Editorial",
+      name: "ReviewIQ Editorial",
       bio: "Our editorial team combines AI-powered analysis with real owner feedback to help you make informed buying decisions.",
     },
     publishedAt: "2026-03-02T08:00:00Z",
@@ -84,7 +84,7 @@ const blogPosts: BlogPost[] = [
 
 ## Why Trust Our Mattress Recommendations?
 
-At SmartReview, we don't just test mattresses in a lab for two weeks. We analyze **thousands of verified owner reviews** from people who have slept on these mattresses for months. Our SmartScore algorithm weighs long-term satisfaction, build quality, and real-world performance data from 4,200+ real users.
+At ReviewIQ, we don't just test mattresses in a lab for two weeks. We analyze **thousands of verified owner reviews** from people who have slept on these mattresses for months. Our SmartScore algorithm weighs long-term satisfaction, build quality, and real-world performance data from 4,200+ real users.
 
 ---
 
@@ -100,25 +100,25 @@ The [Saatva Classic](/category/mattresses/saatva-classic) earns our top recommen
 - Three firmness options let you dial in the right feel
 - Free white-glove delivery includes old mattress removal
 
-**SmartReview SmartScore: 92/100** | **Verified Owner Rating: 4.6/5** based on 1,100+ reviews
+**ReviewIQ SmartScore: 92/100** | **Verified Owner Rating: 4.6/5** based on 1,100+ reviews
 
 ### 2. Purple Original — Best for Pressure Relief
 
 The [Purple Original](/category/mattresses/purple-mattress-original) uses a unique **GelFlex Grid** that adapts to your body weight and position. This makes it exceptionally good at relieving pressure points that contribute to back pain, especially for combination sleepers.
 
-**SmartReview SmartScore: 89/100** | **Verified Owner Rating: 4.4/5** based on 950+ reviews
+**ReviewIQ SmartScore: 89/100** | **Verified Owner Rating: 4.4/5** based on 950+ reviews
 
 ### 3. Nectar Premier — Best Value for Back Pain
 
 The [Nectar Premier](/category/mattresses/nectar-premier) delivers **premium-level support at a mid-range price**. Its gel memory foam and adaptive cover provide solid pressure relief, and the forever warranty signals manufacturer confidence.
 
-**SmartReview SmartScore: 87/100** | **Verified Owner Rating: 4.3/5** based on 800+ reviews
+**ReviewIQ SmartScore: 87/100** | **Verified Owner Rating: 4.3/5** based on 800+ reviews
 
 ### 4. Casper Original — Best for Side Sleepers with Back Pain
 
 The [Casper Original](/category/mattresses/casper-original) features a **zoned support system** specifically designed to keep your spine aligned in the side-sleeping position — the most common position for back pain sufferers.
 
-**SmartReview SmartScore: 85/100** | **Verified Owner Rating: 4.2/5** based on 700+ reviews
+**ReviewIQ SmartScore: 85/100** | **Verified Owner Rating: 4.2/5** based on 700+ reviews
 
 ---
 
@@ -201,7 +201,7 @@ For back pain relief backed by real owner data, the **[Saatva Classic](/category
     categoryName: "Coffee Machines",
     tags: ["nespresso", "keurig", "pod coffee", "comparison", "coffee machines", "2026"],
     author: {
-      name: "SmartReview Editorial",
+      name: "ReviewIQ Editorial",
       bio: "Our editorial team combines AI-powered analysis with real owner feedback to help you make informed buying decisions.",
     },
     publishedAt: "2026-03-04T08:00:00Z",
@@ -410,7 +410,7 @@ Keurig is generally better for offices due to lower pod cost, greater variety to
     categoryName: "Air Fryers",
     tags: ["air fryer", "convection oven", "comparison", "kitchen appliances", "cooking", "2026"],
     author: {
-      name: "SmartReview Editorial",
+      name: "ReviewIQ Editorial",
       bio: "Our editorial team combines AI-powered analysis with real owner feedback to help you make informed buying decisions.",
     },
     publishedAt: "2026-03-06T08:00:00Z",
@@ -554,7 +554,7 @@ Built-in convection ovens take up zero counter space. If your kitchen is small, 
 
 ## What Verified Air Fryer Owners Actually Say
 
-We analyzed satisfaction data from 2,600+ verified air fryer owners on SmartReview:
+We analyzed satisfaction data from 2,600+ verified air fryer owners on ReviewIQ:
 
 - **93% say the air fryer was worth the purchase**
 - **78% use it 3+ times per week**
@@ -613,7 +613,7 @@ Our top air fryer pick: the [Ninja Foodi DZ201](/category/air-fryers/ninja-foodi
     categoryName: "Robot Vacuums",
     tags: ["robot vacuum", "pet hair", "buying guide", "pet owners", "2026"],
     author: {
-      name: "SmartReview Editorial",
+      name: "ReviewIQ Editorial",
       bio: "Our editorial team combines AI-powered analysis with real owner feedback to help you make informed buying decisions.",
     },
     publishedAt: "2026-03-08T08:00:00Z",
@@ -811,7 +811,7 @@ For the best all-around pet hair robot vacuum in 2026, the **[Roborock S8 MaxV U
     categoryName: "Wireless Earbuds",
     tags: ["airpods pro", "sony wf-1000xm5", "wireless earbuds", "comparison", "noise canceling", "2026"],
     author: {
-      name: "SmartReview Editorial",
+      name: "ReviewIQ Editorial",
       bio: "Our editorial team combines AI-powered analysis with real owner feedback to help you make informed buying decisions.",
     },
     publishedAt: "2026-03-10T08:00:00Z",
@@ -1024,7 +1024,7 @@ Sony WF-1000XM5, without question. AirPods Pro 2 lose approximately 40% of their
     categoryName: "Smart Watches",
     tags: ["smartwatch", "fitness tracker", "health tracking", "buying guide", "wearables", "2026"],
     author: {
-      name: "SmartReview Editorial",
+      name: "ReviewIQ Editorial",
       bio: "Our editorial team combines AI-powered analysis with real owner feedback to help you make informed buying decisions.",
     },
     publishedAt: "2026-03-12T08:00:00Z",
@@ -1231,7 +1231,7 @@ Approximately 70-85% accurate for most activities, with walking and running bein
     categoryName: "Standing Desks",
     tags: ["standing desk", "buying guide", "home office", "ergonomics", "remote work", "2026"],
     author: {
-      name: "SmartReview Editorial",
+      name: "ReviewIQ Editorial",
       bio: "Our editorial team combines AI-powered analysis with real owner feedback to help you make informed buying decisions.",
     },
     publishedAt: "2026-03-14T08:00:00Z",
@@ -1459,7 +1459,7 @@ Some do, especially budget models at full standing height. Dual-motor desks with
     categoryName: "Blenders",
     tags: ["blender", "smoothie", "buying guide", "kitchen appliances", "healthy eating", "2026"],
     author: {
-      name: "SmartReview Editorial",
+      name: "ReviewIQ Editorial",
       bio: "Our editorial team combines AI-powered analysis with real owner feedback to help you make informed buying decisions.",
     },
     publishedAt: "2026-03-16T08:00:00Z",
@@ -1672,7 +1672,7 @@ Yes for daily users. 97% of verified owners are satisfied after 12+ months, and 
     categoryName: "Laptops",
     tags: ["laptop", "remote work", "work from home", "buying guide", "productivity", "2026"],
     author: {
-      name: "SmartReview Editorial",
+      name: "ReviewIQ Editorial",
       bio: "Our editorial team combines AI-powered analysis with real owner feedback to help you make informed buying decisions.",
     },
     publishedAt: "2026-03-20T08:00:00Z",
@@ -1897,7 +1897,7 @@ Invest in the laptop you'll use 8+ hours daily — it's the most important tool 
     categoryName: "Electric Toothbrushes",
     tags: ["electric toothbrush", "oral health", "comparison", "dental care", "buying guide", "2026"],
     author: {
-      name: "SmartReview Editorial",
+      name: "ReviewIQ Editorial",
       bio: "Our editorial team combines AI-powered analysis with real owner feedback to help you make informed buying decisions.",
     },
     publishedAt: "2026-03-24T08:00:00Z",

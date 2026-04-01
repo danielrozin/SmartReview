@@ -81,7 +81,7 @@ export default async function CategoryPage({ params }: Props) {
         <div className="prose prose-gray max-w-3xl">
           <p className="text-gray-600 leading-relaxed">
             Choosing the right product in the {category.name.toLowerCase()}{" "}
-            category can be overwhelming. SmartReview analyzes verified buyer
+            category can be overwhelming. ReviewIQ analyzes verified buyer
             experiences to help you understand what matters most — from
             performance and reliability to value and common issues. Browse the
             products above to see AI-powered review summaries, recurring

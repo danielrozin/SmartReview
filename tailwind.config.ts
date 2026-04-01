@@ -5,7 +5,7 @@ import type { Config } from "tailwindcss";
  * Canonical token source: Comparison/src/app/globals.css @theme block.
  *
  * Token mapping:
- *   brand-*  → SmartReview's primary brand (kept distinct)
+ *   brand-*  → ReviewIQ's primary brand (kept distinct)
  *   primary-* → alias of brand-* for cross-product consistency
  *   trust-*  → semantic trust indicators (shared with Comparison's win/lose)
  *   surface-* → background layers
@@ -22,7 +22,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        /* SmartReview brand (blue) */
+        /* ReviewIQ brand (blue) */
         brand: {
           50: "#f0f7ff",
           100: "#e0efff",

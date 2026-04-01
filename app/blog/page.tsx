@@ -7,7 +7,7 @@ import { blogListSchema } from "@/lib/schema/jsonld";
 export const metadata = buildMetadata({
   title: "Blog — Buying Guides, Comparisons & Expert Reviews",
   description:
-    "Expert buying guides, in-depth product comparisons, and review insights backed by real owner data. Make smarter purchase decisions with SmartReview.",
+    "Expert buying guides, in-depth product comparisons, and review insights backed by real owner data. Make smarter purchase decisions with ReviewIQ.",
   path: "/blog",
 });
 
@@ -26,7 +26,7 @@ export default function BlogPage() {
 
       <div className="mt-8 mb-10">
         <h1 className="text-3xl font-bold text-gray-900">
-          SmartReview Blog
+          ReviewIQ Blog
         </h1>
         <p className="text-gray-500 mt-2 max-w-2xl">
           Expert buying guides, product comparisons, and review insights —

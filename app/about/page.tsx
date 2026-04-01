@@ -2,9 +2,9 @@ import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { buildMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildMetadata({
-  title: "About SmartReview",
+  title: "About ReviewIQ",
   description:
-    "SmartReview is an AI-powered product review platform built to fix the broken review ecosystem. Honest intelligence, verified buyers, zero affiliate links.",
+    "ReviewIQ is an AI-powered product review platform built to fix the broken review ecosystem. Honest intelligence, verified buyers, zero affiliate links.",
   path: "/about",
 });
 
@@ -15,7 +15,7 @@ export default function AboutPage() {
 
       <div className="mt-8 max-w-3xl">
         <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-          About SmartReview
+          About ReviewIQ
         </h1>
 
         <div className="space-y-6 text-gray-600 leading-relaxed">
@@ -26,7 +26,7 @@ export default function AboutPage() {
           </p>
 
           <p>
-            SmartReview was built to solve this problem. We combine structured
+            ReviewIQ was built to solve this problem. We combine structured
             buyer reviews with AI-powered analysis to give you honest, useful
             product intelligence — not star-rating noise.
           </p>
@@ -100,7 +100,7 @@ export default function AboutPage() {
             What We&apos;re Building
           </h2>
           <p>
-            SmartReview is currently in early access, covering five product
+            ReviewIQ is currently in early access, covering five product
             categories: robot vacuums, coffee machines, air fryers, wireless
             earbuds, and mattresses. We&apos;re expanding categories, building
             community features, and developing deeper AI analysis capabilities.
@@ -116,7 +116,7 @@ export default function AboutPage() {
               Want to get involved?
             </h3>
             <p className="text-sm text-brand-700">
-              SmartReview is in early development. We&apos;re looking for
+              ReviewIQ is in early development. We&apos;re looking for
               feedback, early reviewers, and people who share our mission of
               fixing product reviews. Reach out at{" "}
               <span className="font-medium">hello@smartreview.com</span>

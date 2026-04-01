@@ -24,10 +24,10 @@ export function Header() {
         <div className="flex items-center justify-between h-16 gap-4">
           <Link href="/" className="flex items-center gap-2 shrink-0">
             <div className="w-8 h-8 bg-brand-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">SR</span>
+              <span className="text-white font-bold text-xs">RIQ</span>
             </div>
             <span className="text-xl font-bold text-gray-900 hidden sm:inline">
-              Smart<span className="text-brand-600">Review</span>
+              Review<span className="text-brand-600">IQ</span>
             </span>
           </Link>
 

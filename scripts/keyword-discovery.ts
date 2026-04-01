@@ -1,5 +1,5 @@
 /**
- * DataForSEO Keyword Discovery for SmartReview
+ * DataForSEO Keyword Discovery for ReviewIQ
  *
  * Uses DataForSEO Labs keyword_suggestions and related_keywords APIs
  * to discover high-volume product review queries across all 5 categories.
@@ -27,7 +27,7 @@ try {
 
 const DATAFORSEO_BASE_URL = "https://api.dataforseo.com/v3";
 
-// SmartReview categories and seed products
+// ReviewIQ categories and seed products
 const CATEGORY_SEEDS = [
   {
     category: "robot-vacuums",
@@ -322,7 +322,7 @@ function deduplicateAndRank(results: KeywordResult[]): KeywordResult[] {
 }
 
 async function main() {
-  console.log("=== SmartReview Keyword Discovery ===");
+  console.log("=== ReviewIQ Keyword Discovery ===");
   console.log(`Date: ${new Date().toISOString()}`);
   console.log(`Categories: ${CATEGORY_SEEDS.length}`);
   console.log(`Filters: volume > 500, difficulty < 60\n`);

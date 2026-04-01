@@ -26,11 +26,11 @@ export async function generateMetadata({
     process.env.NEXT_PUBLIC_SITE_URL || "https://smartreview.com";
 
   return {
-    title: `${cat.name} Buying Guides & Reviews | SmartReview Blog`,
+    title: `${cat.name} Buying Guides & Reviews | ReviewIQ Blog`,
     description: `Expert buying guides, comparisons, and review insights for ${cat.name}. Data-backed recommendations from real owner reviews.`,
     alternates: { canonical: `${siteUrl}/blog/category/${cat.slug}` },
     openGraph: {
-      title: `${cat.name} Buying Guides & Reviews | SmartReview Blog`,
+      title: `${cat.name} Buying Guides & Reviews | ReviewIQ Blog`,
       description: `Expert buying guides, comparisons, and review insights for ${cat.name}. Data-backed recommendations from real owner reviews.`,
       url: `${siteUrl}/blog/category/${cat.slug}`,
       type: "website",

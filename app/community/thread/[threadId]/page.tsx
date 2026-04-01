@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Props) {
   if (!thread) return {};
 
   return buildMetadata({
-    title: `${thread.title} — SmartReview Community`,
+    title: `${thread.title} — ReviewIQ Community`,
     description: thread.body.slice(0, 160),
     path: `/community/thread/${threadId}`,
   });

@@ -81,7 +81,7 @@ const categoryColors: Record<string, string> = {
   lead_capture: "bg-cyan-50 text-cyan-700 border-cyan-200",
 };
 
-export default function SmartReviewAnalytics() {
+export default function ReviewIQAnalytics() {
   const [config, setConfig] = useState<AnalyticsConfig | null>(null);
   const [report, setReport] = useState<WeeklyReport | null>(null);
   const [loading, setLoading] = useState(true);
@@ -137,7 +137,7 @@ export default function SmartReviewAnalytics() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div className="mb-8">
-        <h1 className="text-2xl font-bold text-gray-900">SmartReview Analytics</h1>
+        <h1 className="text-2xl font-bold text-gray-900">ReviewIQ Analytics</h1>
         <p className="text-gray-500 mt-1">
           GA4: {config.ga4Property} | Clarity: {config.clarityProject}
         </p>

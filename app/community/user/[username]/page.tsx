@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props) {
   if (!user) return {};
 
   return buildMetadata({
-    title: `${user.displayName} — SmartReview Community`,
+    title: `${user.displayName} — ReviewIQ Community`,
     description: user.bio,
     path: `/community/user/${username}`,
   });

@@ -23,7 +23,7 @@ export function CookiePolicyContent() {
     >
       <section>
         <p>
-          This Cookie Policy explains how SmartReview uses cookies and similar technologies.
+          This Cookie Policy explains how ReviewIQ uses cookies and similar technologies.
           Please read it alongside our{" "}
           <Link href="/privacy" className="text-brand-600 hover:underline">Privacy Policy</Link>.
         </p>
@@ -112,7 +112,7 @@ export function CookiePolicyContent() {
         <h2 className="text-2xl font-bold text-gray-900 mb-4">7. Contact Us</h2>
         <p className="mb-4">Questions about cookies? Contact us:</p>
         <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 text-sm">
-          <p className="font-semibold text-gray-900 mb-1">SmartReview</p>
+          <p className="font-semibold text-gray-900 mb-1">ReviewIQ</p>
           <p>Email: <a href="mailto:contact@smartreview.com" className="text-brand-600 hover:underline">contact@smartreview.com</a></p>
         </div>
       </section>

@@ -36,11 +36,11 @@ export default function SignInPage() {
         <div className="text-center mb-8">
           <Link href="/" className="inline-flex items-center gap-2">
             <div className="w-10 h-10 bg-brand-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold">SR</span>
+              <span className="text-white font-bold text-sm">RIQ</span>
             </div>
           </Link>
           <h1 className="mt-4 text-2xl font-bold text-gray-900">
-            Sign in to SmartReview
+            Sign in to ReviewIQ
           </h1>
           <p className="mt-2 text-sm text-gray-500">
             Write reviews, save comparisons, and get personalized recommendations.

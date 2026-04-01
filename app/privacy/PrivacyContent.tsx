@@ -26,7 +26,7 @@ export function PrivacyContent() {
     >
       <section>
         <p>
-          Welcome to SmartReview. This Privacy Policy explains how we collect, use, disclose, and safeguard
+          Welcome to ReviewIQ. This Privacy Policy explains how we collect, use, disclose, and safeguard
           your information when you visit our website. Please read this policy carefully.
         </p>
       </section>
@@ -50,7 +50,7 @@ export function PrivacyContent() {
 
       <section id="cookies">
         <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Cookies and Tracking Technologies</h2>
-        <p className="mb-4">SmartReview uses cookies to enhance your experience:</p>
+        <p className="mb-4">ReviewIQ uses cookies to enhance your experience:</p>
         <ul className="list-disc pl-6 space-y-2">
           <li><strong className="text-gray-900">Essential cookies:</strong> Required for the website to function.</li>
           <li><strong className="text-gray-900">Analytics cookies:</strong> Aggregated, anonymous usage data.</li>
@@ -69,7 +69,7 @@ export function PrivacyContent() {
       <section id="how-we-use">
         <h2 className="text-2xl font-bold text-gray-900 mb-4">4. How We Use Your Information</h2>
         <ul className="list-disc pl-6 space-y-1">
-          <li>Operate and improve SmartReview</li>
+          <li>Operate and improve ReviewIQ</li>
           <li>Display and moderate reviews</li>
           <li>Respond to inquiries and support requests</li>
           <li>Analyze usage and optimize content</li>
@@ -116,7 +116,7 @@ export function PrivacyContent() {
 
       <section id="childrens-privacy">
         <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Children&apos;s Privacy</h2>
-        <p>SmartReview is not directed to children under 13. We do not knowingly collect personal information from children.</p>
+        <p>ReviewIQ is not directed to children under 13. We do not knowingly collect personal information from children.</p>
       </section>
 
       <section id="changes">
@@ -128,7 +128,7 @@ export function PrivacyContent() {
         <h2 className="text-2xl font-bold text-gray-900 mb-4">11. Contact Us</h2>
         <p>If you have questions about this Privacy Policy, please contact us:</p>
         <div className="mt-4 bg-gray-50 border border-gray-200 rounded-xl p-5 text-sm">
-          <p className="font-semibold text-gray-900 mb-1">SmartReview</p>
+          <p className="font-semibold text-gray-900 mb-1">ReviewIQ</p>
           <p>Email: <a href="mailto:contact@smartreview.com" className="text-brand-600 hover:underline">contact@smartreview.com</a></p>
         </div>
       </section>

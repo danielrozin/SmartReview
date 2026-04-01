@@ -9,9 +9,9 @@ import { categories } from "@/data/categories";
 import { buildMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildMetadata({
-  title: "Community — SmartReview",
+  title: "Community — ReviewIQ",
   description:
-    "Join the SmartReview community. Ask questions, share experiences, and help others make smarter buying decisions.",
+    "Join the ReviewIQ community. Ask questions, share experiences, and help others make smarter buying decisions.",
   path: "/community",
 });
 

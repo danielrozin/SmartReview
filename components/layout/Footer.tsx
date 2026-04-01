@@ -10,10 +10,10 @@ export function Footer() {
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
               <div className="w-7 h-7 bg-brand-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xs">SR</span>
+                <span className="text-white font-bold text-[10px]">RIQ</span>
               </div>
               <span className="text-lg font-bold text-gray-900">
-                Smart<span className="text-brand-600">Review</span>
+                Review<span className="text-brand-600">IQ</span>
               </span>
             </Link>
             <p className="text-sm text-gray-500 leading-relaxed">
@@ -141,7 +141,7 @@ export function Footer() {
 
         <div className="border-t border-gray-200 mt-10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-gray-400">
-            &copy; {new Date().getFullYear()} SmartReview. All rights reserved.
+            &copy; {new Date().getFullYear()} ReviewIQ. All rights reserved.
           </p>
           <div className="flex gap-6">
             <Link

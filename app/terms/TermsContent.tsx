@@ -26,7 +26,7 @@ export function TermsContent() {
     >
       <section>
         <p>
-          Please read these Terms of Service carefully before using SmartReview. By accessing the site,
+          Please read these Terms of Service carefully before using ReviewIQ. By accessing the site,
           you agree to be bound by these terms.
         </p>
       </section>
@@ -34,14 +34,14 @@ export function TermsContent() {
       <section id="acceptance">
         <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Acceptance of Terms</h2>
         <p>
-          By accessing SmartReview, you confirm that you are at least 13 years of age, have read and
+          By accessing ReviewIQ, you confirm that you are at least 13 years of age, have read and
           understood these Terms, and agree to be legally bound by them.
         </p>
       </section>
 
       <section id="use-of-site">
         <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Use of the Site</h2>
-        <p className="mb-4">SmartReview grants you a limited license for personal, non-commercial use. You agree not to:</p>
+        <p className="mb-4">ReviewIQ grants you a limited license for personal, non-commercial use. You agree not to:</p>
         <ul className="list-disc pl-6 space-y-1">
           <li>Use the Site for unlawful purposes</li>
           <li>Attempt unauthorized access to our systems</li>
@@ -54,7 +54,7 @@ export function TermsContent() {
       <section id="user-content">
         <h2 className="text-2xl font-bold text-gray-900 mb-4">3. User Content and Reviews</h2>
         <p className="mb-4">
-          By submitting reviews or content, you grant SmartReview a worldwide, royalty-free license to
+          By submitting reviews or content, you grant ReviewIQ a worldwide, royalty-free license to
           use, display, and distribute that content for operating the platform.
         </p>
         <p>Reviews must be honest, based on genuine experience, and comply with our community guidelines.</p>
@@ -63,7 +63,7 @@ export function TermsContent() {
       <section id="intellectual-property">
         <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Intellectual Property</h2>
         <p>
-          All SmartReview content, design, and code is protected by intellectual property laws.
+          All ReviewIQ content, design, and code is protected by intellectual property laws.
           You may not reproduce or distribute content without written permission.
         </p>
       </section>
@@ -103,7 +103,7 @@ export function TermsContent() {
         <h2 className="text-2xl font-bold text-gray-900 mb-4">10. Contact</h2>
         <p className="mb-4">Questions about these Terms? Contact us:</p>
         <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 text-sm">
-          <p className="font-semibold text-gray-900 mb-1">SmartReview</p>
+          <p className="font-semibold text-gray-900 mb-1">ReviewIQ</p>
           <p>Email: <a href="mailto:contact@smartreview.com" className="text-brand-600 hover:underline">contact@smartreview.com</a></p>
         </div>
       </section>

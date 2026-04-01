@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { CookiePolicyContent } from "./CookiePolicyContent";
 
 export const metadata: Metadata = {
-  title: "Cookie Policy — SmartReview",
-  description: "Learn how SmartReview uses cookies and similar tracking technologies.",
+  title: "Cookie Policy — ReviewIQ",
+  description: "Learn how ReviewIQ uses cookies and similar tracking technologies.",
 };
 
 export default function CookiePolicyPage() {

@@ -120,7 +120,7 @@ export function SurveyPopup() {
             </div>
             <h3 className="text-lg font-bold text-gray-900 mb-2">Quick feedback?</h3>
             <p className="text-sm text-gray-500 mb-6">
-              Help us make SmartReview better. Takes less than 30 seconds.
+              Help us make ReviewIQ better. Takes less than 30 seconds.
             </p>
             <div className="flex gap-3">
               <button
@@ -269,7 +269,7 @@ export function SurveyPopup() {
         {step === "q5" && (
           <div>
             <p className="text-xs text-brand-600 font-medium mb-2">5 of 5</p>
-            <h3 className="text-base font-bold text-gray-900 mb-4">How did you discover SmartReview?</h3>
+            <h3 className="text-base font-bold text-gray-900 mb-4">How did you discover ReviewIQ?</h3>
             <div className="space-y-2 mb-4">
               {DISCOVERY_OPTIONS.map((opt) => (
                 <button

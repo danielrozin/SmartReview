@@ -66,7 +66,7 @@ export function trackConversion(
   }
 }
 
-// -- Pre-built events for SmartReview --
+// -- Pre-built events for ReviewIQ --
 
 export function trackReviewSubmitted(productSlug: string, rating: number) {
   trackEvent("review_submitted", { product_slug: productSlug, rating });

@@ -30,7 +30,7 @@ export default function HomePage() {
               <span className="text-brand-600">actually trust</span>
             </h1>
             <p className="text-lg sm:text-xl text-gray-500 leading-relaxed mb-8 max-w-2xl mx-auto">
-              Stop guessing. SmartReview analyzes thousands of verified buyer
+              Stop guessing. ReviewIQ analyzes thousands of verified buyer
               experiences to show you what products are really like — the good,
               the bad, and everything in between.
             </p>
@@ -283,7 +283,7 @@ export default function HomePage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-12">
           <h2 className="text-2xl font-bold text-gray-900">
-            How SmartReview Works
+            How ReviewIQ Works
           </h2>
           <p className="text-gray-500 mt-2 max-w-xl mx-auto">
             We built a review platform you can actually trust.

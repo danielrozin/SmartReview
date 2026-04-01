@@ -191,7 +191,7 @@ export default async function BlogPostPage({
         {categoryProducts.length > 0 && (
           <section className="mt-12 border-t border-gray-100 pt-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">
-              Top {post.categoryName} on SmartReview
+              Top {post.categoryName} on ReviewIQ
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {categoryProducts.map((product) => (

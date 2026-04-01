@@ -4,7 +4,7 @@ import { buildMetadata } from "@/lib/seo/metadata";
 export const metadata = buildMetadata({
   title: "How It Works",
   description:
-    "Learn how SmartReview uses AI-powered analysis and verified buyer data to deliver honest, structured product reviews you can trust.",
+    "Learn how ReviewIQ uses AI-powered analysis and verified buyer data to deliver honest, structured product reviews you can trust.",
   path: "/how-it-works",
 });
 
@@ -13,7 +13,7 @@ const steps = [
     number: "01",
     title: "Verified Buyers Submit Structured Reviews",
     description:
-      "Unlike traditional review platforms, SmartReview asks reviewers to share specific details: how long they've owned the product, their experience level, and separate ratings for reliability, ease of use, and value. Every review includes a verification tier so you know how trustworthy it is.",
+      "Unlike traditional review platforms, ReviewIQ asks reviewers to share specific details: how long they've owned the product, their experience level, and separate ratings for reliability, ease of use, and value. Every review includes a verification tier so you know how trustworthy it is.",
     details: [
       "Receipt upload, email receipt, or retailer verification",
       "Structured pros and cons — not just a star rating",
@@ -66,11 +66,11 @@ export default function HowItWorksPage() {
 
       <div className="mt-8 mb-16 max-w-3xl">
         <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-          How SmartReview Works
+          How ReviewIQ Works
         </h1>
         <p className="text-lg text-gray-500 leading-relaxed">
           Most online reviews are manipulated, shallow, or driven by affiliate
-          commissions. SmartReview is different. We built a system where trust,
+          commissions. ReviewIQ is different. We built a system where trust,
           structure, and AI analysis replace star-rating noise.
         </p>
       </div>
