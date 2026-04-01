@@ -113,6 +113,11 @@ export function SearchBar() {
       e.preventDefault();
       if (selectedIndex >= 0 && results[selectedIndex]) {
         navigate(results[selectedIndex].href);
+      } else if (query.trim().length >= 2) {
+        // Navigate to full search page with query
+        setOpen(false);
+        setQuery("");
+        router.push(`/products?q=${encodeURIComponent(query.trim())}`);
       } else if (results.length > 0) {
         navigate(results[0].href);
       }

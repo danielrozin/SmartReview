@@ -6,6 +6,7 @@ import { useSession, signOut } from "next-auth/react";
 import { SearchBar } from "./SearchBar";
 
 const navLinks = [
+  { href: "/products", label: "Products" },
   { href: "/categories", label: "Categories" },
   { href: "/blog", label: "Blog" },
   { href: "/how-it-works", label: "How It Works" },
