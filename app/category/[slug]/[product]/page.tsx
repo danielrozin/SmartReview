@@ -68,16 +68,18 @@ export default async function ProductPage({ params }: Props) {
   const relatedProducts = allCategoryProducts
     .filter((p) => p.slug !== product.slug)
     .sort((a, b) => b.smartScore - a.smartScore)
-    .slice(0, 5)
+    .slice(0, 6)
     .map((p) => ({
       name: p.name,
       slug: p.slug,
       brand: p.brand,
+      image: p.image,
       smartScore: p.smartScore,
       reviewCount: p.reviewCount,
       priceMin: p.priceRange.min,
       priceMax: p.priceRange.max,
       categorySlug: p.categorySlug,
+      categoryName: category.name,
     }));
 
   const avgRating =
@@ -254,14 +256,6 @@ export default async function ProductPage({ params }: Props) {
             productName={product.name}
           />
 
-          {/* Related Products */}
-          {relatedProducts.length > 0 && (
-            <RelatedProducts
-              products={relatedProducts}
-              categorySlug={slug}
-              categoryName={category.name}
-            />
-          )}
         </div>
 
         {/* Right Column — Sidebar */}
@@ -343,6 +337,15 @@ export default async function ProductPage({ params }: Props) {
           <FAQSection items={product.faq} />
         </aside>
       </div>
+
+      {/* Related Products — full width below main content */}
+      {relatedProducts.length > 0 && (
+        <RelatedProducts
+          products={relatedProducts}
+          categorySlug={slug}
+          categoryName={category.name}
+        />
+      )}
 
       {/* Sticky mobile CTA */}
       <StickyMobileCTA productName={product.name} productSlug={product.slug} />
