@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { z } from "zod";
+import { notifyNewFeedback } from "@/lib/email/notify-feedback";
 
 const createSurveySchema = z.object({
   userType: z.string().optional(),
@@ -44,6 +45,9 @@ export async function POST(request: NextRequest) {
         optInEmail: data.optInEmail ?? null,
       },
     });
+
+    // Fire-and-forget email notification — don't block the response
+    notifyNewFeedback(data).catch(() => {});
 
     return NextResponse.json({ id: survey.id }, { status: 201 });
   } catch (error) {
