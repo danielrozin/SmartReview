@@ -4,10 +4,9 @@ import { getProductBySlug, getProductsByCategory } from "@/data/products";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { SmartScore } from "@/components/ui/SmartScore";
 import { RatingStars } from "@/components/ui/RatingStars";
-import { RatingDistribution } from "@/components/ui/RatingDistribution";
 import { VerificationBadge } from "@/components/ui/VerificationBadge";
 import { AISummaryCard } from "@/components/product/AISummaryCard";
-import { ReviewCard } from "@/components/product/ReviewCard";
+import { ReviewSection } from "@/components/product/ReviewSection";
 import { RecurringIssues } from "@/components/product/RecurringIssues";
 import { SpecsTable } from "@/components/product/SpecsTable";
 import { ComparisonModule } from "@/components/product/ComparisonModule";
@@ -221,40 +220,17 @@ export default async function ProductPage({ params }: Props) {
             </div>
           </section>
 
-          {/* Rating Distribution */}
-          <section>
-            <h2 className="text-lg font-semibold text-gray-900 mb-4">
-              Review Distribution
-            </h2>
-            <div className="max-w-md">
-              <RatingDistribution
-                distribution={product.ratingDistribution}
-                totalReviews={product.reviewCount}
-              />
-            </div>
-          </section>
-
           {/* Recurring Issues */}
           {product.recurringIssues.length > 0 && (
             <RecurringIssues issues={product.recurringIssues} />
           )}
 
-          {/* Reviews */}
-          <section>
-            <div className="flex items-center justify-between mb-6">
-              <h2 className="text-lg font-semibold text-gray-900">
-                Verified Reviews
-              </h2>
-              <span className="text-sm text-gray-400">
-                {product.reviews.length} shown
-              </span>
-            </div>
-            <div className="space-y-4">
-              {product.reviews.map((review) => (
-                <ReviewCard key={review.id} review={review} />
-              ))}
-            </div>
-          </section>
+          {/* Reviews with Rating Distribution, Sorting & Voting */}
+          <ReviewSection
+            reviews={product.reviews}
+            ratingDistribution={product.ratingDistribution}
+            totalReviews={product.reviewCount}
+          />
 
           {/* Write a Review CTA */}
           <WriteReviewCTA productName={product.name} productSlug={product.slug} />
