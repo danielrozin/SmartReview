@@ -73,7 +73,6 @@ export default async function ProductPage({ params }: Props) {
       name: p.name,
       slug: p.slug,
       brand: p.brand,
-      image: p.image,
       smartScore: p.smartScore,
       reviewCount: p.reviewCount,
       priceMin: p.priceRange.min,

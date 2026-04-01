@@ -1,12 +1,10 @@
 import Link from "next/link";
-import Image from "next/image";
 import { SmartScore } from "@/components/ui/SmartScore";
 
 interface RelatedProduct {
   name: string;
   slug: string;
   brand: string;
-  image: string;
   smartScore: number;
   reviewCount: number;
   priceMin: number;
@@ -61,15 +59,14 @@ export function RelatedProducts({
             title={`${product.name} review — SmartScore ${product.smartScore}/100`}
             className="group flex flex-col border border-gray-100 rounded-xl overflow-hidden hover:border-brand-200 hover:shadow-md transition-all"
           >
-            {/* Product Thumbnail */}
-            <div className="relative w-full aspect-square bg-gray-50 flex items-center justify-center overflow-hidden">
-              <Image
-                src={product.image}
-                alt={`${product.name} — ${product.categoryName}`}
-                width={200}
-                height={200}
-                className="object-contain p-3 group-hover:scale-105 transition-transform duration-300"
-              />
+            {/* Product Thumbnail Placeholder */}
+            <div className="relative w-full aspect-[4/3] bg-gradient-to-br from-gray-50 to-gray-100 flex flex-col items-center justify-center overflow-hidden p-4">
+              <span className="w-10 h-10 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center text-lg font-bold mb-2">
+                {product.brand.charAt(0)}
+              </span>
+              <span className="text-xs text-gray-400 text-center line-clamp-2 px-2">
+                {product.name}
+              </span>
             </div>
 
             {/* Product Info */}
