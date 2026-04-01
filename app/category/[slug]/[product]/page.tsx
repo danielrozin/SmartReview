@@ -26,6 +26,7 @@ import { WriteReviewCTA } from "@/components/product/WriteReviewCTA";
 import { AnalysisDisclosure } from "@/components/product/AnalysisDisclosure";
 import { StickyMobileCTA } from "@/components/product/StickyMobileCTA";
 import { EmailCaptureCTA } from "@/components/product/EmailCaptureCTA";
+import { ShareButtons } from "@/components/ui/ShareButtons";
 
 interface Props {
   params: Promise<{ slug: string; product: string }>;
@@ -164,6 +165,14 @@ export default async function ProductPage({ params }: Props) {
             </p>
             <p className="text-sm text-gray-400">Verified buyers</p>
           </div>
+        </div>
+
+        <div className="mt-6">
+          <ShareButtons
+            url={`/category/${slug}/${productSlug}`}
+            title={`${product.name} Review — SmartScore ${product.smartScore}/100`}
+            description={`Honest ${product.name} review based on ${product.reviewCount} verified buyer experiences.`}
+          />
         </div>
       </header>
 

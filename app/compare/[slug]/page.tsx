@@ -12,6 +12,7 @@ import { PriceComparison } from "@/components/comparison/PriceComparison";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { comparisonSchema } from "@/lib/schema/jsonld";
 import { AnalysisDisclosure } from "@/components/product/AnalysisDisclosure";
+import { ShareButtons } from "@/components/ui/ShareButtons";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -78,6 +79,13 @@ export default async function ComparisonPage({ params }: Props) {
               {searchVolume.toLocaleString()} monthly searches for this comparison
             </p>
           )}
+          <div className="mt-4 flex justify-center">
+            <ShareButtons
+              url={`/compare/${slug}`}
+              title={`${productA.name} vs ${productB.name} — Side-by-Side Comparison`}
+              description={`Compare ${productA.name} vs ${productB.name} based on ${productA.reviewCount + productB.reviewCount} verified reviews.`}
+            />
+          </div>
         </div>
 
         {/* Quick links to individual product pages */}
