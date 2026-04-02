@@ -4,6 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import { useSession, signOut } from "next-auth/react";
 import { SearchBar } from "./SearchBar";
+import { useSubscription } from "@/lib/context/SubscriptionContext";
+import { ProBadge } from "@/components/premium/ProBadge";
 
 const navLinks = [
   { href: "/products", label: "Products" },
@@ -19,6 +21,7 @@ export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [userMenuOpen, setUserMenuOpen] = useState(false);
   const { data: session, status } = useSession();
+  const { isPro } = useSubscription();
 
   return (
     <header className="border-b border-gray-100 bg-white sticky top-0 z-50">
@@ -86,13 +89,25 @@ export function Header() {
                   {userMenuOpen && (
                     <div className="absolute right-0 mt-1 w-48 bg-white border border-gray-200 rounded-lg shadow-lg py-1 z-50">
                       <div className="px-4 py-2 border-b border-gray-100">
-                        <p className="text-sm font-medium text-gray-900 truncate">
-                          {session.user?.name || "User"}
-                        </p>
+                        <div className="flex items-center gap-1.5">
+                          <p className="text-sm font-medium text-gray-900 truncate">
+                            {session.user?.name || "User"}
+                          </p>
+                          {isPro && <ProBadge size="sm" />}
+                        </div>
                         <p className="text-xs text-gray-500 truncate">
                           {session.user?.email}
                         </p>
                       </div>
+                      {!isPro && (
+                        <Link
+                          href="/pricing"
+                          onClick={() => setUserMenuOpen(false)}
+                          className="block px-4 py-2 text-sm text-amber-700 hover:bg-amber-50 transition-colors font-medium"
+                        >
+                          Upgrade to Pro
+                        </Link>
+                      )}
                       <button
                         onClick={() => { setUserMenuOpen(false); signOut(); }}
                         className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-colors"

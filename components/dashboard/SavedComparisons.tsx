@@ -1,12 +1,20 @@
+"use client";
+
 import Link from "next/link";
 import type { SavedComparison } from "@/types";
 import { getScoreColor, getScoreLabel } from "@/lib/utils";
+import { useSubscription } from "@/lib/context/SubscriptionContext";
+import { UpgradePrompt } from "@/components/premium/UpgradePrompt";
+
+const FREE_LIMIT = 3;
 
 interface SavedComparisonsProps {
   items: SavedComparison[];
 }
 
 export function SavedComparisons({ items }: SavedComparisonsProps) {
+  const { isPro } = useSubscription();
+
   if (items.length === 0) {
     return (
       <div className="text-center py-12 bg-gray-50 rounded-2xl">
@@ -20,6 +28,8 @@ export function SavedComparisons({ items }: SavedComparisonsProps) {
       </div>
     );
   }
+
+  const atLimit = !isPro && items.length >= FREE_LIMIT;
 
   return (
     <div className="space-y-3">
@@ -59,6 +69,12 @@ export function SavedComparisons({ items }: SavedComparisonsProps) {
           </div>
         </Link>
       ))}
+
+      {atLimit && (
+        <div className="mt-4">
+          <UpgradePrompt gate="saved_comparisons" />
+        </div>
+      )}
     </div>
   );
 }

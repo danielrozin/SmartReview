@@ -26,6 +26,7 @@ import { AnalysisDisclosure } from "@/components/product/AnalysisDisclosure";
 import { StickyMobileCTA } from "@/components/product/StickyMobileCTA";
 import { EmailCaptureCTA } from "@/components/product/EmailCaptureCTA";
 import { ShareButtons } from "@/components/ui/ShareButtons";
+import { AdPlacement } from "@/components/premium/AdPlacement";
 
 interface Props {
   params: Promise<{ slug: string; product: string }>;
@@ -230,6 +231,13 @@ export default async function ProductPage({ params }: Props) {
             ratingDistribution={product.ratingDistribution}
             totalReviews={product.reviewCount}
           />
+
+          {/* Ad Placement — hidden for Pro subscribers */}
+          <AdPlacement slot="product-after-reviews" className="my-2">
+            <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center text-xs text-gray-400">
+              Advertisement
+            </div>
+          </AdPlacement>
 
           {/* Write a Review CTA */}
           <WriteReviewCTA productName={product.name} productSlug={product.slug} />

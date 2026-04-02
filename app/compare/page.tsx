@@ -8,6 +8,8 @@ import { ShareButtons } from "@/components/ui/ShareButtons";
 import { MultiScoreComparison } from "@/components/comparison/MultiScoreComparison";
 import { MultiSpecsTable } from "@/components/comparison/MultiSpecsTable";
 import { MultiProsConsComparison } from "@/components/comparison/MultiProsConsComparison";
+import { ExportButton } from "@/components/premium/ExportButton";
+import { AdPlacement } from "@/components/premium/AdPlacement";
 
 function CompareContent() {
   const searchParams = useSearchParams();
@@ -60,17 +62,37 @@ function CompareContent() {
         <p className="text-gray-500 text-sm">
           Side-by-side comparison based on {totalReviews.toLocaleString()} verified buyer reviews
         </p>
-        <div className="mt-4 flex justify-center">
+        <div className="mt-4 flex items-center justify-center gap-3">
           <ShareButtons
             url={`/compare?ids=${idsParam}`}
             title={`${title} — Side-by-Side Comparison`}
             description={`Compare ${compareProducts.length} products side-by-side based on ${totalReviews} verified reviews.`}
           />
+          <ExportButton onExport={(format) => {
+            // Export logic — generates CSV/PDF of comparison data
+            if (format === "csv") {
+              const headers = ["Product", "SmartScore", "Price Min", "Price Max", "Review Count"];
+              const rows = compareProducts.map((p) => [p.name, p.smartScore, p.priceRange.min, p.priceRange.max, p.reviewCount].join(","));
+              const csv = [headers.join(","), ...rows].join("\n");
+              const blob = new Blob([csv], { type: "text/csv" });
+              const url = URL.createObjectURL(blob);
+              const a = document.createElement("a");
+              a.href = url;
+              a.download = `comparison-${Date.now()}.csv`;
+              a.click();
+              URL.revokeObjectURL(url);
+            }
+          }} />
         </div>
       </div>
 
       <div className="space-y-8">
         <MultiScoreComparison products={compareProducts} />
+        <AdPlacement slot="compare-mid" className="my-6">
+          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center text-xs text-gray-400">
+            Advertisement
+          </div>
+        </AdPlacement>
         <MultiSpecsTable products={compareProducts} />
         <MultiProsConsComparison products={compareProducts} />
       </div>

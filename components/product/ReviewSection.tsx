@@ -1,13 +1,18 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { ArrowUpDown, CheckCircle2 } from "lucide-react";
+import { ArrowUpDown, CheckCircle2, Lock } from "lucide-react";
 import type { Review, RatingDistribution as RatingDistType } from "@/types";
 import { RatingStars } from "@/components/ui/RatingStars";
 import { VerificationBadge } from "@/components/ui/VerificationBadge";
 import { ReviewVoting } from "./ReviewVoting";
+import { useSubscription } from "@/lib/context/SubscriptionContext";
+import { UpgradePrompt } from "@/components/premium/UpgradePrompt";
 
-type SortOption = "most_helpful" | "newest" | "oldest" | "highest" | "lowest";
+type SortOption = "most_helpful" | "newest" | "oldest" | "highest" | "lowest" | "reliability" | "value_rating";
+
+const FREE_SORT_OPTIONS: SortOption[] = ["most_helpful", "newest", "oldest", "highest", "lowest"];
+const PRO_SORT_OPTIONS: SortOption[] = ["reliability", "value_rating"];
 
 const SORT_LABELS: Record<SortOption, string> = {
   most_helpful: "Most Helpful",
@@ -15,6 +20,8 @@ const SORT_LABELS: Record<SortOption, string> = {
   oldest: "Oldest First",
   highest: "Highest Rated",
   lowest: "Lowest Rated",
+  reliability: "Best Reliability",
+  value_rating: "Best Value",
 };
 
 interface ReviewSectionProps {
@@ -25,6 +32,18 @@ interface ReviewSectionProps {
 
 export function ReviewSection({ reviews, ratingDistribution, totalReviews }: ReviewSectionProps) {
   const [sortBy, setSortBy] = useState<SortOption>("most_helpful");
+  const [showFilterGate, setShowFilterGate] = useState(false);
+  const { isPro } = useSubscription();
+
+  const handleSortChange = (value: string) => {
+    const option = value as SortOption;
+    if (PRO_SORT_OPTIONS.includes(option) && !isPro) {
+      setShowFilterGate(true);
+      return;
+    }
+    setShowFilterGate(false);
+    setSortBy(option);
+  };
 
   const sortedReviews = useMemo(() => {
     const sorted = [...reviews];
@@ -39,6 +58,10 @@ export function ReviewSection({ reviews, ratingDistribution, totalReviews }: Rev
         return sorted.sort((a, b) => b.rating - a.rating);
       case "lowest":
         return sorted.sort((a, b) => a.rating - b.rating);
+      case "reliability":
+        return sorted.sort((a, b) => (b.reliabilityRating ?? 0) - (a.reliabilityRating ?? 0));
+      case "value_rating":
+        return sorted.sort((a, b) => (b.valueRating ?? 0) - (a.valueRating ?? 0));
       default:
         return sorted;
     }
@@ -121,18 +144,29 @@ export function ReviewSection({ reviews, ratingDistribution, totalReviews }: Rev
             <ArrowUpDown className="w-3.5 h-3.5 text-gray-400" />
             <select
               value={sortBy}
-              onChange={(e) => setSortBy(e.target.value as SortOption)}
+              onChange={(e) => handleSortChange(e.target.value)}
               className="text-sm text-gray-600 bg-transparent border border-gray-200 rounded-lg px-3 py-1.5 pr-8 appearance-none cursor-pointer hover:border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500"
             >
-              {Object.entries(SORT_LABELS).map(([value, label]) => (
+              {FREE_SORT_OPTIONS.map((value) => (
                 <option key={value} value={value}>
-                  {label}
+                  {SORT_LABELS[value]}
+                </option>
+              ))}
+              {PRO_SORT_OPTIONS.map((value) => (
+                <option key={value} value={value}>
+                  {isPro ? SORT_LABELS[value] : `${SORT_LABELS[value]} (Pro)`}
                 </option>
               ))}
             </select>
           </div>
         </div>
       </div>
+
+      {showFilterGate && (
+        <div className="mb-4">
+          <UpgradePrompt gate="advanced_filters" compact />
+        </div>
+      )}
 
       {/* Reviews list */}
       <div className="space-y-4">

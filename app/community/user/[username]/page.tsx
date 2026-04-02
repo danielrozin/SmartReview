@@ -8,6 +8,7 @@ import { getDiscussionsByUser, getCommentsByUser } from "@/data/discussions";
 import { TRUST_LEVEL_LABELS, TRUST_LEVEL_COLORS } from "@/types";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { formatNumber } from "@/lib/utils";
+import { UserProBadge } from "@/components/premium/UserProBadge";
 
 interface Props {
   params: Promise<{ username: string }>;
@@ -62,9 +63,12 @@ export default async function UserProfilePage({ params }: Props) {
               <div className="w-20 h-20 rounded-full bg-brand-100 text-brand-600 font-bold text-2xl flex items-center justify-center mx-auto mb-4">
                 {initials}
               </div>
-              <h1 className="text-xl font-bold text-gray-900">
-                {user.displayName}
-              </h1>
+              <div className="flex items-center justify-center gap-2">
+                <h1 className="text-xl font-bold text-gray-900">
+                  {user.displayName}
+                </h1>
+                <UserProBadge userId={user.id} size="md" />
+              </div>
               <span className={`inline-flex text-xs font-medium px-2.5 py-1 rounded-full mt-2 ${TRUST_LEVEL_COLORS[user.trustLevel]}`}>
                 {TRUST_LEVEL_LABELS[user.trustLevel]}
               </span>

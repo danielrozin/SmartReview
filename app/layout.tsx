@@ -7,6 +7,7 @@ import { AppProvider } from "@/lib/context/AppContext";
 import { CompareProvider } from "@/lib/context/CompareContext";
 import { ComparisonTray } from "@/components/comparison/ComparisonTray";
 import { SessionProvider } from "@/components/providers/SessionProvider";
+import { SubscriptionProvider } from "@/lib/context/SubscriptionContext";
 import { GoogleTagManager, GoogleTagManagerNoScript } from "@/components/tracking/GoogleTagManager";
 import { MetaPixel } from "@/components/tracking/MetaPixel";
 import { SurveyPopup } from "@/components/survey/SurveyPopup";
@@ -52,15 +53,17 @@ export default function RootLayout({
           }}
         />
         <SessionProvider>
-          <AppProvider>
-            <CompareProvider>
-              <Header />
-              <main className="flex-1">{children}</main>
-              <Footer />
-              <ComparisonTray />
-              <SurveyPopup />
-            </CompareProvider>
-          </AppProvider>
+          <SubscriptionProvider>
+            <AppProvider>
+              <CompareProvider>
+                <Header />
+                <main className="flex-1">{children}</main>
+                <Footer />
+                <ComparisonTray />
+                <SurveyPopup />
+              </CompareProvider>
+            </AppProvider>
+          </SubscriptionProvider>
         </SessionProvider>
       </body>
     </html>

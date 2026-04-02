@@ -18,6 +18,7 @@ import { getAllProducts } from "@/data/products";
 import { TRUST_LEVEL_LABELS, TRUST_LEVEL_COLORS } from "@/types";
 import type { UserBadge } from "@/types";
 import { buildMetadata } from "@/lib/seo/metadata";
+import { UserProBadge } from "@/components/premium/UserProBadge";
 
 // Demo user for initial launch — will use session auth when NextAuth is fully wired
 const DEMO_USER_ID = "user-sarah-k";
@@ -67,9 +68,12 @@ export default function DashboardPage() {
             {initials}
           </div>
           <div>
-            <h1 className="text-2xl font-bold text-gray-900">
-              Welcome back, {user.displayName.split(" ")[0]}
-            </h1>
+            <div className="flex items-center gap-2">
+              <h1 className="text-2xl font-bold text-gray-900">
+                Welcome back, {user.displayName.split(" ")[0]}
+              </h1>
+              <UserProBadge userId={user.id} size="md" />
+            </div>
             <div className="flex items-center gap-2 mt-1">
               <span
                 className={`text-[10px] font-medium px-2 py-0.5 rounded-full ${TRUST_LEVEL_COLORS[user.trustLevel]}`}

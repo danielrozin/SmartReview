@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { z } from "zod";
+import { getUserSubscription, isPro, FREE_LIMITS } from "@/lib/subscription";
 
 const saveSchema = z.object({
   userId: z.string().min(1),
@@ -11,6 +12,25 @@ const saveSchema = z.object({
 export async function POST(request: NextRequest) {
   try {
     const data = saveSchema.parse(await request.json());
+
+    // Check if user already has this product saved (update case — always allowed)
+    const existing = await prisma.savedComparison.findUnique({
+      where: { userId_productId: { userId: data.userId, productId: data.productId } },
+    });
+
+    // For new saves, enforce free tier limit
+    if (!existing) {
+      const sub = await getUserSubscription(data.userId);
+      if (!isPro(sub)) {
+        const savedCount = await prisma.savedComparison.count({ where: { userId: data.userId } });
+        if (savedCount >= FREE_LIMITS.maxSavedComparisons) {
+          return NextResponse.json(
+            { error: "limit_reached", message: "Free accounts can save up to 3 products. Upgrade to Pro for unlimited saves.", limit: FREE_LIMITS.maxSavedComparisons },
+            { status: 403 }
+          );
+        }
+      }
+    }
 
     const saved = await prisma.savedComparison.upsert({
       where: {
