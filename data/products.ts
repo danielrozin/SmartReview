@@ -1,6 +1,9 @@
 import type { Product } from "@/types";
+import { productsBatch1 } from "./products-batch1";
+import { productsBatch2 } from "./products-batch2";
+import { productsBatch3 } from "./products-batch3";
 
-export const products: Product[] = [
+const baseProducts: Product[] = [
   // ==========================================
   // ROBOT VACUUMS
   // ==========================================
@@ -4273,6 +4276,13 @@ export const products: Product[] = [
       { id: "Hn5Yn4Wk6nQ", title: "Waterpik Sonic-Fusion 2.0 — Dentist's Honest Opinion" },
     ],
   },
+];
+
+export const products: Product[] = [
+  ...baseProducts,
+  ...productsBatch1,
+  ...productsBatch2,
+  ...productsBatch3,
 ];
 
 export function getProductsByCategory(categorySlug: string): Product[] {
