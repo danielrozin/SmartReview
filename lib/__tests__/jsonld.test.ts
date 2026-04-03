@@ -19,7 +19,7 @@ describe('organizationSchema', () => {
     const schema = organizationSchema()
     expect(schema['@context']).toBe('https://schema.org')
     expect(schema['@type']).toBe('Organization')
-    expect(schema.name).toBe('SmartReview')
+    expect(schema.name).toBe('ReviewIQ')
     expect(schema.url).toBeDefined()
   })
 })
@@ -151,7 +151,7 @@ describe('analysisAuthorSchema', () => {
   it('returns valid Person schema', () => {
     const schema = analysisAuthorSchema()
     expect(schema['@type']).toBe('Person')
-    expect(schema.name).toContain('SmartReview')
+    expect(schema.name).toContain('ReviewIQ')
     expect(schema.worksFor['@type']).toBe('Organization')
   })
 })
