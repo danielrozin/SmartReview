@@ -20,6 +20,14 @@ vi.mock('@/lib/prisma', () => ({
   prisma: mockPrisma,
 }))
 
+vi.mock('@/lib/rate-limit', () => ({
+  reviewLimiter: { check: () => ({ success: true, remaining: 99, reset: Date.now() + 3600000 }) },
+}))
+
+vi.mock('@/lib/sanitize', () => ({
+  sanitizeReviewContent: (s: string) => s,
+}))
+
 import { POST, GET } from '../reviews/route'
 
 function makeRequest(method: string, url: string, body?: unknown): NextRequest {

@@ -22,9 +22,7 @@ interface ConversionOptions {
 
 function getDataLayer(): unknown[] | undefined {
   if (typeof window === "undefined") return undefined;
-  const w = window as unknown as Record<string, unknown>;
-  if (!w.dataLayer) w.dataLayer = [];
-  return w.dataLayer as unknown[];
+  return (window as unknown as Record<string, unknown>).dataLayer as unknown[] | undefined;
 }
 
 function gtag(...args: unknown[]) {
@@ -66,12 +64,10 @@ export function trackConversion(
   }
 }
 
-// -- Pre-built events for ReviewIQ --
+// -- Pre-built events for SmartReview --
 
 export function trackReviewSubmitted(productSlug: string, rating: number) {
   trackEvent("review_submitted", { product_slug: productSlug, rating });
-  // Also push as generate_lead for GA4 recommended conversion event
-  trackEvent("generate_lead", { value: 1, currency: "USD", event_label: `review_${productSlug}` });
   fbq("trackCustom", "ReviewSubmitted", { product_slug: productSlug, rating });
 }
 
@@ -99,15 +95,11 @@ export function trackSearch(query: string, resultsCount: number) {
 
 export function trackNewsletterSignup(source: string) {
   trackEvent("newsletter_signup", { source });
-  // GA4 recommended event for lead capture
-  trackEvent("generate_lead", { value: 0.5, currency: "USD", event_label: `newsletter_${source}` });
   fbq("track", "Lead", { content_name: "newsletter", source });
 }
 
 export function trackContactFormSubmitted() {
   trackEvent("contact_form_submitted");
-  // GA4 recommended event for contact conversion
-  trackEvent("generate_lead", { value: 1, currency: "USD", event_label: "contact_form" });
   fbq("track", "Contact");
 }
 
@@ -133,32 +125,6 @@ export function trackCtaClicked(ctaName: string, page: string) {
   trackEvent("cta_clicked", { cta_name: ctaName, page });
 }
 
-// -- New feature tracking events --
-
-export function trackEmailCaptureShown(source: string, page: string) {
-  trackEvent("email_capture_shown", { source, page });
-}
-
-export function trackEmailCaptureSubmit(source: string, page: string) {
-  trackEvent("email_capture_submit", { source, page });
-  trackEvent("generate_lead", { value: 0.5, currency: "USD", event_label: `email_capture_${source}` });
-  fbq("track", "Lead", { content_name: "email_capture", source });
-}
-
-export function trackReviewAuthGateShown(productSlug: string, triggerAction: string) {
-  trackEvent("review_auth_gate_shown", { product_slug: productSlug, trigger_action: triggerAction });
-}
-
-export function trackReviewAuthSignup(productSlug: string, method: string) {
-  trackEvent("review_auth_signup", { product_slug: productSlug, method });
-  trackEvent("sign_up", { method });
-  fbq("track", "CompleteRegistration", { content_name: "review_auth", method });
-}
-
-export function trackQuickAnswerView(productSlug: string, questionId: string) {
-  trackEvent("quick_answer_view", { product_slug: productSlug, question_id: questionId });
-}
-
-export function trackQuickAnswerExpand(productSlug: string, questionId: string) {
-  trackEvent("quick_answer_expand", { product_slug: productSlug, question_id: questionId });
+export function trackReviewAuthGateShown(productSlug: string, trigger?: string) {
+  trackEvent("review_auth_gate_shown", { product_slug: productSlug, trigger });
 }

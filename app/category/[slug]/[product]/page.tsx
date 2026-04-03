@@ -4,29 +4,21 @@ import { getProductBySlug, getProductsByCategory } from "@/data/products";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { SmartScore } from "@/components/ui/SmartScore";
 import { RatingStars } from "@/components/ui/RatingStars";
+import { RatingDistribution } from "@/components/ui/RatingDistribution";
 import { VerificationBadge } from "@/components/ui/VerificationBadge";
 import { AISummaryCard } from "@/components/product/AISummaryCard";
-import { ReviewSection } from "@/components/product/ReviewSection";
+import { ReviewCard } from "@/components/product/ReviewCard";
 import { RecurringIssues } from "@/components/product/RecurringIssues";
 import { SpecsTable } from "@/components/product/SpecsTable";
 import { ComparisonModule } from "@/components/product/ComparisonModule";
-import { ExternalComparisonLinks } from "@/components/product/ExternalComparisonLinks";
-import { AutoComparisonLinks } from "@/components/product/AutoComparisonLinks";
 import { FAQSection } from "@/components/product/FAQSection";
-import { RelatedProducts } from "@/components/product/RelatedProducts";
 import { YouTubeVideos } from "@/components/product/YouTubeVideos";
 import { ProductDiscussions } from "@/components/community/ProductDiscussions";
 import { getDiscussionsByProduct } from "@/data/discussions";
 import { buildMetadata } from "@/lib/seo/metadata";
-import { productSchema, videoObjectListSchema, analysisAuthorSchema } from "@/lib/schema/jsonld";
+import { productSchema } from "@/lib/schema/jsonld";
 import { formatNumber } from "@/lib/utils";
 import { TrackProductView } from "@/components/tracking/TrackProductView";
-import { WriteReviewCTA } from "@/components/product/WriteReviewCTA";
-import { AnalysisDisclosure } from "@/components/product/AnalysisDisclosure";
-import { StickyMobileCTA } from "@/components/product/StickyMobileCTA";
-import { EmailCaptureCTA } from "@/components/product/EmailCaptureCTA";
-import { ShareButtons } from "@/components/ui/ShareButtons";
-import { AdPlacement } from "@/components/premium/AdPlacement";
 
 interface Props {
   params: Promise<{ slug: string; product: string }>;
@@ -64,24 +56,6 @@ export default async function ProductPage({ params }: Props) {
 
   const productDiscussions = getDiscussionsByProduct(product.slug);
 
-  // Get related products from the same category (excluding current product)
-  const allCategoryProducts = getProductsByCategory(slug);
-  const relatedProducts = allCategoryProducts
-    .filter((p) => p.slug !== product.slug)
-    .sort((a, b) => b.smartScore - a.smartScore)
-    .slice(0, 6)
-    .map((p) => ({
-      name: p.name,
-      slug: p.slug,
-      brand: p.brand,
-      smartScore: p.smartScore,
-      reviewCount: p.reviewCount,
-      priceMin: p.priceRange.min,
-      priceMax: p.priceRange.max,
-      categorySlug: p.categorySlug,
-      categoryName: category.name,
-    }));
-
   const avgRating =
     product.reviews.length > 0
       ? product.reviews.reduce((sum, r) => sum + r.rating, 0) /
@@ -95,20 +69,6 @@ export default async function ProductPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(productSchema(product)),
-        }}
-      />
-      {product.youtubeVideos && product.youtubeVideos.length > 0 && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(videoObjectListSchema(product.youtubeVideos, product.name)),
-          }}
-        />
-      )}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(analysisAuthorSchema()),
         }}
       />
 
@@ -165,24 +125,7 @@ export default async function ProductPage({ params }: Props) {
             <p className="text-sm text-gray-400">Verified buyers</p>
           </div>
         </div>
-
-        <div className="mt-6">
-          <ShareButtons
-            url={`/category/${slug}/${productSlug}`}
-            title={`${product.name} Review — SmartScore ${product.smartScore}/100`}
-            description={`Honest ${product.name} review based on ${product.reviewCount} verified buyer experiences.`}
-          />
-        </div>
       </header>
-
-      {/* Email Capture CTA */}
-      <div className="mb-10">
-        <EmailCaptureCTA
-          productId={product.id}
-          productSlug={product.slug}
-          productName={product.name}
-        />
-      </div>
 
       {/* Main Content Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
@@ -190,9 +133,6 @@ export default async function ProductPage({ params }: Props) {
         <div className="lg:col-span-2 space-y-10">
           {/* AI Summary */}
           <AISummaryCard summary={product.aiSummary} />
-
-          {/* E-E-A-T: About the Analysis */}
-          <AnalysisDisclosure productName={product.name} />
 
           {/* YouTube Videos */}
           {product.youtubeVideos && product.youtubeVideos.length > 0 && (
@@ -220,34 +160,46 @@ export default async function ProductPage({ params }: Props) {
             </div>
           </section>
 
+          {/* Rating Distribution */}
+          <section>
+            <h2 className="text-lg font-semibold text-gray-900 mb-4">
+              Review Distribution
+            </h2>
+            <div className="max-w-md">
+              <RatingDistribution
+                distribution={product.ratingDistribution}
+                totalReviews={product.reviewCount}
+              />
+            </div>
+          </section>
+
           {/* Recurring Issues */}
           {product.recurringIssues.length > 0 && (
             <RecurringIssues issues={product.recurringIssues} />
           )}
 
-          {/* Reviews with Rating Distribution, Sorting & Voting */}
-          <ReviewSection
-            reviews={product.reviews}
-            ratingDistribution={product.ratingDistribution}
-            totalReviews={product.reviewCount}
-          />
-
-          {/* Ad Placement — hidden for Pro subscribers */}
-          <AdPlacement slot="product-after-reviews" className="my-2">
-            <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center text-xs text-gray-400">
-              Advertisement
+          {/* Reviews */}
+          <section>
+            <div className="flex items-center justify-between mb-6">
+              <h2 className="text-lg font-semibold text-gray-900">
+                Verified Reviews
+              </h2>
+              <span className="text-sm text-gray-400">
+                {product.reviews.length} shown
+              </span>
             </div>
-          </AdPlacement>
-
-          {/* Write a Review CTA */}
-          <WriteReviewCTA productName={product.name} productSlug={product.slug} />
+            <div className="space-y-4">
+              {product.reviews.map((review) => (
+                <ReviewCard key={review.id} review={review} />
+              ))}
+            </div>
+          </section>
 
           {/* Community Discussion */}
           <ProductDiscussions
             threads={productDiscussions}
             productName={product.name}
           />
-
         </div>
 
         {/* Right Column — Sidebar */}
@@ -318,29 +270,10 @@ export default async function ProductPage({ params }: Props) {
             categorySlug={slug}
           />
 
-          {/* External Comparisons (aversusb.net) */}
-          {product.externalComparisons && product.externalComparisons.length > 0 ? (
-            <ExternalComparisonLinks comparisons={product.externalComparisons} />
-          ) : (
-            <AutoComparisonLinks productName={product.name} productSlug={product.slug} />
-          )}
-
           {/* FAQ */}
           <FAQSection items={product.faq} />
         </aside>
       </div>
-
-      {/* Related Products — full width below main content */}
-      {relatedProducts.length > 0 && (
-        <RelatedProducts
-          products={relatedProducts}
-          categorySlug={slug}
-          categoryName={category.name}
-        />
-      )}
-
-      {/* Sticky mobile CTA */}
-      <StickyMobileCTA productName={product.name} productSlug={product.slug} />
     </div>
   );
 }
