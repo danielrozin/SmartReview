@@ -16,7 +16,7 @@ import { YouTubeVideos } from "@/components/product/YouTubeVideos";
 import { ProductDiscussions } from "@/components/community/ProductDiscussions";
 import { getDiscussionsByProduct } from "@/data/discussions";
 import { buildMetadata } from "@/lib/seo/metadata";
-import { productSchema } from "@/lib/schema/jsonld";
+import { productSchema, speakableSchema } from "@/lib/schema/jsonld";
 import { formatNumber } from "@/lib/utils";
 import { RelatedProducts } from "@/components/product/RelatedProducts";
 import { PeopleAlsoReviewed } from "@/components/product/PeopleAlsoReviewed";
@@ -94,6 +94,12 @@ export default async function ProductPage({ params }: Props) {
           __html: JSON.stringify(productSchema(product)),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(speakableSchema(product.name, `/category/${slug}/${productSlug}`)),
+        }}
+      />
 
       <Breadcrumbs
         items={[
@@ -118,7 +124,7 @@ export default async function ProductPage({ params }: Props) {
           {product.description}
         </p>
 
-        <div className="flex flex-wrap items-center gap-6">
+        <div className="flex flex-wrap items-center gap-6" data-speakable="smart-score">
           <SmartScore score={product.smartScore} size="lg" />
 
           <div className="h-12 w-px bg-gray-200 hidden sm:block" />
@@ -155,7 +161,9 @@ export default async function ProductPage({ params }: Props) {
         {/* Left Column — Main Content */}
         <div className="lg:col-span-2 space-y-10">
           {/* AI Summary */}
-          <AISummaryCard summary={product.aiSummary} />
+          <div data-speakable="ai-summary">
+            <AISummaryCard summary={product.aiSummary} />
+          </div>
 
           {/* YouTube Videos */}
           {product.youtubeVideos && product.youtubeVideos.length > 0 && (
@@ -166,7 +174,7 @@ export default async function ProductPage({ params }: Props) {
           )}
 
           {/* Key Facts */}
-          <section className="bg-gray-50 rounded-2xl p-6">
+          <section className="bg-gray-50 rounded-2xl p-6" data-speakable="key-facts">
             <h2 className="text-lg font-semibold text-gray-900 mb-4">
               Key Facts
             </h2>

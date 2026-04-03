@@ -221,6 +221,23 @@ export function howToSchema(title: string, steps: BuyingGuideStep[], categorySlu
   };
 }
 
+export function speakableSchema(productName: string, productUrl: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: `${productName} Review`,
+    url: `${SITE_URL}${productUrl}`,
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [
+        "[data-speakable='ai-summary']",
+        "[data-speakable='key-facts']",
+        "[data-speakable='smart-score']",
+      ],
+    },
+  };
+}
+
 export function comparisonSchema(productA: Product, productB: Product) {
   const avgRatingA =
     productA.reviews.length > 0
