@@ -145,6 +145,12 @@ export default function ReviewIQAnalytics() {
           >
             AARRR Pirate Metrics
           </a>
+          <a
+            href="/admin/analytics/okr"
+            className="text-sm text-violet-600 hover:text-violet-800 font-medium underline"
+          >
+            OKR Dashboard
+          </a>
         </div>
         <p className="text-gray-500 mt-1">
           GA4: {config.ga4Property} | Clarity: {config.clarityProject}
