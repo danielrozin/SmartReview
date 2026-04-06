@@ -97,9 +97,9 @@ const baseProducts: Product[] = [
       { title: "Roomba vs Roborock — Full Comparison", url: "https://aversusb.net/compare/roomba-vs-roborock", source: "aversusb.net" },
     ],
     faq: [
-      { question: "Is the Roborock S8 MaxV worth the price?", answer: "For large homes with pets, most reviewers say yes. The all-in-one dock eliminates 95% of maintenance. For small apartments, you're paying for features you won't fully use." },
-      { question: "How does Roborock S8 MaxV compare to Roomba j7?", answer: "The S8 MaxV has stronger suction (6000Pa vs 2200Pa) and better mopping. The Roomba j7 has a simpler app and better carpet detection. The S8 MaxV is the more complete package." },
-      { question: "Does the Roborock S8 MaxV work well with pet hair?", answer: "Yes — it's one of the top-rated robot vacuums for pet owners. The rubber brush and 6000Pa suction handle long and short pet hair effectively. The self-emptying dock means you rarely touch the hair." },
+      { question: "If I have a large home (2,000+ sq ft) with pets and hardwood floors, is the Roborock S8 MaxV worth $1,400?", answer: "If you have 2,000+ square feet, multiple pets, and a mix of hardwood and tile, the S8 MaxV is one of the few robot vacuums that genuinely replaces daily manual vacuuming and mopping. The 6000Pa suction handles pet hair on hard floors and low-pile carpet, the self-emptying dock eliminates 95% of maintenance, and the auto-mop-lift prevents wet pads from dragging across carpeted areas. For smaller apartments under 800 sq ft, you're paying for multi-room navigation and dock features you won't fully use — consider the Roborock Q7 Max at half the price." },
+      { question: "If I'm choosing between the Roborock S8 MaxV and the Roomba j7+ for a home with dogs, which handles pet hair and pet accidents better?", answer: "If your main concern is pet hair pickup on mixed flooring, the S8 MaxV wins with 6000Pa suction (vs Roomba j7's 2200Pa) and a rubber brush that doesn't tangle with long hair. If your dog occasionally has accidents and you need a robot that won't run through them, the Roomba j7+ has superior obstacle avoidance specifically trained on pet waste — its PrecisionVision camera identifies and avoids pet messes with near-perfect accuracy. The S8 MaxV also avoids obstacles but is less specialized for this specific scenario. For pure cleaning power, Roborock; for pet-accident insurance, Roomba." },
+      { question: "If I want a robot vacuum that also mops well enough to skip manual mopping on hardwood and tile, does the Roborock S8 MaxV actually work?", answer: "If you have hardwood, tile, or vinyl flooring and want to skip weekly mopping for light-to-moderate dirt (kitchen spills, paw prints, dust), the S8 MaxV's vibrating mop pad with automatic water flow does a genuinely good job — reviewers rate its mopping 8/10 for maintenance cleaning. It won't replace a deep manual mop for sticky, dried-on messes, but for daily upkeep it eliminates the chore. The auto-mop-lift raises the pad when it detects carpet, so it won't soak your rugs. If you have mostly carpet, the mopping feature adds cost without much benefit." },
     ],
     reviews: [
       {
@@ -211,8 +211,8 @@ const baseProducts: Product[] = [
       { title: "Dyson vs Shark Vacuum — Full Comparison", url: "https://aversusb.net/compare/dyson-vs-shark-vacuum", source: "aversusb.net" },
     ],
     faq: [
-      { question: "Is the Roomba j7+ good for pet hair?", answer: "Yes for hard floors, decent for low-pile carpet. The obstacle avoidance for pet waste is a standout feature. However, deep carpet pet hair removal is not its strength." },
-      { question: "How often do you need to replace the Roomba j7+ bags?", answer: "About every 60 days with daily use. The bags cost about $5 each. Some users find this recurring cost annoying." },
+      { question: "If I have a dog that sheds heavily and I'm worried about the robot running over pet accidents, is the Roomba j7+ the right choice?", answer: "If avoiding pet waste is your top priority, the Roomba j7+ is the industry leader — its PrecisionVision camera is specifically trained to identify and avoid pet messes, cords, socks, and shoes with near-perfect accuracy. For pet hair on hard floors and low-pile carpet, it performs well. Where it falls short: deep carpet cleaning with heavy shedders (Golden Retrievers, Huskies) — the 2200Pa suction can't match the Roborock S8 MaxV's 6000Pa for pulling embedded fur from thick carpet. If you have mostly hardwood with area rugs and a dog prone to accidents, this is the best robot vacuum for peace of mind." },
+      { question: "If I run the Roomba j7+ daily, how much do the replacement bags cost per year, and is there a bagless alternative?", answer: "Running daily, you'll replace the self-emptying dock bag roughly every 60 days — that's about 6 bags per year at $5 each, so approximately $30/year in ongoing costs. There's no official bagless option, though some users report washing and reusing bags 2–3 times before replacement. If recurring consumable costs bother you, consider the Roborock S8 MaxV or Dreame L20 Ultra, which use bagless self-emptying docks that you simply empty into your trash can — no replacement bags needed." },
     ],
     reviews: [
       {
@@ -280,7 +280,7 @@ const baseProducts: Product[] = [
       { title: "Dyson vs Shark Vacuum — Full Comparison", url: "https://aversusb.net/compare/dyson-vs-shark-vacuum", source: "aversusb.net" },
     ],
     faq: [
-      { question: "Is the Ecovacs X2 Omni better than Roborock S8?", answer: "Hardware-wise, the X2 has stronger suction and better edge cleaning. But Roborock's software is far more reliable. If you prioritize cleaning performance over app experience, the X2 edges ahead." },
+      { question: "If I want the absolute strongest suction and best edge cleaning and don't mind dealing with buggy app software, is the Ecovacs X2 Omni worth it over the Roborock S8 MaxV?", answer: "If raw cleaning power is your top priority and you can tolerate app crashes and occasional re-mapping, the Ecovacs X2 Omni's 8000Pa suction and square shape give it a genuine edge — the square design reaches wall edges and corners that round robots miss by 1–2 inches, and the suction power is overkill-good for deep carpet cleaning. If you value reliable daily automation where you set it and forget it, Roborock's software is dramatically more stable — maps save correctly, scheduling works consistently, and the app rarely crashes. Choose Ecovacs for maximum cleaning hardware, Roborock for maximum reliability and ease of use." },
     ],
     reviews: [
       {
@@ -338,7 +338,7 @@ const baseProducts: Product[] = [
       { title: "Roomba vs Roborock — Full Comparison", url: "https://aversusb.net/compare/roomba-vs-roborock", source: "aversusb.net" },
     ],
     faq: [
-      { question: "Is Dreame a reliable brand?", answer: "Dreame is a Xiaomi ecosystem company with solid hardware engineering. Reliability is generally good, but US customer support is more limited than iRobot or Roborock." },
+      { question: "If I want premium robot vacuum features but don't want to pay $1,400 for a Roborock S8 MaxV, is the Dreame L20 Ultra a good alternative at $300 less?", answer: "If you want 90% of the Roborock S8 MaxV's performance at roughly $1,000–$1,100, the Dreame L20 Ultra is the best value in the premium segment. Its extending side brush reaches edges and corners better than any round-body competitor, suction is comparable, and the self-cleaning mop dock works well. The trade-offs: Dreame's US customer support is more limited than iRobot or Roborock (longer response times, fewer service centers), and the app is less polished though functional. If you're comfortable with a Xiaomi ecosystem brand and want to save $300 on comparable cleaning performance, the Dreame L20 Ultra is the smart budget-conscious pick." },
     ],
     reviews: [
       {
@@ -399,8 +399,8 @@ const baseProducts: Product[] = [
       { productId: "cm-breville-bambino", productName: "Breville Bambino Plus", productSlug: "breville-bambino-plus", searchVolume: 18000 },
     ],
     faq: [
-      { question: "Is the De'Longhi Dedica good for beginners?", answer: "Yes — it's one of the most recommended beginner espresso machines. The pressurized basket is forgiving with grind size, and the slim design fits any kitchen. Just know that you'll eventually want to upgrade the basket for better espresso." },
-      { question: "De'Longhi Dedica vs Breville Bambino — which is better?", answer: "The Bambino has better temperature control and a superior milk frother. The Dedica is slimmer and cheaper. For pure espresso quality, the Bambino wins. For space and budget, the Dedica." },
+      { question: "If I've never made espresso at home and want a machine under $350 that fits in a small kitchen, is the De'Longhi Dedica the right starting point?", answer: "If you have limited counter space (the Dedica is only 6 inches wide) and want a forgiving first espresso machine under $350, the Dedica is one of the most recommended entry points. The pressurized basket compensates for inconsistent grind sizes, so you don't need a high-end grinder immediately. The trade-off: as your palate develops, you'll notice temperature inconsistency and want to upgrade the basket to a non-pressurized one ($20 mod) for better extraction. If you can stretch your budget to $500 and have 8+ inches of counter width, the Breville Bambino Plus offers better espresso quality out of the box." },
+      { question: "If I'm deciding between the De'Longhi Dedica and Breville Bambino Plus for making lattes at home, which machine froths milk better?", answer: "If lattes and cappuccinos are your primary drinks, the Breville Bambino Plus wins on milk frothing — its automatic steam wand produces barista-quality microfoam with a single button press, no technique required. The De'Longhi Dedica's manual steam wand requires practice (expect 2–3 weeks to learn proper technique) and produces less consistent microfoam. For pure espresso shots without milk, the Dedica is adequate at a lower price. For milk-based drinks with minimal learning curve, the Bambino Plus at $499 is worth the $150–$200 premium over the Dedica." },
     ],
     reviews: [
       {
@@ -463,7 +463,7 @@ const baseProducts: Product[] = [
       { productId: "cm-delonghi-dedica", productName: "De'Longhi Dedica Arte EC885", productSlug: "delonghi-dedica-arte", searchVolume: 18000 },
     ],
     faq: [
-      { question: "Is the Breville Bambino Plus good for lattes?", answer: "Excellent — the automatic milk frother produces barista-quality microfoam with minimal effort. It's one of the best milk machines under $500." },
+      { question: "If I drink 2–3 lattes a day and want cafe-quality milk foam at home without learning barista skills, is the Breville Bambino Plus worth $499?", answer: "If you drink multiple milk-based espresso drinks daily and don't want to spend weeks learning manual steam wand technique, the Bambino Plus is one of the best machines under $500 for this exact use case. The automatic milk frother produces genuine microfoam — the kind you can pour latte art with — at the press of a button. At 2–3 lattes per day, you'll save roughly $10–$15/day vs buying from a cafe, meaning the machine pays for itself in about 5–6 weeks. The 3-second heat-up time means your morning routine adds only 2 minutes. The main limitation: the 54mm portafilter limits upgrade options if you later want professional-grade baskets." },
     ],
     reviews: [
       {
@@ -518,7 +518,7 @@ const baseProducts: Product[] = [
       { productId: "cm-delonghi-dedica", productName: "De'Longhi Dedica Arte EC885", productSlug: "delonghi-dedica-arte", searchVolume: 8200 },
     ],
     faq: [
-      { question: "Does the Ninja DualBrew leak?", answer: "Unfortunately, leaking is the #1 complaint. About 15% of reviewers report some form of leaking. Check the water reservoir seal and brew basket placement carefully during setup." },
+      { question: "If I'm considering the Ninja DualBrew CFP for its versatility, should I be worried about the leaking complaints I keep seeing online?", answer: "If you've read multiple reviews mentioning leaking, that concern is justified — approximately 15% of verified buyers report some form of leaking, making it the single most common complaint about this machine. The leaking typically comes from the water reservoir seal or improper brew basket seating. Some users resolve it by carefully reseating the reservoir after each fill; others have persistent issues requiring warranty replacement. If reliability is more important to you than versatility, the Breville Bambino Plus (espresso) or a standard drip brewer is more dependable. If you want the Ninja's unique ability to make both K-Cup-style pods AND full carafe coffee, order from a retailer with easy returns so you can test your unit." },
     ],
     reviews: [
       {
@@ -574,7 +574,7 @@ const baseProducts: Product[] = [
       { productId: "cm-breville-bambino", productName: "Breville Bambino Plus", productSlug: "breville-bambino-plus", searchVolume: 14000 },
     ],
     faq: [
-      { question: "Is the Breville Barista Express worth it?", answer: "For most home espresso beginners, yes. The built-in grinder eliminates the need to buy a separate grinder ($200-400 savings). The learning curve is real but rewarding. Best value all-in-one under $750." },
+      { question: "If I want to make cafe-quality espresso at home without buying a separate grinder, is the Breville Barista Express the best all-in-one machine under $750?", answer: "If you want a single machine that grinds and brews without buying a separate grinder ($200–$400 savings), the Breville Barista Express is the most recommended all-in-one under $750. The built-in conical burr grinder produces consistent grounds and the PID temperature control delivers reliable extraction. Expect a 2–3 week learning curve to dial in grind size, dose, and tamping pressure — but once you do, you'll pull shots that match most local cafes. If you want zero learning curve and primarily drink milk-based drinks, the Breville Bambino Plus ($499) with a separate grinder is simpler. If you're willing to invest time in learning, the Barista Express rewards you with more control and better long-term value." },
     ],
     reviews: [
       {
@@ -633,7 +633,7 @@ const baseProducts: Product[] = [
       { productId: "af-cosori-pro", productName: "Cosori Pro LE 5-Quart", productSlug: "cosori-pro-le", searchVolume: 9800 },
     ],
     faq: [
-      { question: "Is the Ninja dual basket air fryer worth it?", answer: "For families of 3+, absolutely. The ability to cook two things at different temperatures simultaneously is genuinely useful. For solo cooks, it's overkill — get a single basket model." },
+      { question: "If I cook dinner for a family of 4 and want to make protein and sides at the same time, is the Ninja DZ201 dual basket air fryer worth the counter space?", answer: "If you regularly cook for 3–5 people and want to air fry chicken (400°F) in one basket and vegetables (375°F) in the other simultaneously, the Ninja DZ201's dual baskets genuinely solve a real problem — the Smart Finish feature times both baskets to finish together. It replaces your oven for 70–80% of weeknight dinners and cooks faster. The trade-off: it's 14 inches wide and takes significant counter space. If you're cooking for 1–2 people, a single-basket air fryer (Cosori Pro at $89 or Philips compact) does the job at half the size and cost. For families, the dual basket capability justifies the footprint." },
     ],
     reviews: [
       {
@@ -687,7 +687,7 @@ const baseProducts: Product[] = [
       { productId: "af-ninja-dz201", productName: "Ninja Foodi DZ201", productSlug: "ninja-foodi-dz201", searchVolume: 9800 },
     ],
     faq: [
-      { question: "How long does the Cosori air fryer last?", answer: "Most reviewers report 1-2 years before coating issues appear. The appliance itself remains functional longer, but the basket may need replacement." },
+      { question: "If I'm on a tight budget and want an air fryer under $100 that I'll use daily, how long will the Cosori Pro actually last before the coating peels?", answer: "If you use the Cosori Pro LE daily, most reviewers report the non-stick basket coating starts showing wear at 10–14 months, with visible peeling by 18 months in heavy-use scenarios. The heating element and controls typically last 3+ years — the basket is the weak point. At $89, many buyers treat it as a semi-disposable appliance and rebuy when the coating fails. To extend basket life: avoid metal utensils, hand-wash instead of using the dishwasher, and use parchment liners. If you want a sub-$100 air fryer that holds up longer, the Instant Vortex Plus ($99) has a more durable basket coating, though cooking performance is nearly identical." },
     ],
     reviews: [
       {
@@ -741,7 +741,7 @@ const baseProducts: Product[] = [
       { productId: "af-ninja-dz201", productName: "Ninja Foodi DZ201", productSlug: "ninja-foodi-dz201", searchVolume: 7200 },
     ],
     faq: [
-      { question: "Is the Philips XXL air fryer worth the premium price?", answer: "If you regularly cook for 4+ people and value build quality, yes. The fat removal technology and even cooking are genuinely superior. But the Ninja DZ201 offers more versatility for less money." },
+      { question: "If I want an air fryer that can cook a whole chicken and will last 5+ years without the coating peeling, is the Philips XXL worth $300?", answer: "If you cook for 4+ people, regularly roast whole chickens (up to 5 lbs fit comfortably), and want an appliance built to last 5+ years, the Philips XXL justifies its $300 price tag — the build quality is commercial-grade, the Rapid Air technology produces the most even cooking of any air fryer we've tested, and the fat-removal tray captures measurable grease. Two-year-old units still look and perform like new. The trade-off: at $300, you're paying nearly 2x the Ninja DZ201 ($170) which offers dual baskets and more cooking versatility. If durability and capacity are your priorities over feature variety, the Philips is the buy-it-for-life choice in this category." },
     ],
     reviews: [
       {
@@ -796,7 +796,7 @@ const baseProducts: Product[] = [
       { productId: "af-cosori-pro", productName: "Cosori Pro LE", productSlug: "cosori-pro-le", searchVolume: 6500 },
     ],
     faq: [
-      { question: "Does the Instant Vortex window actually work?", answer: "It works for the first few minutes but fogs up quickly once steam builds. Most reviewers say it's a nice idea but not reliable for monitoring food." },
+      { question: "If I want to see my food cooking without opening the air fryer, does the Instant Vortex ClearCook window actually stay clear or does it fog up?", answer: "If you're buying the Instant Vortex Plus ClearCook specifically for the window, set realistic expectations — it stays clear for the first 2–3 minutes of cooking, then fogs up once moisture and steam build inside. For foods that release less moisture (frozen fries, dry-rubbed chicken wings), it stays clearer longer. For anything with sauce or high water content, it fogs almost immediately. Most reviewers say the window is a nice-to-have but not a reliable way to monitor food — you'll still need to open the basket to check doneness. The actual cooking performance at the $99–$120 price point is solid and the OdorErase feature genuinely reduces lingering fried-food smell in apartments." },
     ],
     reviews: [
       {
@@ -860,8 +860,8 @@ const baseProducts: Product[] = [
       { title: "AirPods Pro vs Galaxy Buds — Full Comparison", url: "https://aversusb.net/compare/airpods-pro-vs-galaxy-buds", source: "aversusb.net" },
     ],
     faq: [
-      { question: "Are AirPods Pro 2 worth it for Android?", answer: "No. You lose spatial audio, adaptive transparency, automatic switching, and ear tip fit test. Get the Sony XM5 or Samsung Galaxy Buds instead." },
-      { question: "How long do AirPods Pro 2 last?", answer: "Battery per charge: 6 hours. Product lifespan: most users report noticeable battery degradation after 18-24 months. Apple offers battery service for $49 per earbud." },
+      { question: "If I use an Android phone, should I still buy AirPods Pro 2, or am I wasting money on features that won't work?", answer: "If you use an Android phone, you're paying $249 for AirPods Pro 2 while losing spatial audio, adaptive transparency, automatic device switching, ear tip fit test, and Find My integration — roughly 40% of the features that justify the price. The noise cancellation and sound quality still work, but you're getting a $150 experience at a $249 price. For Android users, the Sony WF-1000XM5 ($279, frequently on sale for $229) delivers better sound quality with LDAC codec support, equivalent ANC, and full feature access. Samsung Galaxy Buds3 Pro ($249) are the best choice if you specifically own a Samsung Galaxy phone." },
+      { question: "If I buy AirPods Pro 2 today, how many years will they last before the battery degrades to the point where I need to replace them?", answer: "If you use AirPods Pro 2 for 3–4 hours daily, expect noticeable battery degradation (dropping from 6 hours to 4–4.5 hours per charge) after 18–24 months — lithium-ion batteries in small earbuds degrade faster than phone batteries. Apple offers battery service at $49 per earbud ($98 total) or $29 with AppleCare+. Most users replace AirPods every 2–3 years, making the effective annual cost $83–$125/year. If long-term value matters to you, earbuds with replaceable batteries don't exist yet, but the Sony WF-1000XM5 and Jabra Elite 10 show slightly better battery longevity in 12-month tests." },
     ],
     reviews: [
       {
@@ -919,7 +919,7 @@ const baseProducts: Product[] = [
       { title: "AirPods Pro vs Galaxy Buds — Full Comparison", url: "https://aversusb.net/compare/airpods-pro-vs-galaxy-buds", source: "aversusb.net" },
     ],
     faq: [
-      { question: "Sony XM5 vs AirPods Pro 2 — which sounds better?", answer: "Sony XM5 wins on pure audio quality, especially with LDAC-compatible Android phones. AirPods Pro 2 wins on convenience and ecosystem integration for iPhone users." },
+      { question: "If I care most about sound quality for music and I own an Android phone, should I buy the Sony WF-1000XM5 or AirPods Pro 2?", answer: "If sound quality is your top priority and you use an Android phone, the Sony WF-1000XM5 is the clear winner. With LDAC codec support on Android, the XM5 delivers near-wired audio quality that's audibly richer — wider soundstage, deeper bass, and more detailed highs than AirPods Pro 2. The AirPods Pro 2 don't support LDAC (Apple uses AAC, which is lower bandwidth), and you lose spatial audio, adaptive transparency, and ecosystem features on Android. If you own an iPhone and value seamless device switching, Siri integration, and Find My over absolute audio fidelity, the AirPods Pro 2 are more convenient daily. But purely for music listening quality, Sony wins regardless of phone platform." },
     ],
     reviews: [
       {
@@ -978,7 +978,7 @@ const baseProducts: Product[] = [
       { title: "AirPods Pro vs Galaxy Buds — Full Comparison", url: "https://aversusb.net/compare/airpods-pro-vs-galaxy-buds", source: "aversusb.net" },
     ],
     faq: [
-      { question: "Are Galaxy Buds3 Pro worth it for non-Samsung phones?", answer: "They work well on any Android phone, but you lose some Galaxy AI features. For non-Samsung Android, the Sony XM5 is generally a better value." },
+      { question: "If I own a Google Pixel or OnePlus phone (not Samsung), are the Galaxy Buds3 Pro still worth buying, or should I get something else?", answer: "If you don't own a Samsung Galaxy phone, you lose Galaxy AI features (real-time translation, seamless Galaxy Watch integration, 360 Audio head tracking), which are about 25% of what makes these earbuds premium. The core ANC, sound quality, and call quality still work well on any Android phone. However, for non-Samsung Android users, the Sony WF-1000XM5 at the same $249 price gives you better sound quality (LDAC support, wider soundstage), equivalent ANC, and no ecosystem-locked features. The Galaxy Buds3 Pro are specifically designed for Samsung Galaxy owners — if that's not you, the Sony is the better investment." },
     ],
     reviews: [
       {
@@ -1033,7 +1033,7 @@ const baseProducts: Product[] = [
       { productId: "we-airpods-pro-2", productName: "Apple AirPods Pro 2", productSlug: "apple-airpods-pro-2", searchVolume: 8900 },
     ],
     faq: [
-      { question: "Are Jabra Elite 10 good for phone calls?", answer: "Best-in-class for calls. The 6-mic array with wind protection makes them the top choice for people who take frequent calls in various environments." },
+      { question: "If I take 3+ hours of phone and video calls per day and need earbuds that make me sound professional even outdoors or in noisy offices, are the Jabra Elite 10 the best option?", answer: "If call quality is your primary use case — remote work calls, Zoom meetings, walking-and-talking outdoors — the Jabra Elite 10 are the best earbuds for voice clarity in 2026. The 6-microphone array with wind protection outperforms AirPods Pro 2 and Sony XM5 in noisy environments, and colleagues consistently report clearer voice quality than laptop or phone microphones. For 8+ hour comfort during long work days, the semi-open design reduces ear fatigue better than the sealed fit of Sony or Apple earbuds. The trade-off: ANC is good but not class-leading (AirPods Pro 2 and Sony XM5 block more noise), and bass response is lighter than competitors. If calls and comfort are priorities 1 and 2, Jabra wins. If music and ANC come first, look at Sony or Apple." },
     ],
     reviews: [
       {
@@ -1093,8 +1093,8 @@ const baseProducts: Product[] = [
       { productId: "mt-casper-original", productName: "Casper Original Mattress", productSlug: "casper-original", searchVolume: 22000 },
     ],
     faq: [
-      { question: "Is the Purple mattress good for side sleepers?", answer: "Generally no. The Original is medium-firm and most side sleepers find it too firm for comfortable shoulder/hip support. The Purple Plus or Purple Premier 3 are better options for side sleepers." },
-      { question: "Does the Purple mattress sleep cool?", answer: "Yes — this is its biggest strength. The GelFlex Grid allows constant airflow, and the gel material doesn't trap heat like memory foam. It's one of the coolest-sleeping mattresses available." },
+      { question: "If I'm a side sleeper who wakes up with shoulder and hip pain, is the Purple Original mattress firm enough or too firm for me?", answer: "If you sleep primarily on your side and weigh under 200 lbs, the Purple Original is likely too firm for you — its medium-firm GelFlex Grid doesn't provide enough pressure relief for shoulders and hips in the side-sleeping position, and most side sleepers report discomfort within the first week. The Purple Plus ($1,799) adds a foam comfort layer that provides the pressure relief side sleepers need while keeping the GelFlex Grid cooling. If you're a back sleeper or combination sleeper (back + side), the Original at $1,399 works well. If you're exclusively a side sleeper, skip the Original and look at the Purple Plus or a memory foam mattress with a softer comfort layer." },
+      { question: "If I'm a hot sleeper who sweats through memory foam mattresses, will the Purple mattress actually sleep cooler?", answer: "If you've tried memory foam mattresses (Tempur-Pedic, Casper, Nectar) and wake up sweating, the Purple's GelFlex Grid is a genuinely different technology — the grid structure has open air channels that allow constant airflow, and the hyper-elastic polymer doesn't trap body heat the way foam does. In thermal testing, the Purple sleeps 3–5°F cooler than comparable memory foam mattresses. It's consistently rated as one of the coolest-sleeping mattresses available. If heat is your primary complaint about your current mattress, the Purple solves that specific problem better than any foam mattress can. The only cooler options are innerspring/hybrid mattresses with minimal foam layers, but those sacrifice pressure relief." },
     ],
     reviews: [
       {
@@ -1150,7 +1150,7 @@ const baseProducts: Product[] = [
       { productId: "mt-purple-4", productName: "Purple Original", productSlug: "purple-mattress-original", searchVolume: 22000 },
     ],
     faq: [
-      { question: "How long does the Casper Original last?", answer: "Based on reviews, expect 2-3 years of peak comfort. Sagging complaints spike significantly after 18 months. The 10-year warranty covers defects but has a 1-inch sag requirement for claims." },
+      { question: "If I'm buying a Casper Original for my first apartment and need it to last 3+ years, will it hold up or start sagging?", answer: "If you're under 200 lbs and sleep on your back or stomach, expect 2–3 years of good comfort before noticeable sag develops — reviewers report a significant spike in sagging complaints after 18 months, particularly for side sleepers and heavier individuals who compress the foam more. The 10-year warranty exists but requires a measured 1-inch sag (which is deeper than most people realize) to file a successful claim, and reviews suggest Casper's claims process is slow. If you need a mattress that holds its support for 5+ years, consider the Saatva Classic — its innerspring construction resists body impressions longer than all-foam designs like the Casper." },
     ],
     reviews: [
       {
@@ -1205,7 +1205,7 @@ const baseProducts: Product[] = [
       { productId: "mt-casper-original", productName: "Casper Original", productSlug: "casper-original", searchVolume: 11000 },
     ],
     faq: [
-      { question: "Is Saatva worth the price?", answer: "For the quality and service, most reviewers say yes. The white-glove delivery, 365-night trial, and lifetime warranty add significant value. The innerspring construction also tends to last longer than all-foam alternatives." },
+      { question: "If I want a luxury-feeling mattress with free white-glove delivery and a real warranty, is the Saatva Classic worth $1,400–$2,000 over a $900 Casper?", answer: "If you value the experience of a traditional innerspring mattress (bouncy, cool-sleeping, firm support) and want the premium buying experience — free in-room setup, old mattress removal, a 365-night trial, and a lifetime warranty — the Saatva Classic justifies the $500–$1,100 premium over all-foam competitors. The innerspring coil construction also lasts significantly longer than foam mattresses (5–8 years of consistent support vs 2–3 years for all-foam). If you prefer the hugging, pressure-relieving feel of memory foam, Saatva won't feel right regardless of price — it's a fundamentally different sleep surface. For back and stomach sleepers who want firm support and sleep cool, Saatva is the best-value luxury mattress available online." },
     ],
     reviews: [
       {
@@ -1262,7 +1262,7 @@ const baseProducts: Product[] = [
       { productId: "mt-casper-original", productName: "Casper Original", productSlug: "casper-original", searchVolume: 14000 },
     ],
     faq: [
-      { question: "Is the Nectar Premier forever warranty legitimate?", answer: "The warranty exists but enforcement is difficult. Many reviewers report slow customer service, denied claims, and months-long resolution times. The warranty is only as good as the company behind it." },
+      { question: "If I'm attracted to Nectar's 'forever warranty' and 365-night trial, should I trust those claims or are there hidden catches?", answer: "If the forever warranty is a deciding factor in your purchase, set realistic expectations: the warranty exists on paper but enforcement is difficult. A significant number of reviewers report denied claims (often citing 'normal wear' for visible sagging), response times of 2–4 months, and requirements to keep the original receipt and use a specific bed frame. The 365-night trial is more reliable — most users report smooth returns within the trial period, though you may pay for return shipping ($50–$100). If warranty reliability matters to you, Saatva's lifetime warranty has consistently better customer service reviews, and Purple offers a 10-year warranty with a more straightforward claims process. Buy the Nectar Premier for its $1,099 price and memory foam comfort, not for the warranty promises." },
     ],
     reviews: [
       {
