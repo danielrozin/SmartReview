@@ -1435,16 +1435,16 @@ export const productsBatch3: Product[] = [
     ],
     faq: [
       {
-        question: "What is new in the Amazon Echo 5th Generation?",
-        answer: "The 5th Gen adds improved audio hardware with a larger woofer for better bass, local voice processing for faster and more private commands, Wi-Fi 6 support, and updated Alexa software with better contextual conversation abilities.",
+        question: "If I have an older 3rd or 4th Gen Echo that still works, what specifically does the 5th Gen add that would justify spending $89-$99 on a replacement?",
+        answer: "If you're on a 3rd Gen Echo, the 5th Gen upgrade adds a noticeably larger 2.4-inch woofer that produces fuller bass and fills a room better, local voice processing that responds to commands faster and keeps more audio processing on-device for privacy, Wi-Fi 6 for more reliable connectivity in busy smart home networks, and improved eero mesh Wi-Fi extension. If you have the 4th Gen, the improvements are more incremental — better Alexa contextual conversation handling and the Wi-Fi 6 upgrade. For 3rd Gen owners with 5+ smart home devices, the upgrade is worth the $89-$99. For 4th Gen owners, it's harder to justify unless your current unit is showing its age.",
       },
       {
-        question: "Is Amazon Echo good for music?",
-        answer: "It's acceptable for background music and casual listening but not ideal for serious music enjoyment. For better sound at a similar price, the Sonos Era 100 is significantly better for audio quality. The Echo's strength is smart home integration and Alexa functionality, not audio fidelity.",
+        question: "If I want a speaker primarily for playing music in my kitchen while cooking, will the Amazon Echo 5th Gen sound good enough or should I spend more on a Sonos?",
+        answer: "If you're looking for casual background music while cooking — podcasts, playlists at moderate volume, news briefings — the Echo 5th Gen at $89-$99 handles this adequately with its 2.4-inch woofer and dual tweeters. If you actually care about music fidelity and want to hear instrument separation, bass depth, and vocal clarity while cooking, the Sonos Era 100 at $199-$249 is a dramatically better speaker that fills a kitchen with richer, more detailed sound. The Echo's real value is smart home control, Alexa shopping lists, timers, and voice commands — it's a smart home hub that also plays music, not a music speaker that also does smart home.",
       },
       {
-        question: "Can Echo speakers be used as a multi-room audio system?",
-        answer: "Yes — multiple Echo speakers can be grouped together in the Alexa app for synchronized multi-room audio. This is one of Echo's genuine strengths, especially for Amazon Music or Spotify playback across a whole home.",
+        question: "If I want music playing in every room of my house simultaneously, can I set up multiple Echo speakers as a whole-home audio system for under $500?",
+        answer: "If you have a 3-4 room home, you can place an Echo 5th Gen ($89-$99 each) in each room and group them in the Alexa app for synchronized multi-room playback — total cost around $270-$400 for three to four rooms. This is one of Echo's genuine strengths and works seamlessly with Amazon Music, Spotify, and Apple Music. The audio quality in each room is adequate for background listening but won't match a Sonos multi-room setup (which costs $600-$1,200+ for the same coverage). For the price of one Sonos Era 300, you can outfit 4-5 rooms with Echo speakers and have full voice control in every room plus smart home integration throughout the house.",
       },
     ],
     reviews: [
@@ -1602,16 +1602,16 @@ export const productsBatch3: Product[] = [
     ],
     faq: [
       {
-        question: "Does HomePod 2 work with Spotify?",
-        answer: "Not natively. You must AirPlay from an Apple device running the Spotify app. This works but means your iPhone or iPad must be active and connected. HomePod natively supports Apple Music, Amazon Music, Pandora, and iHeartRadio.",
+        question: "If I use Spotify as my main music service and don't want to switch to Apple Music, can I still use the HomePod 2 without friction?",
+        answer: "If you're a Spotify subscriber, the HomePod 2 does not support native Spotify playback — you cannot say 'Hey Siri, play my Spotify playlist.' You must AirPlay from your iPhone or iPad running the Spotify app, which means your phone needs to stay connected and nearby. This adds a step every time you want to play music and occasionally drops the connection. If you want voice-activated Spotify, the Sonos Era 300 ($399-$449) and Amazon Echo 5th Gen ($89-$99) both support native Spotify control by voice. The HomePod 2 natively supports Apple Music, Amazon Music, Pandora, and iHeartRadio. For Spotify-primary households, this $279-$299 speaker adds daily friction that cheaper alternatives avoid.",
       },
       {
-        question: "Can HomePod 2 work as a TV speaker for Apple TV?",
-        answer: "Yes — HomePod pairs seamlessly with Apple TV 4K using ARC or eARC, functioning as a stereo pair (with two HomePods) or as a single speaker. The result is excellent — spatial audio in Dolby Atmos content is particularly impressive.",
+        question: "If I have an Apple TV 4K and want to skip buying a soundbar, can I pair one or two HomePod 2s as my TV audio system?",
+        answer: "If you want to avoid a separate soundbar, a single HomePod 2 connects to your Apple TV 4K via ARC or eARC and delivers noticeably richer sound than built-in TV speakers — deeper bass and wider soundstage. For a proper stereo home theater setup, two HomePod 2s ($558-$598 total) create a stereo pair with Dolby Atmos spatial audio that multiple reviewers say rivals budget soundbars costing $300-$500. The setup is automatic through the Apple Home app. The limitation is that this only works with Apple TV 4K — you cannot connect HomePods to a Roku, Fire TV, or non-Apple streaming device. For Apple TV households, two HomePods is a compelling alternative to a $400-$600 soundbar setup.",
       },
       {
-        question: "Is HomePod 2 better than HomePod mini?",
-        answer: "Significantly yes for audio quality — the full HomePod 2 is much louder, deeper bass, and has the multi-driver array for spatial audio. The mini is for small rooms and desk use. The HomePod 2 is for living rooms and dedicated listening areas.",
+        question: "If I have a HomePod mini in my bedroom and want something with more bass and volume for my living room, is the full HomePod 2 worth 3x the price?",
+        answer: "If your living room is larger than 150 square feet, the HomePod mini's small driver struggles to fill the space with adequate volume and produces thin bass. The HomePod 2 at $279-$299 (vs the mini at $99) has a high-excursion woofer, an array of five tweeters, and room-sensing spatial audio that dynamically adapts to your living room's acoustics. The bass extension, maximum volume, and spatial imaging are in a completely different category from the mini. For a bedroom, desk, or bathroom, the mini is appropriately sized and priced. For a living room or dedicated music listening area where you want to feel the bass and hear instruments placed in space around you, the full HomePod 2 justifies the 3x price difference in acoustic performance alone.",
       },
     ],
     reviews: [
@@ -1769,16 +1769,16 @@ export const productsBatch3: Product[] = [
     ],
     faq: [
       {
-        question: "Is the Google Nest Hub Max still worth buying in 2025?",
-        answer: "For Google ecosystem users who want a kitchen display, it remains useful but the hardware feels dated. If Google releases a new Nest Hub Max, wait for that. Otherwise, for display-focused use cases with Google services it's still the best option available.",
+        question: "If I want a smart display for my kitchen counter in 2025, should I buy the Google Nest Hub Max even though the hardware hasn't been updated since 2019?",
+        answer: "If you're a Google Workspace and Android household that uses Google Calendar, Google Photos, and YouTube daily, the Nest Hub Max at $199-$229 is still the most integrated kitchen display for those services — recipes on screen, family calendar events showing automatically, and Google Photos cycling family memories. The 2019 hardware runs Google Assistant adequately for voice commands and video calls. If you can wait, Google may release updated hardware with a better display resolution (the current 1280x800 looks dated next to modern tablets), faster processor, and Wi-Fi 6. If you need a kitchen display now and use Google services, it works fine for its intended purpose. If you use Amazon services instead, the Echo Show 10 at $249 has newer hardware and Alexa's broader smart home compatibility.",
       },
       {
-        question: "Can Nest Hub Max be used for video calls?",
-        answer: "Yes — it has a 6.5MP camera and integrates with Google Meet directly. You can take video calls hands-free which is great in the kitchen. It also supports Duo calling. The camera quality is acceptable for video calls but not outstanding.",
+        question: "If I work from home and want to take Google Meet calls from my kitchen while preparing lunch, does the Nest Hub Max camera and microphone handle that well?",
+        answer: "If you take casual calls while multitasking in the kitchen, the Nest Hub Max's 6.5MP camera and built-in microphone let you join Google Meet calls hands-free — you can chop vegetables while talking, and the camera's Face Match auto-frames to follow you as you move around. The audio pickup is adequate for kitchen-distance conversation (3-5 feet from the speaker). For professional calls where background noise matters, the dual 18W woofer and 10W tweeter can pick up kitchen sounds like running water or clattering dishes. The camera quality is acceptable but noticeably lower resolution than a modern laptop webcam. For planned professional meetings, a laptop with a dedicated webcam is better — for informal calls while cooking, the Nest Hub Max works well at $199-$229.",
       },
       {
-        question: "How does Google Assistant compare to Alexa for smart home control?",
-        answer: "Google Assistant understands natural language and complex follow-up questions better than Alexa. Alexa has broader third-party device compatibility and more skills. For conversation quality, Google wins. For raw smart home device support breadth, Alexa wins.",
+        question: "If I have a mix of smart home devices from different brands and want the assistant that understands complex voice commands most reliably, should I go with Google Assistant or Alexa?",
+        answer: "If you ask multi-step questions like 'turn off the living room lights and set the bedroom thermostat to 68 and play jazz music,' Google Assistant parses complex natural language and follow-up questions more accurately than Alexa — you can say 'actually make it 70' and Google understands the context without repeating the full command. If you have a large number of third-party smart home devices (especially Zigbee devices, obscure brands, and niche IoT gadgets), Alexa supports over 140,000 compatible devices and has more third-party skills for specific device control. For a household with 5-15 mainstream smart home devices (Philips Hue, Nest, Ring, smart plugs), both work well. For complex conversational commands, Google wins. For maximum device compatibility breadth, Alexa wins.",
       },
     ],
     reviews: [
@@ -1936,16 +1936,16 @@ export const productsBatch3: Product[] = [
     ],
     faq: [
       {
-        question: "Does the Sonos Era 300 sound better than HomePod 2?",
-        answer: "For spatial audio content on Apple Music or Tidal, the Era 300 is exceptional and arguably better. For standard stereo listening, both are outstanding but have different sound signatures — Sonos tends toward neutral accuracy while HomePod leans warmer. It depends on personal preference.",
+        question: "If I listen to Dolby Atmos tracks on Apple Music and want the most immersive spatial audio from a single speaker, does the Sonos Era 300 at $399-$449 actually sound better than the HomePod 2 at $279-$299?",
+        answer: "If you're playing Dolby Atmos Music content specifically, the Era 300's six-driver array (four upward-firing tweeters plus side-firing drivers) creates a more convincing three-dimensional soundstage than the HomePod 2 — instruments placed above and behind you are more distinctly positioned. The Era 300 was architecturally designed for spatial audio as its primary purpose. For standard stereo music, the difference narrows — the HomePod 2 produces warmer bass and more room-adaptive sound via its S9 chip, while the Sonos leans toward neutral studio accuracy. The $100-$150 price premium for the Era 300 is justified if Dolby Atmos content on Apple Music or Tidal is a significant part of your listening. If most of your library is standard stereo, the HomePod 2 delivers comparable quality for less.",
       },
       {
-        question: "Can the Sonos Era 300 be used as a surround sound speaker?",
-        answer: "Yes — two Era 300s can be configured as rear surround speakers in a Sonos Arc or Beam home theater system, providing Dolby Atmos surround from behind the listening position. This is one of the Era 300's most compelling use cases.",
+        question: "If I already own a Sonos Arc soundbar and want to add rear surround speakers for Dolby Atmos movies, can I use two Era 300s as my rears instead of buying dedicated surrounds?",
+        answer: "If you have a Sonos Arc and want genuine Dolby Atmos surround with height channels from behind, two Era 300s ($798-$898 for the pair) are the strongest rear surround option in the Sonos ecosystem. The upward-firing drivers add a convincing overhead audio dimension that the smaller Sonos One or Era 100 surrounds cannot provide. Users report that helicopters, rain, and overhead effects in Atmos movies feel genuinely directional. Pairing is done through the Sonos app and takes about 5 minutes. The total Arc + two Era 300s system ($1,698-$1,798) rivals dedicated home theater systems costing $2,000-$3,000. If budget is a concern, two Sonos Era 100s ($396-$498 for the pair) work as rears but without the height-channel spatial audio.",
       },
       {
-        question: "Is the Sonos Era 300 worth the upgrade from Era 100?",
-        answer: "Only if you use Apple Music or Tidal for spatial audio and the $250 premium doesn't deter you. For stereo listeners on Spotify, the Era 100 sounds excellent at a much lower price and the upgrade isn't justified by the sonic difference.",
+        question: "If I currently have a Sonos Era 100 and mainly use Spotify, is spending an extra $200-$250 on the Era 300 going to make a noticeable difference?",
+        answer: "If you primarily use Spotify, the Era 300's signature feature — Dolby Atmos spatial audio — is completely unavailable since Spotify only streams in stereo. The six-driver architecture in the Era 300 still produces a wider, more detailed stereo image than the Era 100, but the difference in standard stereo playback is not $200-$250 dramatic. The Era 100 at $199-$249 already sounds excellent for a single speaker. The upgrade to Era 300 at $399-$449 is justified only if you subscribe to Apple Music or Tidal and regularly listen to their Dolby Atmos Music catalog, or if you plan to use two Era 300s as rear Atmos surrounds in a Sonos home theater. For Spotify stereo listening, keep the Era 100 and spend the savings elsewhere.",
       },
     ],
     reviews: [
@@ -2106,16 +2106,16 @@ export const productsBatch3: Product[] = [
     ],
     faq: [
       {
-        question: "Is the Logitech G Pro X Superlight 2 worth it over the Superlight 1?",
-        answer: "Yes for the HERO 2 sensor upgrade alone. The sensor accuracy improvement is measurable in flick shot consistency. The switch from mechanical to optical clicks also virtually eliminates double-click issues that some Superlight 1 units developed over time.",
+        question: "If I already own the original Superlight 1 and it's working fine, is spending another $149-$159 on the Superlight 2 going to actually improve my aim in Valorant or CS2?",
+        answer: "If you play competitive FPS at a high rank and notice micro-inconsistencies in flick shots, the HERO 2 sensor upgrade from 25K to 32K DPI with zero smoothing or prediction produces measurably tighter tracking at high speeds — competitive players report more consistent flick shot landings after switching. The upgrade from mechanical to optical click switches also eliminates the double-click issue that affected some Superlight 1 units after 6-12 months of heavy use. If you're playing casually or at mid-level ranks, the Superlight 1's HERO 25K sensor is still excellent and the $149-$159 upgrade cost won't translate into noticeable rank improvement. For tournament-level or Immortal+ players, the sensor and switch improvements are worth the reinvestment.",
       },
       {
-        question: "Does the G Pro X Superlight 2 have RGB?",
-        answer: "No — there is no RGB lighting on this mouse. This was an intentional design decision to reduce weight. If RGB is important to your setup, look at the Logitech G Pro X or G502 X Plus.",
+        question: "If I have a full RGB gaming setup with matching Logitech peripherals, will the G Pro X Superlight 2 look out of place without any lighting?",
+        answer: "If you have a Logitech G keyboard and headset synced through G Hub with RGB profiles, the Superlight 2 will be the one dark spot on your desk — it has zero RGB lighting by design to keep weight at 60g. The all-white or all-black shell is intentionally plain. If matching your RGB aesthetic matters, the Logitech G502 X Plus ($159) has full LIGHTSYNC RGB and weighs 106g, or the G Pro X ($129) offers RGB at 80g. Both have capable sensors but are heavier. The Superlight 2 sacrifices all visual customization for minimum weight — it's built for competitive performance, not desk aesthetics.",
       },
       {
-        question: "What hand size and grip style is G Pro X Superlight 2 best for?",
-        answer: "The symmetrical shape accommodates claw and fingertip grip most naturally. For palm grip, right-handed users with medium to large hands will find it comfortable. Left-handed users should note this is a right-handed design.",
+        question: "If I have large hands (20cm+) and use a relaxed palm grip, will the Superlight 2's low-profile shape feel too small or flat compared to an ergonomic mouse?",
+        answer: "If you have hands measuring 20cm or larger and use a full palm grip where your entire palm rests on the mouse, the Superlight 2's symmetrical low-profile shape may feel too flat — the rear hump doesn't fill the palm cavity the way ergonomic mice like the Razer DeathAdder V3 Pro ($149-$159) do. The Superlight 2 is most comfortable for claw and fingertip grip styles where your palm partially or fully lifts off the mouse body. For palm grip with medium to large hands, it works but you may feel less supported during long sessions. If you're switching from a tall ergonomic mouse and use palm grip, test it before committing — the DeathAdder V3 Pro at the same price has a dedicated ergonomic hump designed specifically for right-handed palm grip with larger hands.",
       },
     ],
     reviews: [
@@ -2273,16 +2273,16 @@ export const productsBatch3: Product[] = [
     ],
     faq: [
       {
-        question: "Is the Razer DeathAdder V3 Pro better than the V2 Pro?",
-        answer: "Yes — significantly. The V3 Pro is 20g lighter, has a more refined ergonomic shape, upgraded Focus Pro 30K sensor (vs Focus Pro 30K with better filtering), optical switches instead of mechanical, and 90-hour battery vs 70-hour. It's a meaningful generational upgrade.",
+        question: "If I've been using the Razer DeathAdder V2 Pro for two years and it's developing double-click issues, is the V3 Pro worth the $149-$159 replacement cost or should I look at competitors?",
+        answer: "If your V2 Pro is double-clicking (a common issue with its mechanical switches after heavy use), the V3 Pro solves this with Gen-3 optical switches that are physically incapable of double-clicking — the actuation is light-based rather than metal contact. Beyond fixing that specific problem, you get a 20g weight reduction (63g vs 83g), a refined ergonomic shape that better supports the thumb and pinky, the Focus Pro 30K sensor with improved motion filtering, and 90-hour battery life (vs 70 hours on the V2 Pro). The upgrade also adds USB-C charging. At $149-$159, it's a meaningful generational improvement over the V2 Pro. The Logitech G Pro X Superlight 2 at the same price is the main competitor — choose based on whether you prefer ergonomic (DeathAdder) or symmetrical (Superlight) shape.",
       },
       {
-        question: "Is the DeathAdder V3 Pro good for FPS gaming?",
-        answer: "Excellent. The Focus Pro 30K sensor has flawless tracking, the ergonomic shape supports precise control during flick shots, and the wireless performance is tournament-grade. Many professional CS2 and Valorant players have used this mouse.",
+        question: "If I play Valorant and CS2 competitively at Diamond+ rank and want a mouse that gives me an edge in clutch situations, how does the DeathAdder V3 Pro perform for precise flick shots?",
+        answer: "If you play competitive FPS at Diamond or above, the DeathAdder V3 Pro's Focus Pro 30K sensor tracks flick shots with zero negative acceleration and zero jitter at speeds up to 750 IPS — meaning your crosshair goes exactly where your hand moves, even during fast 180-degree turns. The ergonomic right-hand shape supports precise micro-corrections during clutch spray control because your palm sits naturally without tension. Multiple professional CS2 and Valorant players use this mouse in tournaments. HyperSpeed wireless polling at 1000Hz produces tournament-grade latency that's imperceptible from wired in blind testing. At 63g, it's light enough for extended sessions without wrist fatigue. The main alternative at this performance tier is the Logitech G Pro X Superlight 2 (60g, symmetrical shape) — choose based on grip preference.",
       },
       {
-        question: "Can the DeathAdder V3 Pro be used wired?",
-        answer: "Yes — it comes with a USB-C SpeedFlex cable for wired use or charging while playing wireless. The SpeedFlex cable is notably flexible and lightweight, minimizing the drag that traditional mouse cables add.",
+        question: "If I'm in the middle of a ranked match and my battery dies, can I plug in and keep playing without interruption or lag penalty?",
+        answer: "If your battery runs low mid-match, the included USB-C SpeedFlex cable lets you plug in instantly and continue playing in wired mode with zero interruption — the switch from wireless to wired is seamless and requires no software restart. The SpeedFlex cable is specifically designed to be lightweight and flexible, producing minimal drag compared to standard mouse cables, so your aim feel doesn't change dramatically when switching. With 90-hour battery life, running out mid-match is unlikely with occasional charging, but the wired fallback means you're never stranded. You can also charge while playing wireless if you prefer, though most users find the cable light enough that wired mode feels nearly identical.",
       },
     ],
     reviews: [
@@ -2440,16 +2440,16 @@ export const productsBatch3: Product[] = [
     ],
     faq: [
       {
-        question: "Is the SteelSeries Aerox 5 Wireless good for FPS games?",
-        answer: "It's good but not optimal for pure FPS use. The nine buttons are redundant for FPS games and the TrueMove Air sensor, while solid, ranks below the HERO 2 and Focus Pro 30K. For FPS, the Superlight 2 or DeathAdder V3 Pro are better choices. For MMO and battle royale, the Aerox 5 shines.",
+        question: "If I split my gaming time between Warzone, FFXIV, and League of Legends and want one mouse for everything, is the Aerox 5 Wireless a good all-rounder at $109-$129?",
+        answer: "If you play multiple genres and need button flexibility, the Aerox 5 at $109-$129 is one of the strongest all-rounders available. The nine programmable buttons handle FFXIV skill rotations and League ability binds perfectly, while the 74g weight and TrueMove Air sensor (18,000 DPI) are adequate for Warzone gunfights. The tradeoff is that the TrueMove Air sensor shows slight smoothing at very high speeds — detectable in sensor testing but imperceptible for most players below professional competitive level. If you primarily play competitive FPS and rarely touch MMOs, the Superlight 2 ($149-$159) or DeathAdder V3 Pro ($149-$159) have superior sensors for that specific purpose. For a one-mouse solution across FPS, MMO, and MOBA at a $30-$50 lower price, the Aerox 5 covers all three genres well.",
       },
       {
-        question: "Does the honeycomb design of the Aerox 5 cause problems?",
-        answer: "Functionally, no — the IP54 rating means it handles sweat and accidental spills well. The main practical concern is cleanliness: the holes collect dust and debris over time. Using compressed air weekly and a brush monthly keeps it hygienic.",
+        question: "If I eat snacks at my desk while gaming and tend to have sweaty hands, will the Aerox 5's honeycomb holes cause hygiene or durability problems?",
+        answer: "If you eat at your desk, crumbs will inevitably fall into the honeycomb perforations and lodge inside the shell — this is the most common complaint from Aerox 5 owners. A can of compressed air ($5-$8) used weekly and a soft brush monthly keeps it manageable. For sweaty hands, the IP54 water resistance rating actually helps — sweat drains through the holes rather than pooling on the surface, and the internal electronics are protected from moisture. One user reported a full glass of water spilling directly on the mouse and it survived without damage. The functional durability is solid; the aesthetic cleanliness requires more maintenance than a solid-shell mouse. If low-maintenance hygiene matters to you, the Logitech G Pro X Superlight 2 or DeathAdder V3 Pro have sealed shells that wipe clean in seconds.",
       },
       {
-        question: "How does the Aerox 5 battery life compare to other gaming mice?",
-        answer: "The 180-hour battery is exceptional — among the longest in any gaming mouse. Compared to Logitech LIGHTSPEED (70 hours) and Razer HyperSpeed (90 hours), the Aerox 5's wireless longevity is outstanding, though it achieves this partly through a lighter wireless protocol.",
+        question: "If I hate charging my mouse and want something I can forget about for weeks, how does the Aerox 5's 180-hour battery compare to the Superlight 2 and DeathAdder V3 Pro?",
+        answer: "If you game 3-4 hours daily, the Aerox 5's 180-hour battery lasts roughly 6-7 weeks between charges — you can genuinely forget it needs charging. By comparison, the Logitech G Pro X Superlight 2 lasts about 70 hours (2.5 weeks at the same usage), and the Razer DeathAdder V3 Pro lasts about 90 hours (3 weeks). The Aerox 5 achieves this partly through its Quantum 2.0 wireless protocol, which is slightly less aggressive in polling than Logitech's LIGHTSPEED. For the vast majority of gamers, this latency difference is imperceptible. At $109-$129, the Aerox 5 offers the longest time between charges of any competitive gaming mouse, which is a real quality-of-life advantage if charging interrupts your flow.",
       },
     ],
     reviews: [
@@ -2607,16 +2607,16 @@ export const productsBatch3: Product[] = [
     ],
     faq: [
       {
-        question: "Why do professional CS2 players use Zowie mice?",
-        answer: "Zowie mice offer several things pro players value: plug-and-play on any computer without software installation (critical for LAN tournaments), hardware-stored settings that never change between computers, and the EC shape that has been refined over 15 years specifically for competitive FPS play.",
+        question: "If I compete in local LAN tournaments and need a mouse that works identically on every tournament PC without installing software, why do pros recommend Zowie over Logitech or Razer?",
+        answer: "If you play LAN events where you sit down at unfamiliar PCs, the Zowie EC2-CW is plug-and-play — you insert the wireless dongle and your DPI, polling rate, and all settings are stored in the mouse's onboard memory with zero software required. Logitech G Hub and Razer Synapse need installation to access custom profiles, and if tournament PCs don't have them (which is common), your settings revert to defaults mid-match. Zowie's four hardware DPI presets (400, 800, 1600, 3200) cover the most common competitive settings, and the 3200Hz polling rate option provides the lowest input latency available. The EC2 shape has been refined over 15 years based on professional CS player feedback, making it one of the most ergonomically proven FPS mouse shapes in existence.",
       },
       {
-        question: "Does Zowie EC2-CW require any software?",
-        answer: "No — this is by design. All settings including DPI and polling rate are adjusted through hardware buttons and stored in onboard memory. The mouse works identically on any Windows, Mac, or Linux computer the moment you plug in the dongle. No installation, no cloud sync, no accounts.",
+        question: "If I'm frustrated with Logitech G Hub or Razer Synapse crashing during games and resetting my settings, does the Zowie EC2-CW eliminate software headaches entirely?",
+        answer: "If you've experienced G Hub or Synapse crashes mid-match that reset your DPI or disable button bindings (a common frustration among competitive players), the Zowie EC2-CW eliminates this entirely — it has zero software by design. DPI is switched via a physical button on the bottom of the mouse (400, 800, 1600, or 3200), polling rate is set with a hardware toggle, and all settings are stored in onboard memory. The mouse works identically the moment you plug the dongle into any Windows, Mac, or Linux computer. No accounts, no cloud sync, no background processes consuming RAM, and no updates that break your configuration. The tradeoff is no customization beyond the four fixed DPI presets — if you need 1200 DPI or custom button binds, you'll need a software-based mouse instead.",
       },
       {
-        question: "Is 3200Hz polling rate a real advantage?",
-        answer: "At high DPI and fast mouse speeds, 3200Hz provides more granular position updates than 1000Hz, which can reduce micro-stuttering in cursor movement. Professional players report feeling a smoothness difference. However, the benefit is most noticeable at high sensitivity and diminishing for slower, low-sensitivity styles.",
+        question: "If I play on 1600-3200 DPI sensitivity and do fast swipes in Valorant, will I actually feel the difference between 3200Hz and the standard 1000Hz polling rate?",
+        answer: "If you play at 1600 DPI or above and make fast mouse movements, 3200Hz polling sends position updates 3.2 times more frequently than 1000Hz — this reduces micro-stuttering in cursor movement that's visible on 240Hz+ monitors during fast crosshair tracking. Professional players at high sensitivity report a perceptible smoothness improvement, describing it as the cursor feeling 'more connected' to their hand movement. If you play on low sensitivity (400-800 DPI) with large, sweeping arm movements, the benefit diminishes because the cursor moves fewer pixels per update and the 1000Hz refresh is already sufficient. The tradeoff is battery life — at 3200Hz the EC2-CW lasts about 40 hours versus 120 hours at 125Hz. For high-sensitivity competitive players on 240Hz+ monitors, the difference is real. For casual play at standard refresh rates, 1000Hz is more than adequate.",
       },
     ],
     reviews: [
@@ -2777,16 +2777,16 @@ export const productsBatch3: Product[] = [
     ],
     faq: [
       {
-        question: "Can the EcoFlow Delta 2 Max power a whole home during an outage?",
-        answer: "Not indefinitely, but for critical loads yes. It can run a refrigerator, lighting, fans, and device charging for many hours. For total home backup, multiple units with solar panels are recommended. With the maximum 6kWh expansion and 800W solar input, it can become a meaningful home backup system.",
+        question: "If my power goes out for 24-48 hours during a winter storm, can the EcoFlow Delta 2 Max keep my fridge, router, and phone chargers running the entire time?",
+        answer: "If you're running a standard refrigerator (150W average), a Wi-Fi router (15W), phone charging (20W), and LED lighting (40W), that's roughly 225W total draw — the Delta 2 Max's 2048Wh capacity gives you approximately 9 hours of continuous runtime on those loads. For a full 24-48 hour outage, you'll need to recharge mid-outage, which requires solar panels (two 400W panels provide a full charge in 5-7 hours of good sunlight) or a generator. With the maximum 6144Wh expansion (adding two extra batteries at $1,599 each), you can extend to roughly 27 hours of the same load without recharging. For a single-unit setup handling critical loads through a typical 12-18 hour outage, the base 2048Wh unit at $1,599-$1,899 is sufficient.",
       },
       {
-        question: "How long does the EcoFlow Delta 2 Max take to charge from solar?",
-        answer: "With maximum 1000W solar input (requires multiple panels), a full charge from 0% takes approximately 2-3 hours. With a typical 400W setup (2 x 200W panels), expect 5-7 hours for a full charge in good sunlight.",
+        question: "If I want to charge the Delta 2 Max entirely from solar panels while camping or during an outage, how many panels do I need and how long does it take?",
+        answer: "If you have two 400W solar panels (like EcoFlow's own 400W rigid panels, roughly $800-$1,000 for the pair), you get approximately 800W of real-world input in direct sunlight, which charges the 2048Wh battery from empty to full in about 3-4 hours. With a more portable two-panel 200W setup ($300-$500 for the pair), expect 5-7 hours in good sunlight conditions. The Delta 2 Max accepts up to 1000W solar input total, so three 400W panels provide the fastest possible solar charge at approximately 2-3 hours. Cloud cover reduces output by 50-70%, so on overcast days plan for significantly longer charge times. For camping where you're drawing power and charging simultaneously, a 400-600W panel setup maintains a comfortable daily surplus.",
       },
       {
-        question: "What can the EcoFlow Delta 2 Max power?",
-        answer: "The 2400W AC output can power most household appliances including refrigerators, power tools, space heaters (moderate), coffee makers, and medical equipment like CPAP. The 5000W surge handles motor startup spikes for compressors and air conditioners. It cannot continuously run large central AC units or electric dryers.",
+        question: "If I want to run my power tools on a job site without grid electricity, or keep medical equipment like a CPAP running during a blackout, can the Delta 2 Max handle those loads?",
+        answer: "If you're running power tools on site, the 2400W continuous AC output handles circular saws (1400W), angle grinders (900W), drills (600W), and compressors — the 5000W surge capacity absorbs the startup spike when motors kick on. For medical equipment, a CPAP machine (30-60W) runs for 34-68 hours on a full charge, and an oxygen concentrator (300W) runs for approximately 6.5 hours. A standard refrigerator (150W average) runs for about 13 hours. A coffee maker (1000W) or space heater on low (750W) works fine within the 2400W limit. What it cannot do: continuously run a central AC unit (3000W+), an electric clothes dryer (5000W), or multiple high-draw appliances simultaneously above 2400W total. For job sites and medical backup, the Delta 2 Max at $1,599-$1,899 handles virtually everything except the heaviest household appliances.",
       },
     ],
     reviews: [
@@ -2944,16 +2944,16 @@ export const productsBatch3: Product[] = [
     ],
     faq: [
       {
-        question: "How long does the Jackery Explorer 1000 Plus last?",
-        answer: "The LiFePO4 battery is rated for 4000 charge cycles to 80% capacity. With daily use that's over 10 years. With occasional emergency or camping use (30-50 cycles per year), it could realistically last 20+ years without significant degradation.",
+        question: "If I buy the Jackery Explorer 1000 Plus and use it 2-3 times per month for camping and occasional power outages, how many years before the battery degrades noticeably?",
+        answer: "If you cycle the battery 2-3 times monthly (24-36 cycles per year), the LiFePO4 battery's 4000-cycle rating to 80% capacity means it retains at least 80% of its original 2042Wh capacity for over 110 years at that usage rate — effectively the lifetime of the product. Even with daily full cycling, the battery lasts over 10 years before reaching 80% capacity. LiFePO4 chemistry is significantly more durable than the lithium-ion NMC batteries used in older power stations, which typically degrade to 80% in 500-800 cycles. For occasional camping and emergency backup use, the Jackery Explorer 1000 Plus at $1,099-$1,299 will outlast every other component in the unit before battery degradation becomes noticeable.",
       },
       {
-        question: "What solar panels work best with the Jackery Explorer 1000 Plus?",
-        answer: "Jackery SolarSaga panels are the obvious pairing, but any solar panel outputting within the MPPT specs (14-60V, up to 800W total) works. Two 400W panels is the ideal setup for the 800W max solar input. Mix-and-match with other brands' panels works fine with the right connectors.",
+        question: "If I want to pair the Jackery Explorer 1000 Plus with solar panels for off-grid camping, what wattage setup do I need and can I use non-Jackery panels?",
+        answer: "If you want the fastest solar charge for weekend camping, two 400W panels (like the Jackery SolarSaga 200 x2, approximately $600-$800 for the pair) maxes out the 800W solar input and charges the 2042Wh battery from empty in approximately 3-4 hours of direct sunlight. A more portable single 200W panel ($250-$350) charges the battery in 10-12 hours — fine if you camp for multiple days and charge gradually. Any third-party solar panel outputting within the MPPT specs (14-60V, up to 800W total) works, though you may need an MC4-to-Anderson adapter ($10-$15) for non-Jackery panels. Mixing panel brands is fine as long as total input stays under 800W. For weekend car camping, a dual 400W setup is ideal. For backpacking where panel weight matters, a single folding 200W panel is the practical limit.",
       },
       {
-        question: "Is Jackery Explorer 1000 Plus good for camping?",
-        answer: "Excellent for camping. It's specifically designed for transport — the built-in wheel trolley and pull handle make it easy for one person to move. It can power a fridge, lights, phone charging, and small cooking appliances for a weekend camping trip easily.",
+        question: "If I go car camping for 2-3 nights and need to run a portable fridge, charge phones, and power a few LED lights, can the Jackery Explorer 1000 Plus handle an entire weekend without recharging?",
+        answer: "If you run a 12V portable camping fridge (40-60W average), charge two phones daily (20W), and use LED lanterns (10-15W total), that's roughly 70-95W continuous draw — the 2042Wh capacity gives you approximately 21-29 hours of runtime, enough for a full 2-night camping weekend with power to spare. The built-in wheel trolley and pull handle (unique in this class) let one person roll the 14.5kg unit from car to campsite without lifting. Adding a small cooking appliance like an electric kettle (1200W for 5 minutes) draws minimal capacity per use. If you extend to 3+ nights, pair it with a 200-400W solar panel to top up during daylight hours. At $1,099-$1,299, it's the most transport-friendly power station in the 2000Wh class — the Jackery wheel design is a genuine differentiator versus carrying the 23kg EcoFlow Delta 2 Max.",
       },
     ],
     reviews: [
@@ -3111,16 +3111,16 @@ export const productsBatch3: Product[] = [
     ],
     faq: [
       {
-        question: "How does the Anker SOLIX F1500 compare to EcoFlow Delta 2 Max?",
-        answer: "The SOLIX F1500 is typically $500-700 cheaper, has identical 2400W output, but only 1536Wh (vs 2048Wh for EcoFlow). EcoFlow charges much faster (50 min to 80% vs 90 min for Anker) and has expandable capacity. For pure value at 1500Wh, Anker wins. For expandability and speed, EcoFlow is better.",
+        question: "If I'm choosing between the Anker SOLIX F1500 at $999-$1,199 and the EcoFlow Delta 2 Max at $1,599-$1,899, what exactly does the $500-$700 price difference buy me?",
+        answer: "If you spend the extra $500-$700 on the EcoFlow, you get 2048Wh versus 1536Wh capacity (33% more runtime), X-Stream fast charging to 80% in 50 minutes versus 90 minutes for the Anker, expandable capacity up to 6144Wh with additional battery modules (the Anker is permanently fixed at 1536Wh with no expansion option), and a more mature companion app for remote monitoring. Both output 2400W AC, which handles the same appliances. If you need capacity beyond 1536Wh now or in the future, EcoFlow is the only option. If 1536Wh covers your use case (running a fridge and basic devices for 6-7 hours during an outage), the Anker at $999-$1,199 delivers identical output power at a significant savings. The Anker also charges at 1500W solar (vs EcoFlow's 1000W), making it faster for solar-only charging.",
       },
       {
-        question: "Is the Anker SOLIX F1500 good for home backup power?",
-        answer: "For essential loads during short outages (4-12 hours), yes. Running a refrigerator (150W), router (15W), phone charging (20W), and lights (40W) draws roughly 225W, giving about 6-7 hours of runtime on 1536Wh. For longer outages or more devices, the larger EcoFlow or Jackery is recommended.",
+        question: "If I live in an area with frequent 4-8 hour power outages and need my fridge, Wi-Fi, and medical devices running reliably, is the Anker SOLIX F1500 enough or should I spend more?",
+        answer: "If your critical outage load is a refrigerator (150W average), Wi-Fi router (15W), phone charging (20W), and LED lighting (40W) totaling roughly 225W, the SOLIX F1500's 1536Wh capacity gives you approximately 6-7 hours of runtime — enough for a standard 4-8 hour outage. If you also run a CPAP machine (30-60W), that drops to about 5-6 hours, still within range. For outages longer than 8 hours or heavier loads (space heater, multiple devices), the EcoFlow Delta 2 Max ($1,599-$1,899) with 2048Wh and expandable capacity is a safer investment. The Anker cannot expand — if you outgrow 1536Wh, you'd need to buy a second unit entirely. For predictable 4-8 hour outages with basic critical loads, the Anker at $999-$1,199 is the most cost-effective LFP option available.",
       },
       {
-        question: "What solar panels work with the Anker SOLIX F1500?",
-        answer: "Any solar panel within the MPPT input specs (11-150V, max 1500W) is compatible. Anker's own SOLIX RS40B and RS80B panels are designed to pair seamlessly. Third-party panels with compatible connectors or adapters work equally well.",
+        question: "If I want to pair the Anker SOLIX F1500 with solar panels for emergency backup or off-grid use, can I use panels I already own from another brand?",
+        answer: "If you already own solar panels from brands like Renogy, Bluetti, or EcoFlow, they work with the SOLIX F1500 as long as their output falls within the MPPT specs (11-150V, max 1500W total). You may need an MC4-to-XT60 adapter ($8-$15) depending on the connector type. The SOLIX F1500 accepts up to 1500W solar input — the highest in this price class, surpassing EcoFlow's 1000W and Jackery's 800W limits. Anker's own SOLIX RS40B (200W, $349) and RS80B (400W, $599) panels are designed for direct plug-and-play compatibility. A practical setup for emergency backup is two 400W panels ($700-$1,200 depending on brand) providing a full charge in approximately 2-3 hours of direct sunlight.",
       },
     ],
     reviews: [
@@ -3278,16 +3278,16 @@ export const productsBatch3: Product[] = [
     ],
     faq: [
       {
-        question: "Does the Bluetti AC200L have an RV outlet?",
-        answer: "Yes — it uniquely includes a NEMA TT-30 30A outlet, which is the standard RV shore power connection. This means RV travelers can connect directly without an adapter, which is a significant advantage over other power stations in this class.",
+        question: "If I travel full-time in an RV and need a portable power station that plugs directly into my RV's shore power inlet without adapters, does the Bluetti AC200L support that?",
+        answer: "If you have a standard 30A RV shore power inlet (NEMA TT-30), the Bluetti AC200L is the only portable power station in the 2000Wh class with a built-in TT-30 30A outlet — you plug your RV's shore power cord directly into the AC200L and it distributes power to your RV's 12V converter, lighting, water pump, and outlets exactly like a campground hookup. EcoFlow Delta 2 Max, Jackery Explorer 1000 Plus, and Anker SOLIX all require a separate TT-30 adapter ($30-$60) that adds a point of failure. For full-time RV boondocking, this native RV outlet is a significant advantage that eliminates adapter hassle. The 2048Wh capacity paired with four 200-300W solar panels on your roof can sustain a typical RV's electrical system for extended dry camping.",
       },
       {
-        question: "Can Bluetti AC200L charge a laptop while also running appliances?",
-        answer: "Yes — the AC200L can run multiple outputs simultaneously. The dual 100W USB-C ports can fast-charge two laptops while the AC outlets power appliances, all within the total 2400W output capacity.",
+        question: "If I work remotely from a cabin or van and need to fast-charge two MacBooks while simultaneously running a small appliance, can the AC200L handle that without tripping protection?",
+        answer: "If you're running two MacBook Pros on the dual 100W USB-C PD ports (200W total for laptop charging) while powering a small appliance like a coffee maker (1000W) or mini-fridge (60W) on the AC outlets, the AC200L handles this easily — total draw stays well within the 2400W AC output limit. The dual 100W USB-C ports are the highest-wattage laptop charging ports in any power station in this class (EcoFlow and Jackery offer single 100W or lower). You can run all 13 output ports simultaneously as long as total combined draw stays under 2400W. For remote workers in off-grid locations, this means charging laptops, running external monitors, and keeping a fridge cold all from one $1,199-$1,399 unit.",
       },
       {
-        question: "How does the Bluetti AC200L compare to the original AC200P?",
-        answer: "The AC200L is a significant upgrade over the AC200P: larger 2048Wh capacity (vs 2000Wh), the new TT-30 RV outlet, dual 100W USB-C (vs single 60W), and simultaneous AC+solar charging. The AC200P remains available at a discount for budget buyers.",
+        question: "If I own the older Bluetti AC200P and am considering upgrading to the AC200L, what specific improvements would I get for the price difference?",
+        answer: "If you're upgrading from the AC200P, the AC200L adds the NEMA TT-30 RV outlet (critical if you've been using an adapter for RV shore power), dual 100W USB-C PD ports instead of the AC200P's single 60W port (fast-charges laptops nearly twice as fast), simultaneous AC+solar charging up to 2400W combined input (the AC200P cannot charge from AC and solar at the same time), and LFP battery chemistry rated for 3500 cycles versus the AC200P's older LiFePO4 cells rated for 2500 cycles. Capacity increases slightly from 2000Wh to 2048Wh. If your AC200P still meets your needs and you don't require the RV outlet or faster USB-C charging, the AC200P at its current discounted price ($799-$999) remains a capable unit. If you've outgrown the AC200P's charging limitations, the AC200L at $1,199-$1,399 addresses every common AC200P complaint.",
       },
     ],
     reviews: [
