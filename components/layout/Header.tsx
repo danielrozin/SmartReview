@@ -13,6 +13,7 @@ const navLinks = [
   { href: "/blog", label: "Blog" },
   { href: "/pricing", label: "Pricing", accent: true },
   { href: "/how-it-works", label: "How It Works" },
+  { href: "/who-is-this-for", label: "Who Is This For" },
   { href: "/about", label: "About" },
   { href: "/community", label: "Community", accent: true },
 ];
