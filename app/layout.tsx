@@ -8,6 +8,7 @@ import { SessionProvider } from "@/components/providers/SessionProvider";
 import { SubscriptionProvider } from "@/lib/context/SubscriptionContext";
 import { OnboardingProvider } from "@/components/onboarding/OnboardingProvider";
 import { OnboardingOrchestrator } from "@/components/onboarding/OnboardingOrchestrator";
+import { ExperimentProvider } from "@/lib/experiments";
 import { GoogleTagManager, GoogleTagManagerNoScript } from "@/components/tracking/GoogleTagManager";
 import { MetaPixel } from "@/components/tracking/MetaPixel";
 import { CompareProvider } from "@/lib/context/CompareContext";
@@ -50,10 +51,12 @@ export default function RootLayout({
             <AppProvider>
               <CompareProvider>
                 <OnboardingProvider>
-                  <Header />
-                  <OnboardingOrchestrator />
-                  <main className="flex-1">{children}</main>
-                  <Footer />
+                  <ExperimentProvider>
+                    <Header />
+                    <OnboardingOrchestrator />
+                    <main className="flex-1">{children}</main>
+                    <Footer />
+                  </ExperimentProvider>
                 </OnboardingProvider>
               </CompareProvider>
             </AppProvider>
