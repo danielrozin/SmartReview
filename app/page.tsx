@@ -8,6 +8,14 @@ import { SmartScore } from "@/components/ui/SmartScore";
 import { THREAD_TYPE_LABELS, THREAD_TYPE_COLORS } from "@/types";
 import { formatNumber } from "@/lib/utils";
 import { HomeOnboardingSection } from "@/components/onboarding/HomeOnboardingSection";
+import { buildMetadata } from "@/lib/seo/metadata";
+
+export const metadata = buildMetadata({
+  title: "AI-Powered Product Reviews & Comparisons",
+  description:
+    "SmartReview analyzes thousands of verified buyer reviews with AI to deliver SmartScores, honest summaries, and side-by-side comparisons across electronics, appliances, and more.",
+  path: "/",
+});
 
 export default function HomePage() {
   const topProducts = [...products]
