@@ -137,7 +137,15 @@ export default function ReviewIQAnalytics() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div className="mb-8">
-        <h1 className="text-2xl font-bold text-gray-900">ReviewIQ Analytics</h1>
+        <div className="flex items-center gap-3 mb-1">
+          <h1 className="text-2xl font-bold text-gray-900">ReviewIQ Analytics</h1>
+          <a
+            href="/admin/analytics/aarrr"
+            className="text-sm text-emerald-600 hover:text-emerald-800 font-medium underline"
+          >
+            AARRR Pirate Metrics
+          </a>
+        </div>
         <p className="text-gray-500 mt-1">
           GA4: {config.ga4Property} | Clarity: {config.clarityProject}
         </p>
