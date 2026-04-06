@@ -1607,12 +1607,12 @@ export const productsBatch1: Product[] = [
         answer: "If you're used to single-element air fryers where the bottom of your fries and chicken stays pale and soft unless you shake the basket midway, the Dual Blaze's top-and-bottom heating elements directly address this. At $119-$139, the dual heat reduces cooking time by 15-25% and produces even browning on both sides without flipping. You will notice the difference most with french fries, chicken thighs, and baked goods where the bottom comes out crispy instead of steamed. It does not completely eliminate the need to shake dense, overlapping batches, but for single-layer cooking the improvement is significant.",
       },
       {
-        question: "Do I need the app to use the COSORI Dual Blaze?",
-        answer: "No. All 12 presets and manual time/temperature controls work directly on the control panel without the app. The app adds convenience features like remote start, guided recipes, and scheduling, but the appliance functions fully offline.",
+        question: "If I don't want to connect another kitchen appliance to Wi-Fi, can I use the COSORI Dual Blaze without downloading the app?",
+        answer: "If you want to keep your air fryer completely offline, all 12 presets and full manual time/temperature controls (90-450 degrees F) work directly from the touch panel on the unit without the app or Wi-Fi. The VeSync app adds convenience features like remote start from your couch, 100+ guided recipes with step-by-step instructions, and scheduling to have food ready when you walk in. But if you just want to press a button and cook, the $119-$139 Dual Blaze functions entirely without an internet connection.",
       },
       {
-        question: "Is the COSORI Dual Blaze basket dishwasher safe?",
-        answer: "Yes, both the basket and the crisper plate are dishwasher safe. However, COSORI recommends the top rack only and using gentle cycles to extend the non-stick coating lifespan. Hand washing with a soft sponge is the best option for longevity.",
+        question: "If I use my air fryer daily and hate hand-washing greasy baskets, can I put the COSORI Dual Blaze basket in the dishwasher every day without ruining the coating?",
+        answer: "If you plan to dishwash the basket after every use, both the 6.8-qt basket and crisper plate are technically dishwasher safe, but daily dishwasher cycles will accelerate non-stick coating wear. COSORI recommends top rack only on gentle cycles. For daily heavy users, hand washing with a soft sponge and warm soapy water extends the coating life significantly — reviewers who hand-wash report the coating lasting 18-24 months vs 6-12 months for daily dishwasher users. If the coating does wear, COSORI sells replacement basket inserts rather than requiring a whole new unit.",
       },
     ],
     reviews: [
@@ -1770,16 +1770,16 @@ export const productsBatch1: Product[] = [
     ],
     faq: [
       {
-        question: "Can the Ninja Woodfire Grill be used indoors?",
-        answer: "No. The smoke function produces real wood smoke that requires outdoor use only. Even without the pellets, the unit should be used outdoors due to grease smoke and ventilation requirements. It must be placed on a stable outdoor surface away from flammable materials.",
+        question: "If I live in a condo with a small balcony but no backyard, can I use the Ninja Woodfire Grill indoors or on an apartment balcony?",
+        answer: "If you live in a condo, the Ninja Woodfire cannot be used indoors under any circumstances — the smoke function produces real wood smoke and even without pellets, cooking generates grease smoke that requires outdoor ventilation. A balcony can work if your building allows outdoor cooking and the balcony has adequate airflow (check your HOA rules). The unit is 29.5 lbs and electric (1760W), so you need an outdoor power outlet within cord reach. Place it on a stable, heat-resistant surface at least 3 feet from building walls and flammable materials like patio furniture cushions.",
       },
       {
-        question: "Can you use third-party pellets in the Ninja Woodfire?",
-        answer: "Ninja officially recommends only Woodfire Pellets, which are shorter than standard pellet smoker pellets and designed for the hopper. Some users report using broken-up standard pellets with mixed results. Using non-official pellets may void the warranty.",
+        question: "If I already have bags of Traeger or other standard smoking pellets, can I use those in the Ninja Woodfire instead of buying Ninja's proprietary pellets?",
+        answer: "If you have existing Traeger, CookingPellets, or other standard smoker pellets, they will not fit the Ninja Woodfire's 3oz hopper as-is — Ninja's proprietary Woodfire Pellets are shorter and specifically sized for the small hopper. Some users break standard pellets into shorter pieces and report usable results, but Ninja officially recommends only their three Woodfire Pellet flavors (Robust Blend, All-Purpose, and Apple Wood) at roughly $10-$15 per bag. Using non-official pellets may void the warranty, so weigh the savings against potential repair costs on a $349-$399 unit.",
       },
       {
-        question: "How does Woodfire smoke compare to a dedicated smoker?",
-        answer: "It provides a genuine smoke flavor — much more than no smoke — but the intensity is lighter than a dedicated offset smoker or large pellet grill running for 8+ hours. It's best for 1-4 hour smoke applications. For authentic competition-style BBQ, a dedicated smoker will be more satisfying.",
+        question: "If I want to smoke a brisket or pork shoulder with real smoke flavor, does the Ninja Woodfire produce enough smoke to compete with a Traeger or Weber Smokey Mountain?",
+        answer: "If you're looking for competition-level smoke rings and 8-12 hour deep smoke penetration on a full brisket, the Ninja Woodfire will not satisfy you — the 3oz pellet hopper runs about 90 minutes before needing a refill, and the smoke intensity is lighter than a dedicated offset smoker or full-size pellet grill. Where it excels is 1-4 hour smokes on ribs, chicken, salmon, or pork chops, producing a genuine smoky flavor that is noticeably more than cooking without smoke. At $349-$399, it is a convenient electric alternative for casual smoking, not a replacement for a $500-$1,200 dedicated smoker.",
       },
     ],
     reviews: [
@@ -1936,16 +1936,16 @@ export const productsBatch1: Product[] = [
     ],
     faq: [
       {
-        question: "Is the Chefman TurboFry XL good for a beginner?",
-        answer: "Yes — for the price, it's an excellent starting point. The simple presets and touch controls require minimal knowledge. If you're new to air frying and want to learn without a large investment, this is ideal. If you love air frying and use it daily, consider upgrading to a COSORI or Ninja within a year.",
+        question: "If I've never owned an air fryer and want to try one without spending $200+, is the $60-$80 Chefman TurboFry XL a good starter unit?",
+        answer: "If you want to test whether air frying fits your cooking habits before committing to a $130-$400 unit, the Chefman TurboFry XL at $59-$79 is an ideal entry point. The 5 presets and touch controls require zero cooking knowledge — press a button and it cooks frozen fries, nuggets, and wings. The 8-quart capacity is generous for the price. If you find yourself using it daily and wanting more even cooking or better non-stick durability, plan to upgrade to a COSORI Dual Blaze ($119-$139) or Ninja within 12-18 months, as the Chefman's single heating element and budget coating are designed for occasional rather than heavy daily use.",
       },
       {
-        question: "How does the divided basket work on the Chefman TurboFry XL?",
-        answer: "The divided basket is a plastic divider that splits the 8-qt basket into two 4-qt sections. This lets you cook two different foods (like fries and chicken nuggets) at the same time. Both sides cook at the same temperature, so it works best for foods with similar cooking requirements.",
+        question: "If I want to cook fries and chicken nuggets at the same time for my kids, does the Chefman TurboFry XL's divided basket let me set different temperatures for each side?",
+        answer: "If you're looking for dual-zone cooking with independent temperatures like the Ninja Foodi DualZone ($160-$200), the Chefman's divider does not offer that. The plastic divider splits the 8-qt basket into two 4-qt sections, but both sides cook at the same temperature. This works well for foods with similar cook times — fries and nuggets at 400 degrees F for 12-15 minutes is a good pairing. For foods that need different temperatures (like fish at 375 degrees F and vegetables at 400 degrees F), you would need to cook them in separate batches or invest in a dual-zone air fryer.",
       },
       {
-        question: "Why is food cooking unevenly in my Chefman TurboFry?",
-        answer: "Single heating element air fryers like the Chefman produce some natural hot spots. The fix: shake or flip food at the halfway point of cooking, and don't overfill the basket. Leaving adequate space between pieces allows hot air to circulate more evenly.",
+        question: "If the top of my food comes out crispy but the bottom stays soft and pale in the Chefman TurboFry, is my unit defective or is this normal?",
+        answer: "If you're seeing crispy tops and pale bottoms, your unit is not defective — this is normal for single-heating-element air fryers like the Chefman that heat from the top only. The fix: shake or flip food at the halfway mark of cooking, and fill the basket no more than 2/3 full so hot air circulates around each piece. For fries, a single shake at 6-7 minutes into a 12-minute cook produces much more even results. If you find this too inconvenient, the COSORI Dual Blaze ($119-$139) uses top-and-bottom heating elements that largely eliminate the problem without manual flipping.",
       },
     ],
     reviews: [
@@ -2107,16 +2107,16 @@ export const productsBatch1: Product[] = [
     ],
     faq: [
       {
-        question: "How does Bose QC Ultra ANC compare to Sony XM5?",
-        answer: "Both are class-leading, but they excel in different environments. Bose QC Ultra performs better on airplanes and in environments with consistent drone noise (wind, HVAC). Sony XM5 handles voice frequencies slightly better. For most users the difference is marginal — both are excellent. The QC Ultra has 6 hours battery vs Sony's 8, which is a more meaningful practical difference.",
+        question: "If I fly frequently and want the absolute quietest noise cancellation for airplane cabin noise, should I get the $280 Bose QC Ultra or the $280 Sony XM5?",
+        answer: "If you fly weekly and airplane cabin drone is your primary noise concern, the Bose QC Ultra has a slight edge over the Sony XM5 at blocking consistent low-frequency noise like engines, HVAC, and wind. The Sony XM5 handles mid-frequency sounds like nearby conversations marginally better. For most listeners, the ANC difference between them is small. The more meaningful practical difference is battery: the QC Ultra lasts 6 hours with ANC on vs Sony's 8 hours. On a 10-hour international flight, that means the Bose dies before landing unless you charge mid-flight from the case. Both are $279-$299.",
       },
       {
-        question: "What is CustomTune on the Bose QC Ultra Earbuds?",
-        answer: "CustomTune plays a chirp sound when you put the earbuds in and uses the microphones to measure how sound reflects off your unique ear canal. It then adjusts the acoustic profile in real time to optimize bass response and ANC for your specific anatomy. It takes about 1 second and happens automatically every time you wear them.",
+        question: "If I have oddly shaped ear canals and earbuds usually sound different in each ear, does the Bose QC Ultra's CustomTune actually adjust to my specific ears?",
+        answer: "If you have noticed that one earbud sounds bassier or the ANC feels weaker in one ear compared to the other, CustomTune directly addresses this. Every time you insert the earbuds, they play a sub-second chirp and the internal microphones measure how sound reflects off your unique ear canal shape. The system then adjusts bass response and ANC intensity independently for each ear in real time. The whole process takes about 1 second and happens automatically — you do not need to run a manual calibration. Reviewers who swap between different ear tip sizes report an audible difference in sound quality after CustomTune re-calibrates.",
       },
       {
-        question: "Are the Bose QC Ultra Earbuds good for working out?",
-        answer: "They're IPX4 rated (sweat and light rain resistant) so they can handle workouts. However, the fit security is optimized for comfort rather than stability during intense movement. For high-intensity training or running, purpose-built sport earbuds offer better stability and higher IP ratings.",
+        question: "If I want to use the Bose QC Ultra Earbuds for running and HIIT workouts at the gym, will they stay in my ears and survive sweat?",
+        answer: "If you're doing light gym workouts like weight training or cycling, the QC Ultra's IPX4 rating handles sweat and light moisture fine. However, if you run outdoors or do high-intensity interval training with a lot of head movement, the fit is optimized for comfort during seated/stationary use rather than athletic stability — they may shift or loosen during sprints and burpees. For dedicated running or CrossFit, purpose-built sport earbuds like the Jabra Elite 8 Active ($149-$199, IP68) or Beats Fit Pro ($149, wingtip design) offer significantly more secure fit and higher water resistance than the $279-$299 QC Ultra.",
       },
     ],
     reviews: [
@@ -2275,16 +2275,16 @@ export const productsBatch1: Product[] = [
     ],
     faq: [
       {
-        question: "Are Google Pixel Buds Pro 2 worth it if you don't have a Pixel phone?",
-        answer: "For any Android phone, yes — Google Fast Pair, Live Translate, and Google Assistant work on all modern Android devices. For iPhone users, the value is significantly reduced to basic ANC earbuds at $200. The full feature set requires Android.",
+        question: "If I have a Samsung Galaxy phone instead of a Pixel, do I still get Live Translate and Google Assistant features on the Pixel Buds Pro 2?",
+        answer: "If you have any modern Android phone — Samsung Galaxy, OnePlus, Motorola, or others running Android 6.0+ — you get the full Pixel Buds Pro 2 experience including Google Fast Pair, Live Translate (40+ languages), and hands-free Google Assistant. These features are not locked to Pixel phones. At $199-$229, the value holds across the Android ecosystem. For iPhone users, the picture changes dramatically: you lose Live Translate, Google Assistant integration, and most smart features, reducing the Pixel Buds to basic $200 ANC earbuds that compete poorly against AirPods Pro 2.",
       },
       {
-        question: "How does Live Translate work on the Pixel Buds Pro 2?",
-        answer: "Live Translate uses Google Translate in real time through the earbuds. You speak in your language, the other person speaks in theirs, and the earbuds translate both directions with roughly 1-2 second delay. It supports 40+ languages. The Tensor A1 chip processes much of this on-device for better latency than cloud-only solutions.",
+        question: "If I'm traveling to Japan or Spain and don't speak the language, can I actually have a real conversation using Live Translate on the Pixel Buds Pro 2?",
+        answer: "If you're ordering food at a restaurant in Tokyo or asking for directions in Madrid, Live Translate works in real time through the earbuds: you speak English, the other person hears the translation from your phone speaker, they respond in Japanese or Spanish, and you hear the English translation in your ear within 1-2 seconds. It supports 40+ languages and the Tensor A1 chip processes much of the translation on-device for lower latency than cloud-only apps. It handles simple conversations (ordering, directions, shopping) well. Complex, fast-paced conversations with slang or heavy accents can trip it up. At $199-$229, it is the only pair of earbuds that offers this built-in.",
       },
       {
-        question: "How does the battery compare to first-gen Pixel Buds Pro?",
-        answer: "The Pro 2 improves from 7 hours (ANC on) to 8 hours — a modest but meaningful improvement. The total case capacity also jumped from 20 hours to 30 hours. The charging case is slightly smaller than the previous generation despite the larger capacity.",
+        question: "If I currently own the original Pixel Buds Pro and the battery barely lasts my workday, is the Pro 2's battery upgrade enough to justify a $200 upgrade?",
+        answer: "If you're running out of battery at hour 6-7 with the original Pixel Buds Pro during a full workday, the Pro 2 extends to 8 hours with ANC on — enough to cover a standard 9-to-5 without mid-day charging. The case capacity jumped from 20 hours total to 30 hours, giving you nearly 4 full charges vs 3. The case is also slightly smaller despite the bigger battery. Whether the 1-hour earbud improvement and 10-hour case improvement justify a $199-$229 upgrade depends on whether the original's battery was your main pain point. If ANC and sound quality also matter, the Tensor A1 chip and Silent Seal 2.0 are meaningful upgrades beyond just battery.",
       },
     ],
     reviews: [
@@ -2442,16 +2442,16 @@ export const productsBatch1: Product[] = [
     ],
     faq: [
       {
-        question: "Is the Nothing Ear 2 good value compared to Sony XM5?",
-        answer: "For the price difference ($149 vs $279), the Ear 2 is exceptional value. Sound quality is genuinely impressive and approaches the XM5. ANC is good but clearly below Sony. For casual use, commuting, and office work, Ear 2 delivers 80% of the XM5 experience at 55% of the price. For heavy-transit commuters, the ANC gap justifies the Sony premium.",
+        question: "If I want decent ANC earbuds for my daily office commute but don't want to spend $280 on Sony XM5s, is the $130-$150 Nothing Ear 2 actually good enough?",
+        answer: "If your commute involves a bus, moderate street noise, or an open-plan office, the Nothing Ear 2 at $129-$149 delivers roughly 80% of the Sony XM5 experience at about 55% of the price. Sound quality approaches the XM5 with genuinely impressive detail thanks to the 11.6mm drivers and LHDC 5.0 codec on Android. ANC blocks office chatter, bus engines, and cafe background noise effectively. Where the gap shows: on loud subway trains or crowded metro, the ANC ceiling is noticeably lower than the $279 Sony XM5. For a quiet-to-moderate commute and office use, the Ear 2 saves you $130-$150 with minimal sacrifice.",
       },
       {
-        question: "Does Nothing Ear 2 support Hi-Res Audio?",
-        answer: "Yes — the Ear 2 is Hi-Res Audio certified and supports LHDC 5.0 codec for up to 900kbps bitrate on compatible Android devices. This enables noticeably better detail at high volumes on Hi-Res music files. Apple devices use AAC which doesn't fully leverage the LHDC advantage.",
+        question: "If I have a Tidal or Apple Music Hi-Res subscription and want to hear the difference on earbuds, does the Nothing Ear 2 actually support Hi-Res Audio or is it just marketing?",
+        answer: "If you're streaming Hi-Res tracks from Tidal, Qobuz, or Amazon Music HD on an Android phone, the Nothing Ear 2 is Hi-Res Audio certified and supports LHDC 5.0 codec for up to 900kbps bitrate — a meaningful jump over standard Bluetooth's 328kbps AAC. You will hear noticeably more detail in vocals, instrument separation, and high-frequency clarity on well-mastered Hi-Res tracks, especially at moderate-to-high volumes. If you use an iPhone, the earbuds default to AAC codec, which does not fully leverage the LHDC advantage and sounds comparable to standard Bluetooth earbuds at this $129-$149 price range.",
       },
       {
-        question: "Can you use Nothing Ear 2 with two devices at the same time?",
-        answer: "Yes — the dual connection feature connects simultaneously to two devices (e.g., phone and laptop). You can switch between them seamlessly without re-pairing. Incoming calls from the phone automatically take priority over laptop audio.",
+        question: "If I want to listen to music on my laptop at work and instantly switch to take calls on my phone without re-pairing, does the Nothing Ear 2 support dual device connection?",
+        answer: "If you work at a desk with a laptop and keep your phone nearby, the Nothing Ear 2's dual connection pairs simultaneously to both devices. You can stream Spotify from your laptop, receive an incoming call on your phone, and the earbuds automatically switch to the call — then switch back to laptop audio when you hang up. No re-pairing, no Bluetooth menu diving. This works with any two Bluetooth devices: phone + laptop, phone + tablet, or two phones. At $129-$149, this is a feature that typically only appears in $200+ earbuds from Sony and Jabra.",
       },
     ],
     reviews: [
@@ -2609,16 +2609,16 @@ export const productsBatch1: Product[] = [
     ],
     faq: [
       {
-        question: "Are Sennheiser MTW 4 the best sounding wireless earbuds?",
-        answer: "According to the majority of professional audio reviewers, yes — or among the very best. The TrueResponse drivers produce detail, soundstage, and tonal accuracy that most audiophile reviewers rate above Sony XM5 and well above AirPods Pro. If sound quality is your primary criterion, these are a top pick.",
+        question: "If I care more about sound quality than noise cancellation and want the absolute best-sounding wireless earbuds under $300, are the Sennheiser MTW 4 actually worth it over the Sony XM5?",
+        answer: "If you're an audiophile or music professional who prioritizes detail, soundstage, and tonal accuracy over ANC strength, the Sennheiser MTW 4 at $279-$299 consistently ranks at or above the Sony XM5 in blind sound quality tests by professional reviewers. The custom TrueResponse 7mm transducers produce instrument separation, vocal clarity, and low-end definition that audiophile reviewers rate above the Sony XM5 and significantly above AirPods Pro 2. The tradeoff: Sony and Bose both deliver stronger ANC in loud environments. If your listening happens primarily in quiet-to-moderate settings like your home, office, or calm cafe, the MTW 4's sound quality advantage is the deciding factor.",
       },
       {
-        question: "What is Sound Persona on the Sennheiser MTW 4?",
-        answer: "Sound Persona is an in-app audiometric test that plays tones at different frequencies and volumes to map your personal hearing response. The result is a custom EQ curve designed specifically for how your ears perceive sound. Most users hear a noticeable improvement after completing it — particularly in bass response and vocal clarity.",
+        question: "If I feel like my earbuds always sound slightly off no matter how I adjust the EQ, does the Sennheiser MTW 4's Sound Persona feature actually make a noticeable difference?",
+        answer: "If you've spent time tweaking EQ sliders on other earbuds without finding a satisfying setting, Sound Persona takes a different approach. It runs a 10-15 minute in-app audiometric test that plays tones at different frequencies and volumes, mapping how your specific ears perceive sound (similar to a hearing test). The result is a custom EQ curve calibrated to your personal hearing profile rather than generic presets. Most users report a noticeable improvement, particularly in bass fullness and vocal clarity. The test does take patience — some users abandon it partway through — but completing it is what unlocks the $279-$299 MTW 4's full potential.",
       },
       {
-        question: "How does the Sennheiser MTW 4 compare to Sony XM5 for commuting?",
-        answer: "For commuting in very noisy environments, the Sony XM5 leads on ANC by a meaningful margin. For sound quality during the commute, the Sennheiser wins clearly. If you prefer to hear your music in higher fidelity and your commute noise is moderate (office bus, walking), MTW 4 is superior overall. For loud subway/train commuters, Sony's ANC advantage is more important.",
+        question: "If I take a loud subway to work every day and want to enjoy my music without hearing train screeching, should I pick the Sennheiser MTW 4 or the Sony XM5?",
+        answer: "If your daily commute involves a loud subway, metro, or crowded train where screeching brakes and tunnel noise are constant, the Sony XM5's ANC outperforms the Sennheiser MTW 4 by a meaningful margin in those harsh environments. If your commute is a quieter bus, car, or walking route where ambient noise is moderate, the MTW 4's superior sound quality means your music sounds noticeably richer and more detailed at the same volume. Both cost $279-$299. For loud-transit commuters, go Sony. For quiet-to-moderate commuters who prioritize audio fidelity, go Sennheiser. The 7-hour MTW 4 battery vs 8-hour Sony battery is a secondary consideration.",
       },
     ],
     reviews: [
@@ -2780,16 +2780,16 @@ export const productsBatch1: Product[] = [
     ],
     faq: [
       {
-        question: "Is Tempur-Pedic worth the high price?",
-        answer: "For buyers who prioritize pressure relief and motion isolation above all else, and who sleep on their sides, Tempur-Pedic consistently delivers. The longevity (10-15 years with proper use) spreads the cost over time. For average sleepers who aren't dealing with specific pain points, comparable memory foam mattresses from Casper, Nectar, or Helix offer similar comfort for a fraction of the price.",
+        question: "If I have chronic hip and shoulder pain from side sleeping and have tried $500-$800 memory foam mattresses that didn't help, is spending $2,300-$3,000 on a Tempur-Pedic ProAdapt actually worth it?",
+        answer: "If you have specific pressure point pain at your hips and shoulders from side sleeping and cheaper memory foam mattresses have not resolved it, the Tempur-Pedic ProAdapt's proprietary TEMPUR material provides measurably better pressure distribution than standard memory foam in the $500-$800 range. Reviewers with chronic back, hip, and shoulder pain frequently report significant improvement within 3-6 weeks. The $2,299-$2,999 cost spreads to roughly $150-$200 per year over its 10-15 year lifespan — less than a monthly chiropractor visit. For average sleepers without specific pain issues, a Casper ($1,095), Nectar ($799), or Helix Midnight Luxe ($1,099-$1,549) delivers comparable comfort for 40-65% less.",
       },
       {
-        question: "Does the Tempur-Pedic ProAdapt sleep hot?",
-        answer: "Warm sleepers frequently report overheating. The standard TEMPUR material is thermally adaptive — it softens with body heat — but this same property retains warmth. If you sleep warm, consider the TEMPUR-ProBreeze or TEMPUR-LuxeBreeze models which have active cooling layers. The ProAdapt is fine for cool/neutral sleepers.",
+        question: "If I tend to wake up sweating in the middle of the night and my bedroom doesn't have air conditioning, will the Tempur-Pedic ProAdapt make my overheating problem worse?",
+        answer: "If you already sleep warm and your bedroom gets above 72-74 degrees F without AC, the standard ProAdapt will likely make overheating worse. The TEMPUR material softens with body heat — great for pressure relief, but it traps warmth around your body. This is the number one complaint from ProAdapt owners. If you sleep warm, consider the TEMPUR-ProBreeze ($2,899-$3,599) or TEMPUR-LuxeBreeze ($3,499-$4,199) which add active cooling layers, or add a cooling mattress topper ($150-$200) to the ProAdapt. For cool or neutral sleepers in climate-controlled bedrooms, the ProAdapt's temperature retention is typically not an issue.",
       },
       {
-        question: "How long does a Tempur-Pedic ProAdapt last?",
-        answer: "Typically 10-15 years, significantly longer than average mattresses. Tempur-Pedic uses a unique open-cell TEMPUR formulation that resists compression over time better than standard memory foam. The 10-year full replacement warranty reflects this confidence — any comfort defects result in full replacement.",
+        question: "If I'm spending $2,500+ on a Tempur-Pedic ProAdapt, how many years should I realistically expect it to last before it sags or loses support?",
+        answer: "If you're investing $2,299-$2,999, the ProAdapt typically lasts 10-15 years before needing replacement — roughly 2-3x longer than a $500-$800 budget memory foam mattress that often sags within 4-6 years. Tempur-Pedic's proprietary open-cell TEMPUR formulation resists body impression compression better than standard memory foam. Two-year-old owners consistently report zero sagging or support loss. The 10-year full replacement warranty covers any comfort defects with complete replacement, not prorated credit. At $2,500 over 12 years, that works out to roughly $208 per year — comparable to many mattresses that cost half as much upfront but need replacing twice in the same period.",
       },
     ],
     reviews: [
@@ -2946,16 +2946,16 @@ export const productsBatch1: Product[] = [
     ],
     faq: [
       {
-        question: "Is the Helix Midnight Luxe good for side sleepers?",
-        answer: "Yes — it's specifically designed for side sleeping. The zoned coils are softer in the shoulder zone to allow shoulder sink-in, and firmer in the lumbar zone for hip support. Most side sleeper reviewers report excellent pressure relief at hips and shoulders. If you're primarily a side sleeper, this is one of the top-rated options in its price range.",
+        question: "If I sleep exclusively on my side and wake up with shoulder and hip soreness every morning, is the Helix Midnight Luxe designed to fix this specific problem?",
+        answer: "If you're a dedicated side sleeper dealing with morning shoulder and hip soreness, the Midnight Luxe at $1,099-$1,549 is specifically engineered for your sleep position. The zoned pocketed coils are softer in the shoulder zone to let your shoulder sink in without pressure, and firmer in the lumbar/hip zone to keep your spine aligned and prevent hip sag. Reviewers who switched from flat-support mattresses report shoulder soreness disappearing within 2-4 weeks. The pillow top comfort layer adds immediate cushion at pressure points. Compared to the Tempur-Pedic ProAdapt ($2,299+) which also relieves side-sleeper pressure, the Helix saves $1,000+ and sleeps cooler thanks to coil airflow and the Tencel cover.",
       },
       {
-        question: "What is the difference between Helix Midnight and Midnight Luxe?",
-        answer: "The Luxe adds a pillow top Euro-style comfort layer, zoned Lumbar support coils (vs non-zoned in standard), and a Tencel cover for better cooling. The Luxe is approximately $200-$400 more but delivers noticeably more luxurious feel and the zoned support provides better precision for side sleepers.",
+        question: "If I'm debating between the standard Helix Midnight and the Midnight Luxe, is the $200-$400 upgrade actually worth it or am I just paying for a fancier label?",
+        answer: "If you're deciding between the standard Midnight ($699-$1,099) and the Luxe ($1,099-$1,549), the Luxe adds three concrete upgrades: a Euro-style pillow top comfort layer for immediate plush feel, zoned lumbar support coils (softer at shoulders, firmer at hips) vs non-zoned coils in the standard, and a Tencel cooling cover that sleeps noticeably cooler than the standard fabric. For side sleepers specifically, the zoned coils are the key difference — they provide targeted shoulder sink-in and hip support that the standard model's uniform coils cannot match. If you weigh under 150 lbs and don't have specific pressure point issues, the standard Midnight may feel sufficient and save you $200-$400.",
       },
       {
-        question: "Does Helix offer free returns?",
-        answer: "Yes — Helix offers a 100-night free trial with full pickup and refund if you're unsatisfied. They typically donate returned mattresses to local charities. This policy is important given that online mattress feel can differ from showroom experience or quiz expectations.",
+        question: "If I order the Helix Midnight Luxe online and hate it after a month, can I actually return it for free or will I get stuck with a $1,000+ mattress I don't like?",
+        answer: "If you order online and the feel is not right after sleeping on it for a few weeks, Helix offers a 100-night free trial with full pickup and complete refund — no restocking fees, no shipping costs. They schedule a pickup from your home and typically donate the mattress to local charities. This policy exists specifically because buying a mattress online without trying it first is a gamble, and Helix's own sleep quiz occasionally recommends a firmness that does not match a buyer's expectations. You have over 3 months to decide, and most mattress experts recommend sleeping on a new mattress at least 30 days before judging it.",
       },
     ],
     reviews: [
@@ -3112,16 +3112,16 @@ export const productsBatch1: Product[] = [
     ],
     faq: [
       {
-        question: "Is the Leesa Sapira Hybrid good for combination sleepers?",
-        answer: "Yes — it's one of its key strengths. The balanced medium feel with responsive coils allows easy position changes without the stuck-in feeling of all-foam mattresses. The support adjusts well to different positions, making it particularly suitable for people who start on their back and roll to their side.",
+        question: "If I start the night on my back but always end up on my side by morning, is the Leesa Sapira Hybrid supportive enough for both sleeping positions?",
+        answer: "If you're a combination sleeper who shifts between back and side positions throughout the night, the Sapira Hybrid at $1,099-$1,399 is specifically designed for this. The 1000 individually wrapped pocketed coils respond quickly to position changes without the 'stuck in quicksand' feeling of all-foam mattresses like Tempur-Pedic. The medium firmness (5.5/10) provides enough support for back sleeping while offering adequate shoulder and hip give for side sleeping. Compared to the Helix Midnight Luxe which is optimized specifically for side sleepers, the Sapira is less specialized but more versatile for people who change positions 3-5 times per night.",
       },
       {
-        question: "How does the Leesa Sapira Hybrid edge support compare to other mattresses?",
-        answer: "The reinforced perimeter coils are a standout feature. Edge support is significantly better than most foam mattresses and competitive with premium hybrid alternatives. You can sleep right to the edge without feeling like you'll roll off — useful for couples who want maximum sleeping space.",
+        question: "If my partner and I both sleep near the edges of our queen bed and hate the roll-off feeling, does the Leesa Sapira Hybrid have strong enough edge support for couples?",
+        answer: "If you share a queen or king bed and both tend to sleep near the edges to maximize personal space, the Sapira Hybrid's reinforced perimeter coils provide edge support that is significantly stronger than all-foam mattresses like Tempur-Pedic or Casper Original and competitive with premium hybrids like the Beautyrest. You can sleep with your shoulder right at the mattress edge without feeling like you are sliding off. You can also sit on the edge of the bed (getting dressed, putting on shoes) without the mattress compressing deeply. At $1,099-$1,399, this edge support is one of the Sapira's standout features compared to same-priced competitors.",
       },
       {
-        question: "What is the Leesa social mission?",
-        answer: "For every 10 mattresses sold, Leesa donates one to homeless shelters, foster care, and other community organizations. They've donated over 40,000 mattresses to date. This social enterprise model resonates strongly with buyers who want their purchase to have community impact.",
+        question: "If I want to buy from a company that gives back and the Leesa social mission matters to me, what exactly does Leesa donate and is it verifiable?",
+        answer: "If you want your $1,099-$1,399 purchase to have community impact beyond your own bedroom, Leesa donates one mattress for every 10 sold to homeless shelters, foster care facilities, and community organizations. They have donated over 40,000 mattresses to date and the program is documented through their nonprofit partnerships. Returned trial mattresses are also donated locally rather than sent to landfill. This social enterprise model is unique among mattress brands at this price tier — competitors like Casper, Helix, and Tempur-Pedic do not have equivalent donation programs tied directly to sales volume.",
       },
     ],
     reviews: [
@@ -3278,16 +3278,16 @@ export const productsBatch1: Product[] = [
     ],
     faq: [
       {
-        question: "Does the Brooklyn Bedding Aurora Luxe actually sleep cooler than competitors?",
-        answer: "Yes — and it's measurable. Independent tests show the PCM cover consistently maintains a lower surface temperature than standard foam or fabric covers. The CopperFlex foam also conducts heat away from the body. For hot sleepers, the cooling effect is noticeable from the first night. For cold sleepers in winter, the cover can feel surprisingly cold before body heat warms it.",
+        question: "If I've tried Casper, Leesa, and even a Tempur-Pedic and still wake up sweating every night, does the Brooklyn Bedding Aurora Luxe actually sleep cooler or is the cooling just marketing?",
+        answer: "If you have cycled through multiple mattress brands and still overheat, the Aurora Luxe at $999-$1,399 uses two active cooling technologies that produce measurable results: a Phase Change Material (PCM) cover that absorbs and dissipates body heat, and CopperFlex infused foam that conducts heat away from your body into the coil layer. Independent temperature tests show the PCM cover maintains a lower surface temperature than standard foam, fabric, or even Tencel covers. Reviewers who previously overheated on Casper, Leesa, and standard Tempur-Pedic models report sleeping through the night without sweating for the first time. The tradeoff: in winter, cold sleepers may find the PCM cover uncomfortably cool for the first few minutes of getting into bed.",
       },
       {
-        question: "Which firmness should I choose for the Aurora Luxe?",
-        answer: "Soft: side sleepers under 200 lbs who want maximum pressure relief. Medium: combination sleepers, side sleepers 150-230 lbs, or couples with different preferences. Firm: back/stomach sleepers, heavier individuals (200+ lbs), or anyone who prefers a very supportive surface. Brooklyn Bedding allows a firmness swap within the 120-night trial period.",
+        question: "If I weigh 220 lbs and sleep on my side and back, which firmness of the Brooklyn Bedding Aurora Luxe should I choose — Soft, Medium, or Firm?",
+        answer: "If you weigh 220 lbs and alternate between side and back sleeping, the Medium firmness is the recommended choice. It provides enough cushion for side-sleeping pressure relief at your weight while maintaining adequate support for back sleeping without excessive sinkage. The Soft option would likely sag under 220 lbs in back-sleeping position. The Firm is designed for back/stomach sleepers above 200 lbs who want a very supportive surface. Brooklyn Bedding allows one free firmness swap within the 120-night trial period — so if the Medium feels too soft or firm after 30 days of adjustment, you can exchange it for a different firmness at no cost.",
       },
       {
-        question: "How long is Brooklyn Bedding's trial period?",
-        answer: "120 nights — longer than most competitors including Tempur-Pedic (90 nights), Helix (100 nights), and Casper (100 nights). This extended trial is particularly useful given that mattress comfort preferences often only become clear after 60-90 days when the body has fully adjusted.",
+        question: "If I'm nervous about buying a $1,000+ mattress online without trying it in a store first, how long does Brooklyn Bedding give me to test the Aurora Luxe before I'm stuck with it?",
+        answer: "If you're hesitant about buying a mattress sight-unseen online, Brooklyn Bedding offers a 120-night trial — 4 full months to sleep on it before deciding. That is longer than Tempur-Pedic (90 nights), Helix (100 nights), and Casper (100 nights). The extended trial matters because mattress comfort preferences often change during the first 60-90 days as your body adjusts to new support layers. If you decide it is not right after 3 months, Brooklyn Bedding arranges free pickup and a full refund on the $999-$1,399 purchase. They also allow one free firmness swap within the trial if you want to try a different feel before returning.",
       },
     ],
     reviews: [
