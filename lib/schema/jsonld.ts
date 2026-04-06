@@ -1,4 +1,5 @@
 import type { Product, Review, Category, FAQItem, BlogPost, YouTubeVideo, BuyingGuideStep } from "@/types";
+import type { FAQEntry } from "@/data/faq-pages";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://smartreview.com";
 
@@ -238,6 +239,48 @@ export function speakableSchema(productName: string, productUrl: string) {
       ],
     },
   };
+}
+
+export function competitorFaqPageSchema(opts: {
+  faqs: FAQEntry[];
+  pageUrl: string;
+  pageName: string;
+  competitor: { name: string; url: string; type: string };
+}) {
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: opts.faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
+        },
+      })),
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      name: opts.pageName,
+      url: `${SITE_URL}${opts.pageUrl}`,
+      about: {
+        "@type": opts.competitor.type,
+        name: opts.competitor.name,
+        url: opts.competitor.url,
+      },
+      mentions: {
+        "@type": "Organization",
+        name: "ReviewIQ",
+        url: SITE_URL,
+      },
+      speakable: {
+        "@type": "SpeakableSpecification",
+        cssSelector: ["[data-speakable='faq-answer']"],
+      },
+    },
+  ];
 }
 
 export function comparisonSchema(productA: Product, productB: Product) {

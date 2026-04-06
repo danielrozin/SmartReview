@@ -4,6 +4,7 @@ import { products } from "@/data/products";
 import { discussions } from "@/data/discussions";
 import { getAllBlogPosts, getBlogCategories } from "@/data/blog-posts";
 import { getAllComparisonPairs } from "@/data/comparisons";
+import { faqPages } from "@/data/faq-pages";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 3600; // Revalidate every hour
@@ -126,6 +127,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })),
   ];
 
+  // FAQ landing pages
+  const faqLandingPages: MetadataRoute.Sitemap = [
+    {
+      url: `${siteUrl}/faq`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
+    },
+    ...faqPages.map((page) => ({
+      url: `${siteUrl}/faq/${page.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
+  ];
+
   return [
     ...staticPages,
     ...categoryPages,
@@ -133,6 +150,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...comparisonPages,
     ...communityPages,
     ...blogPages,
+    ...faqLandingPages,
     ...dbProductPages,
     ...dbDiscussionPages,
   ];
