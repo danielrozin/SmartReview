@@ -151,6 +151,12 @@ export default function ReviewIQAnalytics() {
           >
             OKR Dashboard
           </a>
+          <a
+            href="/admin/analytics/weekly-report"
+            className="text-sm text-indigo-600 hover:text-indigo-800 font-medium underline"
+          >
+            Weekly Report
+          </a>
         </div>
         <p className="text-gray-500 mt-1">
           GA4: {config.ga4Property} | Clarity: {config.clarityProject}
