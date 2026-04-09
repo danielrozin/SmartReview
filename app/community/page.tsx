@@ -3,7 +3,8 @@ import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { ThreadCard } from "@/components/community/ThreadCard";
 import { UserChip } from "@/components/community/UserChip";
 import { TrustBadge } from "@/components/community/TrustBadge";
-import { discussions, getTrendingDiscussions, getPinnedDiscussions } from "@/data/discussions";
+import { discussions, getTrendingDiscussions, getRecentDiscussions, getTopDiscussions, getPinnedDiscussions } from "@/data/discussions";
+import { SortableDiscussions } from "@/components/community/SortableDiscussions";
 import { getTopContributors } from "@/data/users";
 import { categories } from "@/data/categories";
 import { buildMetadata } from "@/lib/seo/metadata";
@@ -17,6 +18,8 @@ export const metadata = buildMetadata({
 
 export default function CommunityPage() {
   const trending = getTrendingDiscussions(10);
+  const recent = getRecentDiscussions(10);
+  const top = getTopDiscussions(10);
   const pinned = getPinnedDiscussions();
   const topContributors = getTopContributors(5);
 
@@ -91,33 +94,7 @@ export default function CommunityPage() {
           )}
 
           {/* All discussions */}
-          <section>
-            <div className="flex items-center justify-between mb-4">
-              <h2 className="text-lg font-semibold text-gray-900">
-                Trending Discussions
-              </h2>
-              <div className="flex items-center gap-1">
-                {["Trending", "Recent", "Top"].map((tab, i) => (
-                  <button
-                    key={tab}
-                    className={`text-xs font-medium px-3 py-1.5 rounded-lg transition-colors ${
-                      i === 0
-                        ? "bg-brand-50 text-brand-600"
-                        : "text-gray-500 hover:bg-gray-50"
-                    }`}
-                  >
-                    {tab}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <div className="space-y-3">
-              {trending.map((thread) => (
-                <ThreadCard key={thread.id} thread={thread} />
-              ))}
-            </div>
-          </section>
+          <SortableDiscussions trending={trending} recent={recent} top={top} />
         </div>
 
         {/* Right sidebar */}

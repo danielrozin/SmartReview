@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
@@ -228,6 +228,12 @@ export default function WriteReviewPage() {
     setCons(updated);
   };
 
+  useEffect(() => {
+    if (status !== "loading" && !session) {
+      trackReviewAuthGateShown("", "page_load");
+    }
+  }, [session, status]);
+
   // Auth gate: require sign-in to write reviews
   if (status === "loading") {
     return (
@@ -240,7 +246,6 @@ export default function WriteReviewPage() {
   }
 
   if (!session) {
-    trackReviewAuthGateShown("", "page_load");
     return (
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <Breadcrumbs items={[{ name: "Write a Review", url: "/write-review" }]} />
@@ -288,9 +293,30 @@ export default function WriteReviewPage() {
           <p className="text-sm text-gray-400 mb-8">
             Reviews typically appear within 24-48 hours after verification.
           </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <a
+              href="/write-review"
+              onClick={(e) => { e.preventDefault(); setSubmitted(false); setStep(0); setSelectedProduct(""); setHeadline(""); setRating(0); setBody(""); setPros(["","",""]); setCons(["","",""]); setExperienceLevel(""); setTimeOwned(""); setVerification(""); setReliabilityRating(0); setEaseOfUseRating(0); setValueRating(0); setTouched({}); }}
+              className="inline-flex px-6 py-3 bg-brand-600 text-white font-semibold rounded-xl hover:bg-brand-700 transition-colors"
+            >
+              Write Another Review
+            </a>
+            <a
+              href="/community"
+              className="inline-flex px-6 py-3 border border-gray-200 text-gray-700 font-semibold rounded-xl hover:bg-gray-50 transition-colors"
+            >
+              Join the Community
+            </a>
+            <a
+              href="/products"
+              className="inline-flex px-6 py-3 border border-gray-200 text-gray-700 font-semibold rounded-xl hover:bg-gray-50 transition-colors"
+            >
+              Explore Products
+            </a>
+          </div>
           <a
             href="/"
-            className="inline-flex px-6 py-3 bg-brand-600 text-white font-semibold rounded-xl hover:bg-brand-700 transition-colors"
+            className="inline-flex mt-3 text-sm text-gray-400 hover:text-gray-600 transition-colors"
           >
             Back to Home
           </a>

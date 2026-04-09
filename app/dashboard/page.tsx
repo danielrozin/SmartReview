@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { redirect } from "next/navigation";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/lib/auth";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { StatsOverview } from "@/components/dashboard/StatsOverview";
 import { SavedComparisons } from "@/components/dashboard/SavedComparisons";
@@ -21,23 +24,26 @@ import { buildMetadata } from "@/lib/seo/metadata";
 import { UserProBadge } from "@/components/premium/UserProBadge";
 import { ProfileChecklist } from "@/components/onboarding/ProfileChecklist";
 
-// Demo user for initial launch — will use session auth when NextAuth is fully wired
-const DEMO_USER_ID = "user-sarah-k";
-
 export const metadata = buildMetadata({
   title: "Dashboard — SmartReview",
   description: "Your saved comparisons, review history, and product watchlist.",
   path: "/dashboard",
 });
 
-export default function DashboardPage() {
-  const user = getUserById(DEMO_USER_ID);
+export default async function DashboardPage() {
+  const session = await getServerSession(authOptions);
+  if (!session?.user) {
+    redirect("/auth/signin?callbackUrl=/dashboard");
+  }
+
+  const userId = (session.user as { id?: string }).id || "";
+  const user = getUserById(userId);
   if (!user) return null;
 
-  const stats = getDashboardStats(DEMO_USER_ID);
-  const saved = getSavedComparisons(DEMO_USER_ID);
-  const watchlist = getWatchlistItems(DEMO_USER_ID);
-  const recommended = getRecommendedProducts(DEMO_USER_ID, 4);
+  const stats = getDashboardStats(userId);
+  const saved = getSavedComparisons(userId);
+  const watchlist = getWatchlistItems(userId);
+  const recommended = getRecommendedProducts(userId, 4);
 
   // Build review history from products data
   const allProducts = getAllProducts();

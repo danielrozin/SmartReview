@@ -569,6 +569,12 @@ export function getRecentDiscussions(limit: number = 5): DiscussionThread[] {
     .slice(0, limit);
 }
 
+export function getTopDiscussions(limit: number = 5): DiscussionThread[] {
+  return [...discussions]
+    .sort((a, b) => b.upvotes - a.upvotes)
+    .slice(0, limit);
+}
+
 export function getPinnedDiscussions(): DiscussionThread[] {
   return discussions.filter((d) => d.isPinned);
 }
