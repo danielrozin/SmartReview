@@ -16,7 +16,7 @@ import { YouTubeVideos } from "@/components/product/YouTubeVideos";
 import { ProductDiscussions } from "@/components/community/ProductDiscussions";
 import { getDiscussionsByProduct } from "@/data/discussions";
 import { buildMetadata } from "@/lib/seo/metadata";
-import { productSchema, speakableSchema } from "@/lib/schema/jsonld";
+import { productSchema, speakableSchema, faqSchema } from "@/lib/schema/jsonld";
 import { formatNumber } from "@/lib/utils";
 import { RelatedProducts } from "@/components/product/RelatedProducts";
 import { PeopleAlsoReviewed } from "@/components/product/PeopleAlsoReviewed";
@@ -101,6 +101,14 @@ export default async function ProductPage({ params }: Props) {
           __html: JSON.stringify(speakableSchema(product.name, `/category/${slug}/${productSlug}`)),
         }}
       />
+      {product.faq.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqSchema(product.faq)),
+          }}
+        />
+      )}
 
       <Breadcrumbs
         items={[

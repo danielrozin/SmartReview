@@ -51,6 +51,8 @@ export function productSchema(product: Product) {
       ? product.reviews.reduce((sum, r) => sum + r.rating, 0) / product.reviews.length
       : 0;
 
+  const buildDate = new Date().toISOString().split("T")[0];
+
   return {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -58,6 +60,8 @@ export function productSchema(product: Product) {
     brand: { "@type": "Brand", name: product.brand },
     description: product.description,
     image: product.image,
+    datePublished: product.createdAt || buildDate,
+    dateModified: product.updatedAt || product.createdAt || buildDate,
     offers: {
       "@type": "AggregateOffer",
       lowPrice: product.priceRange.min,
@@ -293,12 +297,24 @@ export function comparisonSchema(productA: Product, productB: Product) {
       ? productB.reviews.reduce((sum, r) => sum + r.rating, 0) / productB.reviews.length
       : 0;
 
+  const buildDate = new Date().toISOString().split("T")[0];
+  const datePublished =
+    productA.createdAt && productB.createdAt
+      ? [productA.createdAt, productB.createdAt].sort()[0]
+      : productA.createdAt || productB.createdAt || buildDate;
+  const dateModified =
+    productA.updatedAt && productB.updatedAt
+      ? [productA.updatedAt, productB.updatedAt].sort().reverse()[0]
+      : productA.updatedAt || productB.updatedAt || buildDate;
+
   return {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: `${productA.name} vs ${productB.name} — Comparison`,
     description: `Side-by-side comparison of ${productA.name} and ${productB.name} based on verified buyer reviews.`,
     url: `${SITE_URL}/compare/${[productA.slug, productB.slug].sort().join("-vs-")}`,
+    datePublished,
+    dateModified,
     mainEntity: {
       "@type": "ItemList",
       name: `${productA.name} vs ${productB.name}`,

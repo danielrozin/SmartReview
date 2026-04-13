@@ -36,6 +36,8 @@ export interface Product {
   faq: FAQItem[];
   reviews: Review[];
   youtubeVideos?: YouTubeVideo[];
+  createdAt?: string;
+  updatedAt?: string;
 }
 
 export interface YouTubeVideo {
