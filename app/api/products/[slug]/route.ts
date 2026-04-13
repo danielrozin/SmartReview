@@ -20,7 +20,7 @@ export async function GET(
       aiSummary: true,
       issues: true,
       faqs: true,
-      videos: true,
+      videos: { where: { isActive: true } },
       reviews: {
         where: { status: "published" },
         orderBy: { createdAt: "desc" },

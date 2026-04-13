@@ -180,10 +180,12 @@ model FAQ {
 }
 
 model YouTubeVideo {
-  id        String @id @default(cuid())
-  productId String
-  videoId   String
-  title     String
+  id          String   @id @default(cuid())
+  productId   String
+  videoId     String
+  title       String
+  isActive    Boolean  @default(true)
+  lastChecked DateTime?
 
   product Product @relation(fields: [productId], references: [id], onDelete: Cascade)
 
