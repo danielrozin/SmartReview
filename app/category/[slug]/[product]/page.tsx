@@ -12,7 +12,6 @@ import { RecurringIssues } from "@/components/product/RecurringIssues";
 import { SpecsTable } from "@/components/product/SpecsTable";
 import { ComparisonModule } from "@/components/product/ComparisonModule";
 import { FAQSection } from "@/components/product/FAQSection";
-import { YouTubeVideos } from "@/components/product/YouTubeVideos";
 import { ProductDiscussions } from "@/components/community/ProductDiscussions";
 import { getDiscussionsByProduct } from "@/data/discussions";
 import { buildMetadata } from "@/lib/seo/metadata";
@@ -20,8 +19,11 @@ import { productSchema, speakableSchema, faqSchema } from "@/lib/schema/jsonld";
 import { formatNumber } from "@/lib/utils";
 import { RelatedProducts } from "@/components/product/RelatedProducts";
 import { PeopleAlsoReviewed } from "@/components/product/PeopleAlsoReviewed";
-import { TrackProductView } from "@/components/tracking/TrackProductView";
-import { ReviewFormCTA } from "@/components/product/ReviewFormCTA";
+import {
+  TrackProductView,
+  YouTubeVideos,
+  ReviewFormCTA,
+} from "@/components/product/ProductPageClientWidgets";
 import { BestFor } from "@/components/product/BestFor";
 
 interface Props {

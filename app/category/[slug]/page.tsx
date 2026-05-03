@@ -7,7 +7,7 @@ import { buildMetadata } from "@/lib/seo/metadata";
 import { productListSchema, howToSchema } from "@/lib/schema/jsonld";
 import { categories } from "@/data/categories";
 import { getBuyingGuide } from "@/data/buying-guides";
-import { TrackCategoryView } from "@/components/tracking/TrackCategoryView";
+import { TrackCategoryView } from "@/components/product/ProductPageClientWidgets";
 
 interface Props {
   params: Promise<{ slug: string }>;
