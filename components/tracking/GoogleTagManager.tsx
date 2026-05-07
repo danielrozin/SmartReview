@@ -1,5 +1,3 @@
-"use client";
-
 /**
  * Google Tag Manager container script.
  * Loads GTM and initializes dataLayer with GA4 + Google Ads config.

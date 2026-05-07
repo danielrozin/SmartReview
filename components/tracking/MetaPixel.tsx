@@ -1,5 +1,3 @@
-"use client";
-
 /**
  * Meta (Facebook) Pixel integration.
  * Loads the Meta Pixel SDK and fires PageView on init.
